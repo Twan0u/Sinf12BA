@@ -3,34 +3,34 @@
 ##Notes de cours 2
 
 En C : 
->decimal : 123
->Binaire : **0b**1111011
->Octal : **0**173
->Hexadécimal :**0x**7B
+>decimal : 123  
+>Binaire : **0b**1111011  
+>Octal : **0**173   
+>Hexadécimal :**0x**7B  
 
-en C on a des unsign short, 
-unsign int (min 16 bits)
-...voir slide
+en C on a des unsign short,  
+* unsign int (min 16 bits)  
+...voir slide   
 
-Size of retourne l'espace mémoire du type utilisé.
+Size of retourne l'espace mémoire du type utilisé.  
 
 ...
 
-**Attention** pas de Tab.length en C 
+**Attention** pas de Tab.length en C   
 ...
-en C chaque chaine de caractère se termine avec \0
+en C chaque chaine de caractère se termine avec \0  
 
 
 ###Pointeurs 
-en C la mémoire est gérée avec des pointeurs.
+en C la mémoire est gérée avec des pointeurs.  
 
 On déclare avec * **ptr = &variable**
->*int* i = 5;
+>*int* i = 5;  
 >*int* *ptr = &i
 
 On peut récupérer une valeur stockée à l'adresse d'un pointeur avec **variable =** * **ptr**
->*int* j = *ptr ;
 >printf("%d\n",j);
+>*int* j = *ptr ;  
 
 modifier la valeur 
  ...
