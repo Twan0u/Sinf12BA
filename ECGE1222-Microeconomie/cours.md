@@ -1,11 +1,12 @@
 #Microéconomie
+
 >16 pts Exam
 >4  pts 18-20 Avril
 >Qcm - +1 - -0.25
 
-#Chapitre 1 : Préférences et choix
+##Chapitre 1 : Préférences et choix
 
-#1.1 Problème de décision
+###1.1 Problème de décision
 
 -**Problème de décision** : Un décideur fait face à un ensemble d’alternatives possibles ( mutuellement exclusives ) dans une situation donnée.
 -**Situation** : contraintes d'un choix.
@@ -14,7 +15,7 @@
 	On peut expliquer le comportement d'un individu face à une décision de deux façon : 	- Approche Préférence
  		- Aproche des Choix
 
-#1.2 Préférences
+###1.2 Préférences
 
 	Les goûts de l'individu. Ces goûts peuvent être résumés par une relation de préférence.
 	L'individu peut :
@@ -32,12 +33,12 @@ Violation des hypothèses de départ :
 - complétude : situation extrème ou toute paire ne pourrait être comparée
 - transitivité : cas de différences à peine perceptibles / cadrage("framing") façon dont les choses sont présentées.
 
-#1.3 Utilité
+###1.3 Utilité
 
 	On synthétise les préférences au moyen d'une fonction. cette fonction est appelée fonction d'utilitée
-#1.4 Choix et Contraintes
+###1.4 Choix et Contraintes
 
-#1.5 Préférences révélées
+###1.5 Préférences révélées
 
 
 
