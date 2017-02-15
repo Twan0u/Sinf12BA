@@ -8,26 +8,27 @@
 
 ###1.1 Problème de décision
 
--**Problème de décision** : Un décideur fait face à un ensemble d’alternatives possibles ( mutuellement exclusives ) dans une situation donnée.
--**Situation** : contraintes d'un choix.
--**Alternatives réalisables** : ensemble d'éléments d'une situation.
+-**Problème de décision** : Un décideur fait face à un ensemble d’alternatives possibles ( mutuellement exclusives ) dans une situation donnée.  
+-**Situation** : contraintes d'un choix.  
+-**Alternatives réalisables** : ensemble d'éléments d'une situation.  
 
-	On peut expliquer le comportement d'un individu face à une décision de deux façon : 	- Approche Préférence
- 		- Aproche des Choix
+	On peut expliquer le comportement d'un individu face à une décision de deux façon : 	
+		*Approche Préférence     
+ 		*Aproche des Choix
 
 ###1.2 Préférences
 
-	Les goûts de l'individu. Ces goûts peuvent être résumés par une relation de préférence.
-	L'individu peut :
+	Les goûts de l'individu. Ces goûts peuvent être résumés par une relation de préférence.  
+	L'individu peut :  
 		-préférer strictement 
 		-être indifférent à un choix entre 2 choses.
 
-	Il peut aussi préférer faiblement >~ (>~ signifie que c'est soit ~ soit >) 
+	Il peut aussi préférer faiblement >~ (>~ signifie que c'est soit ~ soit >)   
 
 	Hypotheses fondamentales sur les préférences (préférences rationelles / cohérence ): 
-		-Complétudes / relation complète / préférences complètes : soit a>~b soit a~<b soit a>~b et a~<b
-		-Transitivite / relation de transitivité / transitives : si a>~b et b>~c alors a>~c
-		- Réflexive / relation de réflexivité / réflexives : a>~a 
+		 - Complétudes / relation complète / préférences complètes : soit a>~b soit a~<b soit a>~b et a~<b   
+		 - Transitivite / relation de transitivité / transitives : si a>~b et b>~c alors a>~c
+		 - Réflexive / relation de réflexivité / réflexives : a>~a 
 
 Violation des hypothèses de départ : 
 - complétude : situation extrème ou toute paire ne pourrait être comparée
