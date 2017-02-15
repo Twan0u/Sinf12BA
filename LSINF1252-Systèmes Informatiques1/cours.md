@@ -1,5 +1,43 @@
 #Systèmes Informatiques 1
 
+
+##cours 1
+CPU & registres <--> cache[SRAM]/Mémoire Principale[DRAM]/Mémoire Virtuelle[Disque]
+###Répertoires
+Hiérarchie de répertoires
+* **/:** racine
+*  **/bin** et **/usr/bin** : utilitaires
+*  **/var** et **/tmp** : fichiers temporaires
+*  **/etc** : fichiers de configuration
+*  **/home** : répertoires utilisateurs (~login)
+
+Service Unix
+###Système d'exploitation
+Son rôle est de coordonner les opérations des différents composantes physiques de la machine et les applications.
+###Utilisateurs 
+lambda  
+root : Superutilisateur  
+###Commandes de base 
+**ls** : affiche la liste des fichiers et dossiers du répertoire spécifié  
+**mv** : utilitaire pour renommer ou déplacer un fichier ou dossier  
+**cp** : copie un fichier ou dossier (-r pour les dossiers)  
+**rm** : efface un fichier ou dossier  
+**mkdir** : crée un répertoire  
+**rmdir** : efface un répertoire vide  
+**cd** : change le répertoire courant  
+**pwd** : affiche le répertoire courant  
+**grep** : permet de faire des recherches sur le contenu des fichiers  
+**./prog** : est utilisé pour lancer le programme prog
+###Compiler
+
+**gcc -Werror code.c -o prog**  
+>gcc : compilateur  
+>-Werror : affiche les erreurs  
+>code.c : fichier qui contient le code en c à compiler  
+>prog : nom du programme de sortie  
+
+
+
 ##Notes de cours 2
 
 En C : 
