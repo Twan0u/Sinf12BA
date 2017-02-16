@@ -1,9 +1,8 @@
-#Systèmes Informatiques 1
+# Systèmes Informatiques 1
 
-
-##cours 1
+## cours 1
 CPU & registres <--> cache[SRAM]/Mémoire Principale[DRAM]/Mémoire Virtuelle[Disque]
-###Répertoires
+### Répertoires
 Hiérarchie de répertoires
 * **/:** racine
 *  **/bin** et **/usr/bin** : utilitaires
@@ -12,12 +11,12 @@ Hiérarchie de répertoires
 *  **/home** : répertoires utilisateurs (~login)
 
 Service Unix
-###Système d'exploitation
+### Système d'exploitation
 Son rôle est de coordonner les opérations des différents composantes physiques de la machine et les applications.
-###Utilisateurs 
+### Utilisateurs 
 lambda  
 root : Superutilisateur  
-###Commandes de base 
+### Commandes de base 
 **ls** : affiche la liste des fichiers et dossiers du répertoire spécifié  
 **mv** : utilitaire pour renommer ou déplacer un fichier ou dossier  
 **cp** : copie un fichier ou dossier (-r pour les dossiers)  
@@ -28,17 +27,25 @@ root : Superutilisateur
 **pwd** : affiche le répertoire courant  
 **grep** : permet de faire des recherches sur le contenu des fichiers  
 **./prog** : est utilisé pour lancer le programme prog
-###Compiler
-
+**echo "Blabla" >> file.txt** copie le texte Blabla dans le fichier file.txt  
+**man** :lire les pages de manuel d’un système Unix.  
+### Compilateur
 **gcc -Werror code.c -o prog**  
 >gcc : compilateur  
 >-Werror : affiche les erreurs  
 >code.c : fichier qui contient le code en c à compiler  
 >prog : nom du programme de sortie  
 
-
-
 ##Notes de cours 2
+```c
+#include<stdio.h>
+#define NAME " World "
+
+int main ( intarg c , char ∗ argv [ ] ){//la fonction main est appelée pré-processeur, elle est exécutée en premier et tout programme en c doit la contenir. 
+    printf ( "Hello , %s!\n" , NAME) ;// affiche sur la sortie standard
+    return 0;//Un programme retourne toujours une valeur (en C : return ou exit ).
+}
+```
 
 En C : 
 >decimal : 123  
@@ -46,9 +53,16 @@ En C :
 >Octal : **0**173   
 >Hexadécimal :**0x**7B  
 
-en C on a des unsign short,  
-* unsign int (min 16 bits)  
-...voir slide   
+en C on a des nombres non signés,  
+* unsigned short minimum 16 bits
+* unsigned int minimum 16 bits
+* unsigned long minimum 32 bits
+* unsigned long long minimum 64 bits
+* sizeof(...) permet de connaitre la taille d’un type en nombre d’octets (8 bits). 
+
+> Par exemple :  
+> sizeof( unsigned int ) = 4  
+> sizeof ( unsigned short ) = 2   
 
 Size of retourne l'espace mémoire du type utilisé.  
 
@@ -59,7 +73,7 @@ Size of retourne l'espace mémoire du type utilisé.
 en C chaque chaine de caractère se termine avec \0  
 
 
-###Pointeurs 
+### Pointeurs 
 en C la mémoire est gérée avec des pointeurs.  
 
 On déclare avec * **ptr = &variable**
@@ -84,7 +98,7 @@ printf("%s\n",c_ptr;
 >c_ptr --> adresse  
 >c_ptr --> char   
 
-###Structures
+### Structures
 
 Définition d'une structure
 >*struct* studen{  
@@ -102,7 +116,7 @@ Déclaration et initialisation
 >...   
 >...   
 
-###passage par valeur
+### passage par valeur
 **Attention** : quand on place un pointeur comme argument d'une fonction on ne peut la modifier.
 
 Bit shift : plus optimisé pour "effecturer des opérations"
