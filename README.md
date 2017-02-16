@@ -10,7 +10,7 @@ Résumé jusqu'à - Cours S1
 Notes brutes - Cours S0   
 Résumé jusqu'à - Cours 0   
 ##LSINF1252-Systèmes informatiques
-Notes brutes - Cours S2 \ {pas S1}   
+Notes brutes - Cours S2   
 Résumé jusqu'à - Cours 0  
 
 
