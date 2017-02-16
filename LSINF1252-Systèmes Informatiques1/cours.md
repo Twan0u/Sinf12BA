@@ -30,7 +30,9 @@ root : Superutilisateur
 **echo "Blabla" >> file.txt** copie le texte Blabla dans le fichier file.txt  
 **man** :lire les pages de manuel d’un système Unix.  
 ### Compilateur
-**gcc -Werror code.c -o prog**  
+``` 
+gcc -Werror code.c -o prog 
+```
 >gcc : compilateur  
 >-Werror : affiche les erreurs  
 >code.c : fichier qui contient le code en c à compiler  
@@ -60,16 +62,16 @@ en C on a des nombres non signés,
 * unsigned long long minimum 64 bits
 * sizeof(...) permet de connaitre la taille d’un type en nombre d’octets (8 bits). 
 
-> Par exemple :  
-> sizeof( unsigned int ) = 4  
+> Par exemple :
+> sizeof( unsigned int ) = 4
 > sizeof ( unsigned short ) = 2   
 
-Size of retourne l'espace mémoire du type utilisé.  
+**Attention** pas de Tab.length en C  il faut donc prévoir de garder la taille du tableau en mémoire si on veut l'utiliser par la suite
 
-...
+>En C :
+> ``` && ``` signifie : et logique
+> ``` || ``` signifie : ou logique
 
-**Attention** pas de Tab.length en C   
-...
 en C chaque chaine de caractère se termine avec \0  
 
 
