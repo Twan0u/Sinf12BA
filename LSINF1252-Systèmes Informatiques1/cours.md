@@ -69,7 +69,7 @@ en C on a des nombres non signés,
 **Attention** pas de Tab.length en C  il faut donc prévoir de garder la taille du tableau en mémoire si on veut l'utiliser par la suite
 
 >En C :
-> ``` && ``` signifie : et logique
+> ``` && ``` signifie : et logique  
 > ``` || ``` signifie : ou logique
 
 en C chaque chaine de caractère se termine avec \0  
