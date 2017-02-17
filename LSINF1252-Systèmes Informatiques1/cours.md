@@ -66,7 +66,7 @@ en C on a des nombres non signés,
 * sizeof(...) permet de connaitre la taille d’un type en nombre d’octets (8 bits). 
 
 Par exemple : 
-```C 
+``` c
 sizeof( unsigned int ) = 4 
 sizeof ( unsigned short ) = 2    
 ```
@@ -84,8 +84,12 @@ Réels
 8 (resp. 11) bits pour l’exposant
 23 (resp. 52) bits pour la fraction
 
-sizeof(float) 4 bytes - 32 bits
-sizeof(double) 8 bytes - 64 bits
+``` c
+sizeof(float) 4 bytes  //32 bits
+sizeof(double) 8 bytes  //64 bits
+```
+---
+
 en C chaque chaine de caractère se termine avec \0  
 
 
