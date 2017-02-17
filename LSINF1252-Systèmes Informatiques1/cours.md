@@ -38,7 +38,7 @@ gcc -Werror code.c -o prog
 >code.c : fichier qui contient le code en c à compiler  
 >prog : nom du programme de sortie  
 
-##Notes de cours 2
+## cours 2
 ```c
 #include<stdio.h>
 #define NAME " World "
@@ -54,7 +54,10 @@ En C :
 >Binaire : **0b**1111011  
 >Octal : **0**173   
 >Hexadécimal :**0x**7B  
+> ``` && ``` signifie : et logique  
+> ``` || ``` signifie : ou logique  
 
+### Unsigned
 en C on a des nombres non signés,  
 * unsigned short minimum 16 bits
 * unsigned int minimum 16 bits
@@ -62,16 +65,27 @@ en C on a des nombres non signés,
 * unsigned long long minimum 64 bits
 * sizeof(...) permet de connaitre la taille d’un type en nombre d’octets (8 bits). 
 
-> Par exemple :
-> sizeof( unsigned int ) = 4
-> sizeof ( unsigned short ) = 2   
-
+Par exemple : 
+```C 
+sizeof( unsigned int ) = 4 
+sizeof ( unsigned short ) = 2    
+```
 **Attention** pas de Tab.length en C  il faut donc prévoir de garder la taille du tableau en mémoire si on veut l'utiliser par la suite
 
->En C :
-> ``` && ``` signifie : et logique  
-> ``` || ``` signifie : ou logique
+### Signed
+Les bits signés sont représentés sous la forme : Signe (négatif si = 1) - Nombre 
+* short minimum 16 bits
+* int minimum 16 bits
+* long minimum 32 bits
+* long long minimum 64 bits
 
+Réels
+1 bit pour le signe
+8 (resp. 11) bits pour l’exposant
+23 (resp. 52) bits pour la fraction
+
+sizeof(float) 4 bytes - 32 bits
+sizeof(double) 8 bytes - 64 bits
 en C chaque chaine de caractère se termine avec \0  
 
 
