@@ -3,12 +3,12 @@
 ## cours 1
 CPU & registres <--> cache[SRAM]/Mémoire Principale[DRAM]/Mémoire Virtuelle[Disque]
 ### Répertoires
-Hiérarchie de répertoires
-* **/:** racine
-*  **/bin** et **/usr/bin** : utilitaires
-*  **/var** et **/tmp** : fichiers temporaires
-*  **/etc** : fichiers de configuration
-*  **/home** : répertoires utilisateurs (~login)
+Hiérarchie de répertoires :   
+- **/:** racine  
+-  **/bin** et **/usr/bin** : utilitaires  
+-  **/var** et **/tmp** : fichiers temporaires  
+-  **/etc** : fichiers de configuration  
+-  **/home** : répertoires utilisateurs (~login)  
 
 Service Unix
 ### Système d'exploitation
@@ -26,7 +26,7 @@ root : Superutilisateur
 **cd** : change le répertoire courant  
 **pwd** : affiche le répertoire courant  
 **grep** : permet de faire des recherches sur le contenu des fichiers  
-**./prog** : est utilisé pour lancer le programme prog
+**./prog** : est utilisé pour lancer le programme prog  
 **echo "Blabla" >> file.txt** copie le texte Blabla dans le fichier file.txt  
 **man** :lire les pages de manuel d’un système Unix.  
 ### Compilateur
@@ -59,11 +59,11 @@ En C :
 
 ### Unsigned
 en C on a des nombres non signés,  
-* unsigned short minimum 16 bits
-* unsigned int minimum 16 bits
-* unsigned long minimum 32 bits
-* unsigned long long minimum 64 bits
-* sizeof(...) permet de connaitre la taille d’un type en nombre d’octets (8 bits). 
+- unsigned short minimum 16 bits  
+- unsigned int minimum 16 bits  
+- unsigned long minimum 32 bits  
+- unsigned long long minimum 64 bits  
+- sizeof(...) permet de connaitre la taille d’un type en nombre d’octets (8 bits).   
 
 Par exemple : 
 ``` c
@@ -74,21 +74,22 @@ sizeof ( unsigned short ) = 2
 
 ### Signed
 Les bits signés sont représentés sous la forme : Signe (négatif si = 1) - Nombre 
-* short minimum 16 bits
-* int minimum 16 bits
-* long minimum 32 bits
-* long long minimum 64 bits
+- short minimum 16 bits  
+- int minimum 16 bits  
+- long minimum 32 bits  
+- long long minimum 64 bits  
 
 Réels
-1 bit pour le signe
-8 (resp. 11) bits pour l’exposant
-23 (resp. 52) bits pour la fraction
+1 bit pour le signe  
+8 (resp. 11) bits pour l’exposant  
+23 (resp. 52) bits pour la fraction  
 
 ``` c
-sizeof(float) 4 bytes  //32 bits
+sizeof(float) 4 bytes  //32 bits  
 sizeof(double) 8 bytes  //64 bits
 ```
 ---
+
 
 en C chaque chaine de caractère se termine avec \0  
 
@@ -98,10 +99,10 @@ en C la mémoire est gérée avec des pointeurs.
 
 On déclare avec * **ptr = &variable**
 >*int* i = 5;  
->*int* *ptr = &i
+>*int* *ptr = &i  
 
-On peut récupérer une valeur stockée à l'adresse d'un pointeur avec **variable =** * **ptr**
->printf("%d\n",j);
+On peut récupérer une valeur stockée à l'adresse d'un pointeur avec **variable =** * **ptr**  
+>printf("%d\n",j);  
 >*int* j = *ptr ;  
 
 modifier la valeur 
@@ -143,7 +144,7 @@ Bit shift : plus optimisé pour "effecturer des opérations"
 
 
  
-
+ 
 
 
 
