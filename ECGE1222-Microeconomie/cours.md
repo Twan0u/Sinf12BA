@@ -41,5 +41,17 @@ Violation des hypothèses de départ :
 
 ###1.5 Préférences révélées
 
+##chapitre 2 
+...cours 2 ...
+le consommateur choisissent le meilleur panier de biens et services parmi ceux qu'ils peuvent acquérir
+
+4 regles
+
+...
+slide 38 
+Il existe des preférences telles qu'il n'existe aucune fonction pour les représenter. Si elles peuvent l'être, elles sont complètes et transitives.
+
+
+
 
 
