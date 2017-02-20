@@ -99,18 +99,18 @@ group by C.LOCALITE, P.NPRO
 
 - Accès aux données : 
 >le SGBD :  
->- permet l'accès aux données à la fois par l'utilisateur occasionnel et par les programmes de traitement de données.
+>- permet l'accès aux données à la fois par l'utilisateur occasionnel et par les programmes de traitement de données.  
 
-- Protection contre les accidents : 
->le SGBD :
->- garantit l'intégrité et l'accessibilité des données en cas d'incident ou d'attaque.
-- Gestion des accès concurrents : 
->le SGBD :
->- permet l'accès simultané aux données par des centaines voire des milliers d'utilisateurs. 
->- contrôle rigoureusement les opérations simultanées sur les mêmes données.
-- Contrôle des accès : 
->le SGBD 
->- garantit que seuls les utilisateurs autorisés peuvent accéder aux données et les modifier.
+- Protection contre les accidents :   
+>le SGBD :  
+>- garantit l'intégrité et l'accessibilité des données en cas d'incident ou d'attaque.  
+- Gestion des accès concurrents :   
+>le SGBD :  
+>- permet l'accès simultané aux données par des centaines voire des milliers d'utilisateurs.   
+>- contrôle rigoureusement les opérations simultanées sur les mêmes données.  
+- Contrôle des accès :   
+>le SGBD   
+>- garantit que seuls les utilisateurs autorisés peuvent accéder aux données et les modifier.  
 
 ---
 
@@ -118,6 +118,10 @@ group by C.LOCALITE, P.NPRO
 contraintes d'unicité
 
 cercle bleu signifie doit avoir    
+
+(Etudiant (Noma))  =  (Etudiant) -[<->,<->] - (Noma)
+
+Unicité : il faut un truc et un autre truc
 
 
 
