@@ -77,40 +77,42 @@ and D.NPRO = P.NPRO
 group by C.LOCALITE, P.NPRO
 ```
 
->Une **base de données** est constituée d’un ensemble de **tables**  
->Une **table** contient les données relatives à une **collection d ’entités** de même nature  
->Chaque **ligne** d’une table reprend les données relatives à une **entité**  
->Chaque **colonne** d’une table décrit une propriété commune des entités  
->Un **identifiant** de la table est Le jeu de colonnes dont les valeurs sont uniques  
->Une **clé étrangère** vers cette autre table sont les lignes d’une table peuvent faire référence chacune à une ligne d’une autre table.  
->On évite d’enregistrer des données qu’il est possible de calculer à partir d’autres données enregistrées.
+> Une **base de données** est constituée d’un ensemble de **tables**  
+> Une **table** contient les données relatives à une **collection d ’entités** de même nature  
+> Chaque **ligne** d’une table reprend les données relatives à une **entité**  
+> Chaque **colonne** d’une table décrit une propriété commune des entités  
+> Un **identifiant** de la table est Le jeu de colonnes dont les valeurs sont uniques  
+> Une **clé étrangère** vers cette autre table sont les lignes d’une table peuvent faire référence chacune à une ligne d’une autre table.  
+> On évite d’enregistrer des données qu’il est possible de calculer à partir d’autres données enregistrées.
 
 ### Les SGBD ( Systèmes de Gestion de Bases de Donées )
 - Organisation des données
->le SGBD :   
->- organise les données en tables permanentes stockées sur disques.  
->- crée les mécanismes garantissant un accès rapide aux données.  
->- informe les utilisateurs sur ces structures.  
+> le SGBD :   
+> - organise les données en tables permanentes stockées sur disques.  
+> - crée les mécanismes garantissant un accès rapide aux données.  
+> - informe les utilisateurs sur ces structures.  
 
 - Gestion des données : 
->le SGBD  :   
->- garantit l'évolution cohérente des données.  
->- vérifie que les contraintes (unicité, références entre tables, etc.) sont respectées.  
+> le SGBD  :   
+> - garantit l'évolution cohérente des données.  
+> - vérifie que les contraintes (unicité, références entre tables, etc.) sont respectées.  
 
 - Accès aux données : 
->le SGBD :  
->- permet l'accès aux données à la fois par l'utilisateur occasionnel et par les programmes de traitement de données.  
+> le SGBD :  
+> - permet l'accès aux données à la fois par l'utilisateur occasionnel et par les programmes de traitement de données.  
 
 - Protection contre les accidents :   
->le SGBD :  
->- garantit l'intégrité et l'accessibilité des données en cas d'incident ou d'attaque.  
+> le SGBD :  
+> - garantit l'intégrité et l'accessibilité des données en cas d'incident ou d'attaque.  
+
 - Gestion des accès concurrents :   
->le SGBD :  
->- permet l'accès simultané aux données par des centaines voire des milliers d'utilisateurs.   
->- contrôle rigoureusement les opérations simultanées sur les mêmes données.  
+> le SGBD :  
+> - permet l'accès simultané aux données par des centaines voire des milliers d'utilisateurs.   
+> - contrôle rigoureusement les opérations simultanées sur les mêmes données.  
+
 - Contrôle des accès :   
->le SGBD   
->- garantit que seuls les utilisateurs autorisés peuvent accéder aux données et les modifier.  
+> le SGBD   
+> - garantit que seuls les utilisateurs autorisés peuvent accéder aux données et les modifier.  
 
 ---
 
