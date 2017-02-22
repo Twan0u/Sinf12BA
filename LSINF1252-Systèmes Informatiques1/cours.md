@@ -130,13 +130,16 @@ printf ( "%d == %d\n" , ∗ ptr, i ) ; // affichera 10
 
 ### Structures
 
-// Definition d’une structure  
+**Definition d’une structure**  
+```c
 struct student {  
 int matricule ;  
 char prenom [ 2 0 ] ;  
 char nom [ 3 0 ] ;  
 } ;  
-// Declaration + Initialization  
+```
+**Declaration + Initialization**  
+```c
 struct student linus = { 1 , " Linus " , " Torvalds " } ;  
 struct student richard = { .matricule = 2, .prenom = " Richard " , . nom = " Stallman " } ;  
 struct student evil ;  
