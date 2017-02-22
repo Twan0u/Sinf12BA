@@ -112,17 +112,17 @@ En C la mémoire est gérée avec des pointeurs.
 Déclaration d’un pointeur :
 ```c
 int i = 5;
-i n t ∗ p t r = &i ;
+int ∗ ptr = &i ;
 ```c
 Récupérer la valeur stockée à l’adresse du pointeur :
 ```c
 int j = ∗ ptr ;
-p r i n t f ( "%d\n" , j ) ; // affichera 5
+printf ( "%d\n" , j ) ; // affichera 5
 ```
 Modifier la valeur stockée à l’adresse du pointeur :
 ```c
 ∗ ptr = 10;
-p r i n t f ( "%d == %d\n" , ∗ p t r , i ) ; // affichera 10
+printf ( "%d == %d\n" , ∗ ptr, i ) ; // affichera 10
 == 10
 ```
 
@@ -131,20 +131,22 @@ p r i n t f ( "%d == %d\n" , ∗ p t r , i ) ; // affichera 10
 
 ### Structures
 
-// Definition d’une structure
-struct student {
-int matricule ;
-char prenom [ 2 0 ] ;
-char nom [ 3 0 ] ;
-} ;
-// Declaration + Initialization
-struct student linus = { 1 , " Linus " , " Torvalds " } ;
-struct student richard = { .matricule = 2, .prenom = " Richard " , . nom = " Stallman " } ;
-struct student evil ;
-evil . noma = 3 ;
-evil . prenom = "Bill" ;
-evil . nom = " Gates " ;
+// Definition d’une structure  
+struct student {  
+int matricule ;  
+char prenom [ 2 0 ] ;  
+char nom [ 3 0 ] ;  
+} ;  
+// Declaration + Initialization  
+struct student linus = { 1 , " Linus " , " Torvalds " } ;  
+struct student richard = { .matricule = 2, .prenom = " Richard " , . nom = " Stallman " } ;  
+struct student evil ;  
+evil . noma = 3 ;  
+evil . prenom = "Bill" ;  
+evil . nom = " Gates " ;  
 ```
+>typedef //permet de redéfinir le nom des types de données.  
+
 
 ### passage par valeur
 **Attention** : quand on place un pointeur comme argument d'une fonction on ne peut la modifier.
