@@ -20,9 +20,9 @@ On peut expliquer le comportement d'un individu face à une décision de deux fa
 
 Les goûts de l'individu. Ces goûts peuvent être résumés par une relation de préférence.  
 L'individu peut :  
-- préférer strictement \>
-- être indifférent à un choix entre 2 choses. \~
-- préférer faiblement \>\~
+- préférer strictement \>  
+- être indifférent à un choix entre 2 choses. \~  
+- préférer faiblement \>\~  
 
 Hypotheses fondamentales sur les préférences (préférences rationelles / cohérence ): 
 - Complétudes / relation complète / préférences complètes : soit a\>\~b soit a\<\~ b soit a\>\~b et a\<\~b   
@@ -32,13 +32,17 @@ Hypotheses fondamentales sur les préférences (préférences rationelles / coh�
 Violation des hypothèses de  : 
 - complétude : situation extrème ou toute paire ne pourrait être comparée
 - transitivité : cas de différences à peine perceptibles  
-- cadrage("framing") façon dont les choses sont présentées.
+- cadrage("framing") façon dont les choses sont présentées.  
 
+> ces hypothèses sont si fondamentales que on peut les appeler axiomes ( ou axiomes de rationalité ou de cohérence )  
 ---
 
 ###1.3 Utilité
 
-	On synthétise les préférences au moyen d'une fonction. cette fonction est appelée fonction d'utilitée
+On synthétise les préférences au moyen d'une fonction. cette fonction est appelée fonction d'utilitée. Cette fonction représente la relation de préférence. De telles fonctions sont appelées fonctions d'utilité. u:X--\> R. si cette relation représente \>\~ alors, on peut dire que on a u(a) \>\= u(b) \<\-\> a \>\~ b.
+
+#### Concept ordinal
+
 ###1.4 Choix et Contraintes
 
 ###1.5 Préférences révélées
