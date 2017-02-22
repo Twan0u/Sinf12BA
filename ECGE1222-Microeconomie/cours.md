@@ -24,16 +24,17 @@ L'individu peut :
 - être indifférent à un choix entre 2 choses. \~
 - préférer faiblement \>\~
 
- ---
-
 Hypotheses fondamentales sur les préférences (préférences rationelles / cohérence ): 
-- Complétudes / relation complète / préférences complètes : soit a\>\~b soit a\~\< b soit a\>\~b et a\~\<b   
-- Transitivite / relation de transitivité / transitives : si a>~b et b>~c alors a>~c   
-- Réflexive / relation de réflexivité / réflexives : a\succsim \precsim a    
+- Complétudes / relation complète / préférences complètes : soit a\>\~b soit a\<\~ b soit a\>\~b et a\<\~b   
+- Transitivite / relation de transitivité / transitives : si a\>\~b et b\>\~c alors a>~c   
+- Réflexive / relation de réflexivité / réflexives : a \>\~ a    
 
-Violation des hypothèses de départ : 
+Violation des hypothèses de  : 
 - complétude : situation extrème ou toute paire ne pourrait être comparée
-- transitivité : cas de différences à peine perceptibles / cadrage("framing") façon dont les choses sont présentées.
+- transitivité : cas de différences à peine perceptibles  
+- cadrage("framing") façon dont les choses sont présentées.
+
+---
 
 ###1.3 Utilité
 
