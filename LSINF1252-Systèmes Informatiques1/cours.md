@@ -96,8 +96,9 @@ ISO-8859 8bits
 Unicode Permet de représenter tous les caractères connus de toutes les langues. il utilise plus de 8 bits par caractères     
 
 en C chaque chaine de caractère se termine avec '\0'  
-  
+La taille d'une chaine de caractères est donc de 'chaine' + '\0' = 'taille de la chaine' + 1   
 
+---
 
 ### Pointeurs 
 en C la mémoire est gérée avec des pointeurs.  
