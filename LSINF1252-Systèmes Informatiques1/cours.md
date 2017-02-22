@@ -88,10 +88,15 @@ Réels
 sizeof(float) 4 bytes  //32 bits  
 sizeof(double) 8 bytes  //64 bits
 ```
----
 
+### Caractères et chaines de caractères
 
-en C chaque chaine de caractère se termine avec \0  
+ASCII - 7 bits mais représenté sur 8 bits.   
+ISO-8859 8bits   
+Unicode Permet de représenter tous les caractères connus de toutes les langues. il utilise plus de 8 bits par caractères     
+
+en C chaque chaine de caractère se termine avec '\0'  
+  
 
 
 ### Pointeurs 
