@@ -126,8 +126,7 @@ printf ( "%d == %d\n" , ∗ ptr, i ) ; // affichera 10
 == 10
 ```
 
----- 
-```c
+
 
 ### Structures
 
