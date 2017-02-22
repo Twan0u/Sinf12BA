@@ -6,7 +6,7 @@ Notes brutes - Cours S1
 Résumé jusqu'à - Cours 0
   
 ## ECGE1322-Analyse Système info
-Résumé jusqu'à - Cours S1 (en Pdf)  
+Résumé jusqu'à - Cours S2 (en Pdf)  
 
 ## LSINF1225-COO
 Notes brutes - Cours S3 / pas S2  

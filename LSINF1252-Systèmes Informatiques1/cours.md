@@ -91,9 +91,9 @@ sizeof(double) 8 bytes  //64 bits
 
 ### Caractères et chaines de caractères
 
-ASCII - 7 bits mais représenté sur 8 bits.   
-ISO-8859 8bits   
-Unicode Permet de représenter tous les caractères connus de toutes les langues. il utilise plus de 8 bits par caractères     
+**ASCII** - 7 bits mais représenté sur 8 bits.   
+**ISO-8859** 8bits   
+**Unicode** Permet de représenter tous les caractères connus de toutes les langues. il utilise plus de 8 bits par caractères     
 
 En C chaque chaine de caractère se termine avec '\0'  
 La taille d'une chaine de caractères est donc de 'chaine' + '\0' = 'taille de la chaine' + 1   
@@ -107,47 +107,44 @@ printf("%p\n",&x); //afficher une variable en mémoire dans un print:
 ```
 
 ### Pointeurs 
-en C la mémoire est gérée avec des pointeurs.  
+En C la mémoire est gérée avec des pointeurs.  
 
-On déclare avec * **ptr = &variable**
->*int* i = 5;  
->*int* *ptr = &i  
+Déclaration d’un pointeur :
+```c
+int i = 5;
+i n t ∗ p t r = &i ;
+```c
+Récupérer la valeur stockée à l’adresse du pointeur :
+```c
+int j = ∗ ptr ;
+p r i n t f ( "%d\n" , j ) ; // affichera 5
+```
+Modifier la valeur stockée à l’adresse du pointeur :
+```c
+∗ ptr = 10;
+p r i n t f ( "%d == %d\n" , ∗ p t r , i ) ; // affichera 10
+== 10
+```
 
-On peut récupérer une valeur stockée à l'adresse d'un pointeur avec **variable =** * **ptr**  
->printf("%d\n",j);  
->*int* j = *ptr ;  
-
-modifier la valeur 
- ...
-
-*char* sigle[] = "sinf1252";  
-*char* *ptr = sigle;  
-*char* *c-ptr = ptr + 4;  
-printf("%s\n",c_ptr;  
-*char* c = *c_ptr;  
-> = *ptr  --> s   
-> =c_ptr --> 1   
-> sigle ==&(sigle[0]) -->   
->c_ptr --> adresse  
->c_ptr --> char   
+---- 
+```c
 
 ### Structures
 
-Définition d'une structure
->*struct* studen{  
->*int* matricule;  
->char prenom[20];  
->char nom[30];  
->};  
-
-
-Déclaration et initialisation
->struct student linus = {1,"linus","Torvald"}   
->...   
->...   
->...   
->...   
->...   
+// Definition d’une structure
+struct student {
+int matricule ;
+char prenom [ 2 0 ] ;
+char nom [ 3 0 ] ;
+} ;
+// Declaration + Initialization
+struct student linus = { 1 , " Linus " , " Torvalds " } ;
+struct student richard = { .matricule = 2, .prenom = " Richard " , . nom = " Stallman " } ;
+struct student evil ;
+evil . noma = 3 ;
+evil . prenom = "Bill" ;
+evil . nom = " Gates " ;
+```
 
 ### passage par valeur
 **Attention** : quand on place un pointeur comme argument d'une fonction on ne peut la modifier.
