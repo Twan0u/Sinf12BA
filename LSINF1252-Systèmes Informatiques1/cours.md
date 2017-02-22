@@ -95,10 +95,16 @@ ASCII - 7 bits mais représenté sur 8 bits.
 ISO-8859 8bits   
 Unicode Permet de représenter tous les caractères connus de toutes les langues. il utilise plus de 8 bits par caractères     
 
-en C chaque chaine de caractère se termine avec '\0'  
+En C chaque chaine de caractère se termine avec '\0'  
 La taille d'une chaine de caractères est donc de 'chaine' + '\0' = 'taille de la chaine' + 1   
 
----
+### Variables 
+
+```c
+int x // initialise le x comme un entier
+x = 2 // affecte 2 à la variable 2
+printf("%p\n",&x); //afficher une variable en mémoire dans un print:
+```
 
 ### Pointeurs 
 en C la mémoire est gérée avec des pointeurs.  
