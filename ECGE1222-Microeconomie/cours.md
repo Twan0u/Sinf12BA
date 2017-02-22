@@ -43,6 +43,7 @@ On synthétise les préférences au moyen d'une fonction. cette fonction est app
 
 #### Concept ordinal
 
+
 ###1.4 Choix et Contraintes
 
 ###1.5 Préférences révélées
