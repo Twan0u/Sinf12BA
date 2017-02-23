@@ -54,8 +54,9 @@ En C :
 >Binaire : **0b**1111011  
 >Octal : **0**173   
 >Hexadécimal :**0x**7B  
-> ``` && ``` signifie : et logique  
-> ``` || ``` signifie : ou logique  
+> ``` & ``` signifie : et logique  
+> ``` | ``` signifie : ou logique  
+> ``` ^ ``` signifie : ou logique  
 
 ### Unsigned
 en C on a des nombres non signés,  
@@ -113,7 +114,7 @@ Déclaration d’un pointeur :
 ```c
 int i = 5;
 int ∗ ptr = &i ;
-```c
+```
 Récupérer la valeur stockée à l’adresse du pointeur :
 ```c
 int j = ∗ ptr ;
@@ -185,7 +186,7 @@ my long = 5 ;
 
 ```c
 int times two ( i nt ∗n) {
-r e t u r n ( ( ∗ n ) +(∗n ) ) ;
+return((∗n)+(∗n));
 }
 int timestwo (int ∗n) {
 ∗n=(∗n ) +(∗n ) ;
@@ -193,7 +194,13 @@ return ( ∗n ) ;
 }
 ```
 
-Bit shift : plus optimisé pour "effecturer des opérations"
+### Manipulation des bits 
+```c
+ ̃ a // négation  : inverse tous les bits 
+```
+
+> Bit shift : Action de déplaçer les bits vers la gauche ou la droite.  
+> plus optimisé pour "effecturer des opérations"
 
 
  
