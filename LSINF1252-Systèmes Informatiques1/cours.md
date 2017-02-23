@@ -138,7 +138,9 @@ char prenom [ 2 0 ] ;
 char nom [ 3 0 ] ;  
 } ;  
 ```
+
 **Declaration + Initialization**  
+
 ```c
 struct student linus = { 1 , " Linus " , " Torvalds " } ;  
 struct student richard = { .matricule = 2, .prenom = " Richard " , . nom = " Stallman " } ;  
@@ -149,9 +151,47 @@ evil . nom = " Gates " ;
 ```
 >typedef //permet de redéfinir le nom des types de données.  
 
+Les éléments d’une structure peuvent être accédés via l’opérateur ‘.’
+(point)
 
-### passage par valeur
+Les éléments référencés par un pointeur vers une structure peuvent
+être accédés via l’opérateur ‘−>’
+
+### Déclaration
+Indique au compilateur le type (en cas de variables) ou les
+arguments et le type de la valeur de retour (en cas de
+fonctions). Toutes fonctions ou variables doivent être
+déclarées avant d’être utilisées.
+
+```c
+int timestwo( *n);
+unsigned long my long ;
+```
+
+### Définition
+Le corps de la fonction spécifié dans la déclaration, ou en
+cas d’une variable son initialisation.
+```c
+it times two(int ∗n) {
+return((∗n)+(∗n)) ;
+}
+my long = 5 ;
+
+```
+
+
+### Pointeurs
 **Attention** : quand on place un pointeur comme argument d'une fonction on ne peut la modifier.
+
+```c
+int times two ( i nt ∗n) {
+r e t u r n ( ( ∗ n ) +(∗n ) ) ;
+}
+int timestwo (int ∗n) {
+∗n=(∗n ) +(∗n ) ;
+return ( ∗n ) ;
+}
+```
 
 Bit shift : plus optimisé pour "effecturer des opérations"
 
