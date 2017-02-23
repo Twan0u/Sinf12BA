@@ -196,7 +196,7 @@ return ( ∗n ) ;
 
 ### Manipulation des bits 
 ```c
- ̃ a // négation  : inverse tous les bits 
+~a // négation  : inverse tous les bits 
 ```
 
 > Bit shift : Action de déplaçer les bits vers la gauche ou la droite.  
