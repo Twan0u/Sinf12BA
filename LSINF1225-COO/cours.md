@@ -126,6 +126,13 @@ cercle bleu signifie doit avoir
 Unicité : il faut un truc et un autre truc
 
 
+## Cours S4 - notes 
+
+Le sous la guage DDL permets de créer des structures de données et les modifier.
+Data Description Language
+
+
+
 
 
 
