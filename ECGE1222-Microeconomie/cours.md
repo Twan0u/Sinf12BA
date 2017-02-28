@@ -13,29 +13,28 @@
 **Alternatives réalisables** : ensemble d'éléments d'une situation.  
 
 On peut expliquer le comportement d'un individu face à une décision de deux façon : 	
-> Approche Préférence     
+> Approche Préférence       
 > Aproche des Choix  
 
 ###1.2 Préférences
 
-Les goûts de l'individu. Ces goûts peuvent être résumés par une relation de préférence.  
+Les goûts de l'individu. Ces goûts peuvent être résumés par une relation de préférence.   
 L'individu peut :  
 - préférer strictement \>  
 - être indifférent à un choix entre 2 choses. \~  
 - préférer faiblement \>\~  
 
-Hypotheses fondamentales sur les préférences (préférences rationelles / cohérence ): 
-- Complétudes / relation complète / préférences complètes : soit a\>\~b soit a\<\~ b soit a\>\~b et a\<\~b   
-- Transitivite / relation de transitivité / transitives : si a\>\~b et b\>\~c alors a>~c   
+Hypotheses fondamentales sur les préférences (préférences rationelles / cohérence ):   
+- Complétudes / relation complète / préférences complètes : soit a\>\~b soit a\<\~ b soit a\>\~b et a\<\~b     
+- Transitivite / relation de transitivité / transitives : si a\>\~b et b\>\~c alors a>~c    
 - Réflexive / relation de réflexivité / réflexives : a \>\~ a    
 
-Violation des hypothèses de  : 
-- complétude : situation extrème ou toute paire ne pourrait être comparée
-- transitivité : cas de différences à peine perceptibles  
-- cadrage("framing") façon dont les choses sont présentées.  
+Violation des hypothèses de  :   
+- complétude : situation extrème ou toute paire ne pourrait être comparée   
+- transitivité : cas de différences à peine perceptibles    
+- cadrage("framing") façon dont les choses sont présentées.   
 
 > ces hypothèses sont si fondamentales que on peut les appeler axiomes ( ou axiomes de rationalité ou de cohérence )  
----
 
 ###1.3 Utilité
 
@@ -43,6 +42,14 @@ On synthétise les préférences au moyen d'une fonction. cette fonction est app
 
 #### Concept ordinal
 
+L'utilité est utilisé pour décrire (/synthétiser) les préférences mais ne peux pas être soumis à une quelconque inteprétaion psychologique. La seule caractériqtique pertinente d'une telle fonction est sa capacité d'ordonner les alternatives en fonction des préférences.  
+
+#### Infinité 
+
+il existe une infinité de façon de transformer l'équation d'utilité.    
+**u = f(u)** nous donne	la même	relation de préférence.	
+
+#### Existence 
 
 ###1.4 Choix et Contraintes
 
