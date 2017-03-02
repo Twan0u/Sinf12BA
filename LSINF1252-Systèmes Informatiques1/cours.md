@@ -220,7 +220,7 @@ char nom[30];
 ```c
 struct student bob ={42,"Bob","Truc"} 
 ```
-Les éléments d'une structure de référence par un **(\*e).nom** ou e->nom  
+Les éléments d'une structure de référence par un **(\*e).nom** ou **e->nom**  
 
 ### modificationdes type d'élément 
 ```c
@@ -237,7 +237,36 @@ typedef int entier;
 > plus optimisé pour "effecturer des opérations"
 
 
+## Cours 3 
+### Partie des variables
+- Variable globales    
+- Variable locales   
+
+### Main 
+```c
+int main (int argc, char *argv[])
+```
+
+### Constantes et enum  
+```c
+const int vie = 42; //défini une variable qui ne peut changer
+typedef enum {lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche};
+```
+
+### Organisation des processus en mémoire
+OS - arg, envp - Stack & Heap - données non-initialisées - données initialisées - code(texte) - OS   
+
+### Alocations en mémoire
+Stack : allouées en automatiquement en  mémoire  
+Heap : alouées manuellement en mémoire
  
+#### brk & sbrk 
+> \#include <unistd.h>   
+```c
+int brk(void*addr);
+void*sbrk(intptr_t incrément);
+```
+ces deux éléments permettent de modifier la taille du data segment size
  
 
 
