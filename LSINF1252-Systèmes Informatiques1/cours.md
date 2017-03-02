@@ -220,11 +220,13 @@ char nom[30];
 ```c
 struct student bob ={42,"Bob","Truc"} 
 ```
+Les éléments d'une structure de référence par un **(\*e).nom** ou e->nom  
 
 ### modificationdes type d'élément 
 ```c
 typedef int entier;
 ```
+
 
 ### Manipulation des bits 
 ```c
