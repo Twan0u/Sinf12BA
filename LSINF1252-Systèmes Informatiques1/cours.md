@@ -44,7 +44,7 @@ gcc -Werror code.c -o prog
 #define NAME " World "
 
 int main ( intarg c , char ∗ argv [ ] ){//la fonction main est appelée pré-processeur, elle est exécutée en premier et tout programme en c doit la contenir. 
-    printf ( "Hello , %s!\n" , NAME) ;// affiche sur la sortie standard
+    printf ( "Hello , %s!\n" , NAME) ;// affiche sur la sortie standard le \n c'est pour le retour à la ligne le %s c'est pour la variable 
     return 0;//Un programme retourne toujours une valeur (en C : return ou exit ).
 }
 ```
@@ -180,18 +180,50 @@ my long = 5 ;
 
 ```
 
+### Tableaux  
+```c
+int tab[3]; //puis allocation par la suite 
+int tab2[3] = {1,2,3};
+int tab[]= {1,2,3};
+```
+**Attention** :	on ne peut pas récuérer	la taille d'un tableau avec la variable	tab.length.        
+
 
 ### Pointeurs
 **Attention** : quand on place un pointeur comme argument d'une fonction on ne peut la modifier.
 
+```c 
+&var // permets e récupérer la variable 
+*ptr = &var // on déclare un pointeur
+```
+
+
 ```c
-int times two ( i nt ∗n) {
+int times_two ( i nt ∗n) {
 return((∗n)+(∗n));
 }
 int timestwo (int ∗n) {
 ∗n=(∗n ) +(∗n ) ;
 return ( ∗n ) ;
 }
+```
+
+###Structures 
+
+```c
+struct student{
+int matricule;
+char prenom[20];
+char nom[30];
+}
+```
+```c
+struct student bob ={42,"Bob","Truc"} 
+```
+
+### modificationdes type d'élément 
+```c
+typedef int entier;
 ```
 
 ### Manipulation des bits 
