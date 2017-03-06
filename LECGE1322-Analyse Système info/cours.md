@@ -43,15 +43,36 @@ OuvrirMission = verbe d'action concret + objet
 |  2   | // | // | chg ress l/m : +SI + terminaux | // |
 |  2   | // | // | chg ress info : + commande correcte | // |
 |  2   | // | // | pt att déc : si complète | // |
-|  2   | // | // | deff périod : f(P2) /= f(P1) | // |
+|  2   | // | // | diff périod : f(P2) /= f(P1) | // |
 |  3   | Préparer Requis | 2 | chg ress l/m : -terminaux | Automatique |
 |  3   | // | // | chg ress pers : -opérateurs | // |
 |  3   | // | // | chg ress l/m	: +SI +	terminaux | // |
 |  3   | // | // | pt att déc :	si correcte | // |
-|  3   | // | // | deff	périod : f(P3) /= f(P2) | // |
+|  3   | // | // | diff	périod : f(P3) /= f(P2) | // |
 |  4   | PréparerSérie | 3 | chg ress info : +série | Automatique |
 |  4   | // | // | pt att accumulation : "n bons" | // |
-|  4   | // | // | deff	périod : f(P4) /= f(P1)	| // |
+|  4   | // | // | diff	périod : f(P4) /= f(P3)	| // |
+|  5   | ExécuterSérie | 4 | chg lieu :  -> lieu(entrepôt) | Manuelle(now:mécanique) |
+|  5   | // | // | chg ress pers : +magasinier | // |
+|  5   | // | // | chg ress l/m : -SI | // |
+|  5   | // | // | chg ress info : +série exécutée  | // |
+|  5   | // | // | diff périod : f(P5) =1 /= f(P4) | // |
+|  6   | ConstituerColis | 5 | chg lieu : lieu(entrepôt) -> lieu(salle de colisage) | Manuelle |
+|  6   | // | // | chg ress pers : -magasinier, +opérateur(embal) | // |
+|  6   | // | // | chg ress l/m : +SI + terminaux | // |
+|  6   | // | // | chg ress info : +colis(+ docs colisage) | // |
+|  6   | // | // | deff périod : f(P6) /= f(P5) | // |
+|  7   | ExpédierColis | 6 | chg lieu : lieu(salle de colisage) -> lieu(expéditeur) | Manuelle |
+|  7   | // | // | chg ress pers : -opérateur(embal) +Société d'expédition | // |
+|  7   | // | // | chg ress info : +colis expédié | // |
+|  7   | // | // | deff périod : f(P7) /= f(P6) | // |
+|  8   | SéléctionnerCommandeDiff | 3 | chg ress info : +nouvelle livraison | Automatique |
+|  8   | // | // | pt att acc : si nouvelle livraison | // |
+|  8   | // | // | deff périod : f(P8) != f(P3) | // |
+
+
+
+
 
 
 
