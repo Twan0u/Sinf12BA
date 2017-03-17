@@ -113,7 +113,7 @@ En C la mémoire est gérée avec des pointeurs.
 Déclaration d’un pointeur :
 ```c
 int i = 5;
-int ∗ ptr = &i ;
+int ∗ptr = &i ;
 ```
 Récupérer la valeur stockée à l’adresse du pointeur :
 ```c
@@ -256,7 +256,7 @@ typedef enum {lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche};
 ### Organisation des processus en mémoire
 OS - arg, envp - Stack & Heap - données non-initialisées - données initialisées - code(texte) - OS   
 
-### Alocations en mémoire
+### Alocations dynamiques en mémoire
 Stack : allouées en automatiquement en  mémoire  
 Heap : alouées manuellement en mémoire
  
@@ -266,8 +266,27 @@ Heap : alouées manuellement en mémoire
 int brk(void*addr);
 void*sbrk(intptr_t incrément);
 ```
-ces deux éléments permettent de modifier la taille du data segment size
- 
+ces deux éléments permettent de modifier la taille du data segment size mais ils ne sont que très peu utilisées
 
+#### Calloc
+
+```c
+void *calloc(size_t num_element, size_t size); // base
+char *ptr = calloc(15,size(char));//exemple
+```
+la fonction calloc alloue de la mémoire préalablement initialisée à 0. 
+
+#### Malloc
+```c
+void *malloc(size_t size); // base
+char *ptr = malloc(15*size(char));//exemple
+```
+**Attention** : cette fonction ne fait que libérer de l'espace en mémoire, il ne reinitialise pas les données à 0.
+
+#### Realloc (BONUS)
+```c
+```
+
+livelock = le processeur tourne mais rien n'est exécuté 
 
 

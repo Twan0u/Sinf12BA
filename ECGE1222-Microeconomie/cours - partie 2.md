@@ -1,5 +1,3 @@
-mardi, 14. mars 2017 11:23 
-
 #Chapitre 1 : L'économie Industrielle
 #1.1 : Introduction
 **L'économie industrielle** : l'étude de l'organisation des firmes, de la concurrence entre les firmes et de la structure des marchés qui en résulte. 
@@ -38,12 +36,20 @@ Les firmes n'**observent** les quantités des autres firmes qu'**après coup**.
 > Dans notre étude, fixer les quantités est identique à fixer les capacités de
 production;
 
-(...)
+La fonction suivante est la fonction de maximisation du profit.
+
+![](http://i.imgur.com/eg3Xk5D.png) 
+
+Cela nous donne la **fonction de réaction**
+de la firme 2. Elle illustre les **interactions stratégiques** entre les firmes.
+
+![](http://i.imgur.com/ebXeK3g.png) 
+
+si chaque firme établie sa fonction de réaction, le point formé par leur intersection est un équilibre qui est appelé **équilibre de Cournot**
+
+![](http://i.imgur.com/qlGr7Ek.png) 
+
+>p = a-b
 
 ligne rouge : monopole si y1 = 0
 prod Y2 - si prod Y1+
-
-Fénéant
-Déteste la routine
-Curieux 
-Fan de Technologies Innovantes

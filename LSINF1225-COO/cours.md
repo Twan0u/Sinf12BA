@@ -132,8 +132,14 @@ Le sous la guage DDL permets de créer des structures de données et les modifie
 Data Description Language
 
 
+## cours S6 - notes
 
-
+UML = Unified Modelling language
+- language architecture (ex: package)
+- UML class diagrams
+- UMZ sequence diagrams
+-...
+User stories = récit utilisateurs
 
 
 
