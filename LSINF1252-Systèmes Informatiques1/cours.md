@@ -257,8 +257,9 @@ typedef enum {lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche};
 OS - arg, envp - Stack & Heap - données non-initialisées - données initialisées - code(texte) - OS   
 
 ### Alocations dynamiques en mémoire
-Stack : allouées en automatiquement en  mémoire  
-Heap : alouées manuellement en mémoire
+
+Stack : allouées en automatiquement en  mémoire  (functions)
+Heap : alouées manuellement en mémoire (variables)
  
 #### brk & sbrk 
 > \#include <unistd.h>   
@@ -285,8 +286,32 @@ char *ptr = malloc(15*size(char));//exemple
 
 #### Realloc (BONUS)
 ```c
+...
 ```
+## Cours S4
 
+Dram : condensateur - gourmand en énergie,  50ns
+Sram  : consomation en continue => production de chaleur , 1ns
+Dram : GB
+Sram : MB
+Posibilité d'avoir les deux avantages ?
+on doit mettre dans la sram les données en cours d'utilisation ( aussi appelé Cache )
+
+### Mémoire 
+*Code*-*Données*-*Heap*-*Stack*
+
+**Principe de localité** :
+- spatiale : si on edite un élément, il est courrant d'accéder à une variable proche en mémoire
+- Si on a accédé à l'adresse X à l'instant t, il est commun d'accéder à la même adresse X à l'instant t+1 
+
+En pratique, on a une hierarchie de mémoire caches. on sépare la cache insruction de la cache données. 
+
+il existe une cache dans le processeur.
+ 
+
+
+## Cours S5
+## Cours S6
 livelock = le processeur tourne mais rien n'est exécuté 
 
 
