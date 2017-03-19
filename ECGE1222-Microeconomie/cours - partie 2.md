@@ -53,3 +53,4 @@ si chaque firme établie sa fonction de réaction, le point formé par leur inte
 
 ligne rouge : monopole si y1 = 0
 prod Y2 - si prod Y1+
+
