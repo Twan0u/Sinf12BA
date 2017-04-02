@@ -11,9 +11,6 @@
 ### Durée 
 **9 semaines** à raison de 2H/semaine
 
-### Open Campus Days
-
-**S7**
 
 ### Projet - EZMeal
 
@@ -78,14 +75,22 @@ group by C.LOCALITE, P.NPRO
 ```
 
 > Une **base de données** est constituée d’un ensemble de **tables**  
+
 > Une **table** contient les données relatives à une **collection d ’entités** de même nature  
+
 > Chaque **ligne** d’une table reprend les données relatives à une **entité**  
+
 > Chaque **colonne** d’une table décrit une propriété commune des entités  
+
 > Un **identifiant** de la table est Le jeu de colonnes dont les valeurs sont uniques  
+
 > Une **clé étrangère** vers cette autre table sont les lignes d’une table peuvent faire référence chacune à une ligne d’une autre table.  
+
 > On évite d’enregistrer des données qu’il est possible de calculer à partir d’autres données enregistrées.
 
 ### Les SGBD ( Systèmes de Gestion de Bases de Donées )
+Un système de gestion de bases de données est un système informatiue permettant de gérer une BD.(maintenir la DB & répondre à des requêtes)
+
 - Organisation des données
 > le SGBD :   
 > - organise les données en tables permanentes stockées sur disques.  
@@ -114,12 +119,24 @@ group by C.LOCALITE, P.NPRO
 > le SGBD   
 > - garantit que seuls les utilisateurs autorisés peuvent accéder aux données et les modifier.  
 
----
+### SQLite
 
-## Cours S3 - notes
+Le moteur de **base de données relationnelles** est accessible par le language SQL.
+
+> il doit être intégré aux programmes et n'a pas besoin de serveur séparé.   
+>*Sa particularité est de stocker toutes ses données dans un seul fichier .sqlite sur le disque*  
+Sqlite est utilisé pour les données des applications de type Android et IPhone
+
+### Univers de discours (UoD)
+L'UoD décrit le domaine de l'application. Cet univers décrit typiquement une partie du monde "réel".
+
+### ORM 
+**ORM** = Object-Role Modeling
+
+ 
 contraintes d'unicité
 
-cercle bleu signifie doit avoir    
+cercle bleu signifie 'doit avoir'    
 
 (Etudiant (Noma))  =  (Etudiant) -[<->,<->] - (Noma)
 
@@ -140,6 +157,7 @@ UML = Unified Modelling language
 - UMZ sequence diagrams
 -...
 User stories = récit utilisateurs
+
 
 
 
