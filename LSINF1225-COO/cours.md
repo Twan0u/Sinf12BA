@@ -37,8 +37,6 @@ différentes extensions possibles
 ### Examen 
 Modélisation et conception d'une application similaire à l'étude de cas développée dans les séances pratiques  
 
-
-
 5 questions sur des sujets vus au cours  
 
 ORM, SQL, diagrammes de classes, diagrammes de séquences, ...  
@@ -54,7 +52,7 @@ complétez ou raffinez le modèle pour une extension donnée
 **Une Base de Donnée** : est unsystème informatique de stockage d'informations  
 
 >Il existe une grande variété de base de données.   
-> mais les plus utilisés s'appuient sur le **modèle relationnel** et utilisent le **language SQL**  
+> Les plus utilisés s'appuient sur le **modèle relationnel** et utilisent le **language SQL**  
 
 Si une donnée est redondante, c'est qu'elle peut être mise dans une BD.  
 
@@ -132,8 +130,48 @@ L'UoD décrit le domaine de l'application. Cet univers décrit typiquement une p
 
 ### ORM 
 **ORM** = Object-Role Modeling
+**Base de données** = ensemble de relations n-aires
+**Schéma de base de données** : constitué de l'ensemble des signatures des relations de la base.
 
- 
+> L'ORM est une approche *fact-oriented* càd : modélisation de l'info comme des **faits** suivant des **règles**
+
+Le modèle relationnel exprime de façon **déclarative** (non opérationnelle) les requêtes.
+
+*Comment accéder à ces tuples ?*
+Dans le modèle relationnel, on utilise des **identificateurs** ( pas la position)
+
+
+####Exemples
+(12,Antoine,Lambert,SINF12BA) : **Tuple**
+(ID,NOM,PRENOM,UCL_INFO) : **Shéma de la relation**
+STUDENT(ID,NOM,PRENOM,UCL_INFO) : **Signature de la relation n-aire**
+
+#### Modélisation ORM
+> suivant le processus *Conceptual Schema Design Procedure*
+
+1. Trouver les faits élémentaires à partir des exemples de données 
+	* prendre des exemples concrets
+	* les transforer en faits élémentaires    Type - (Mode)- Valeur
+> Les faits élémentaires expriment des relations entre les objets et ne peuvent être divisés.
+> Ils peuvent être unaire (propriété de l'objet[...est...]) , binaire (relation entre 2 objets[...a...]) ou n-aire
+2. Dessiner les types de faits et ajouter une population au diagramme 
+> *entités* : cercles plein (entité)
+> *valeurs* : cercle pointillé ou (valeur) en dessous des entités : (...valeur...)
+> référencement des éléments : -[][]-
+> rôle : []
+3. Combiner des types d'entités et noter des dérivations arithmétiques 
+4. Ajouter des contraintes d'unicité et vérifier les arités des types de faits
+**Les contriantes d'unicité** : définissent les éléments qui peuvent apparaitre 2 fois dans une base de donnée et ceux qui sont uniques
+>**Attention !!** : l'emplacement des contriantes est l'inverse du diagramme UML
+
+ L'arité des contraintes doit toujours être de n-1. Sinon, soit il y a une erreur soit on peut subdiviser
+
+
+
+----
+
+
+
 contraintes d'unicité
 
 cercle bleu signifie 'doit avoir'    
