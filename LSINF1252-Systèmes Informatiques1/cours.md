@@ -1,35 +1,41 @@
 # Systèmes Informatiques 1
 
-## cours 1
-CPU & registres <--> cache[SRAM]/Mémoire Principale[DRAM]/Mémoire Virtuelle[Disque]
-### Répertoires
-Hiérarchie de répertoires :   
-- **/:** racine  
--  **/bin** et **/usr/bin** : utilitaires  
--  **/var** et **/tmp** : fichiers temporaires  
--  **/etc** : fichiers de configuration  
--  **/home** : répertoires utilisateurs (~login)  
+## Chapitre 1 : Introduction
+### Section 1.1 : Introduction
+#### Composition d'un système informatique
+Le système informatique le plus simple est **un processeur** (*cpu*) et **une mémoire**. Ce prosesseur est capable de : *lire et écrire* de l'information en mémoire et de *réaliser des calculs*. 
 
-Service Unix
-### Système d'exploitation
-Son rôle est de coordonner les opérations des différents composantes physiques de la machine et les applications.
-### Utilisateurs 
-lambda  
-root : Superutilisateur  
-### Commandes de base 
-**ls** : affiche la liste des fichiers et dossiers du répertoire spécifié  
-**mv** : utilitaire pour renommer ou déplacer un fichier ou dossier  
-**cp** : copie un fichier ou dossier (-r pour les dossiers)  
-**rm** : efface un fichier ou dossier  
-**mkdir** : crée un répertoire  
-**rmdir** : efface un répertoire vide  
-**cd** : change le répertoire courant  
-**pwd** : affiche le répertoire courant  
-**grep** : permet de faire des recherches sur le contenu des fichiers  
-**./prog** : est utilisé pour lancer le programme prog  
-**echo "Blabla" >> file.txt** copie le texte Blabla dans le fichier file.txt  
+L'architecture des ordinateurs est basée sur le modèle Von Neumann.
+![](images/Von_Neumann_architecture.png) 
+
+#### Systèmes Unix
+Unix est un nom générique donné à une famille de systèmes d'exploitations. On y retrouve MacOS, FreeBSD et Linux qui sont les plus utilisés.
+
+Un système unix est composé de trois grands types de logiciels: 
+1. **Le noyau du système d'exploitation** : chargé au démarage de la machine, il se charge de toutes les interactions entre les logiciels et le matériel.
+2. **Les librairies** :Nombreuses, elles facilitent l'écriture et le développement d'applications
+3. **Les programmes utilitaires** : utilisés pour résoudre une série de problèmes
+
+> *API* signifie *Application Programming Interface* 
+
+> Sous unix, les processus qui se terminent correctement retourne 0 et une valeur différente sinon
+ntes physiques de la machine et les applications.
+
+##### Commandes de base 
+**ls** : affiche la liste des fichiers et dossiers du répertoire spécifié.  
+**mv** : utilitaire pour renommer ou déplacer un fichier ou dossier.  
+**cp** : copie un fichier ou dossier (-r pour les dossiers).   
+**rm** : efface un fichier ou dossier.  
+**mkdir** : crée un répertoire.  
+**rmdir** : efface un répertoire vide.  
+**cd** : change le répertoire courant.  
+**pwd** : affiche le répertoire courant.  
+**grep** : permet de faire des recherches sur le contenu des fichiers.  
+**./prog** : est utilisé pour lancer le programme prog.  
+**grep** : utilitaire permettant d'extraire d'un fichier les lignes qui contiennent ou non une chaine de caractèrepassée en argument.   
+**echo "Blabla" >> file.txt** copie le texte Blabla dans le fichier file.txt.  
 **man** :lire les pages de manuel d’un système Unix.  
-### Compilateur
+##### Compilateur
 ``` 
 gcc -Werror code.c -o prog 
 ```
@@ -38,7 +44,50 @@ gcc -Werror code.c -o prog
 >code.c : fichier qui contient le code en c à compiler  
 >prog : nom du programme de sortie  
 
-## cours 2
+
+##### Shell 
+Le shell (Terminal/console) est un programme qui à été concu pour l'utilisation d'un système Unix via le clavier. 
+
+Le shell permets d'écrire des scripts(ensemble de commandes shell écrites dans un fichier) qui peuvent être lancées.
+
+On y retrouve nottament 
+``` Shell
+THING = 12 // int variable
+OTHERTHNG = "string" //string variable
+$THING // récupère les infos dans la variable 
+$# // retourne le nombre d'arguments
+$1 // retourne l'argument 1
+$2 // retourne l'argument 2 
+$@ // liste des arguments 
+if [ ]; then
+	// something 
+fi
+``` 
+## Chapitre 2 : Langage C
+### Section 2.1 : Le langage C
+Le langage machine  : langage binaire pour le processeur.
+Le langage assembleur est converti en langage machine grâce à un assebleur. Ce langage est le plus proche du processeur.
+Au moment de la compilation, le compilateur va exécuter les directives préprocesseur.
+```C
+#define <stdio.h> //ajoute les librairies au moment de la compilation
+#define <stdlib.h>
+```
+
+###### Manuel
+accessible via la commande man 
+1. Utilitaire disponible pour tous les utilisateurs
+2. Appels systèmes en C
+3. Fonctions de la librairie
+4. Fichiers spéciaux
+5. Formats de fichiers et conventions pour certains types de fichiers
+6. Jeux
+7. Utilitaires de manipulation de fichiers textes
+8. Commandes et procédure de gestion du système
+
+> ``` & ``` signifie : et logique  
+> ``` | ``` signifie : ou logique  
+> ``` ^ ``` signifie : ou logique  
+
 ```c
 #include<stdio.h>
 #define NAME " World "
@@ -49,16 +98,17 @@ int main ( intarg c , char ∗ argv [ ] ){//la fonction main est appelée pré-p
 }
 ```
 
-En C : 
+
+
+### Section 2.2 : Types de données
+Les types de données et leur représentation en mémoire
 >decimal : 123  
 >Binaire : **0b**1111011  
 >Octal : **0**173   
 >Hexadécimal :**0x**7B  
-> ``` & ``` signifie : et logique  
-> ``` | ``` signifie : ou logique  
-> ``` ^ ``` signifie : ou logique  
 
-### Unsigned
+#### Nombre entiers
+##### Unsigned
 en C on a des nombres non signés,  
 - unsigned short minimum 16 bits  
 - unsigned int minimum 16 bits  
@@ -73,7 +123,7 @@ sizeof ( unsigned short ) = 2
 ```
 **Attention** pas de Tab.length en C  il faut donc prévoir de garder la taille du tableau en mémoire si on veut l'utiliser par la suite
 
-### Signed
+##### Signed
 Les bits signés sont représentés sous la forme : Signe (négatif si = 1) - Nombre 
 - short minimum 16 bits  
 - int minimum 16 bits  
@@ -88,7 +138,36 @@ Réels
 ``` c
 sizeof(float) 4 bytes  //32 bits  
 sizeof(double) 8 bytes  //64 bits
+``` 
+#### Les tableaux
+Dans les anciennes version du langage langage C, les tableaux étaient de taille fixe
+```C
+#define N 10
+float matrice[N][N]
 ```
+
+#### Caractères et chaines de caractères
+
+
+
+
+
+
+
+
+
+--------
+
+
+
+
+
+
+
+
+
+
+
 
 ### Caractères et chaines de caractères
 
