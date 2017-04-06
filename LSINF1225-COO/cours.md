@@ -167,18 +167,38 @@ STUDENT(ID,NOM,PRENOM,UCL_INFO) : **Signature de la relation n-aire**
  L'arité des contraintes doit toujours être de n-1. Sinon, soit il y a une erreur soit on peut subdiviser
 
 
+-°(Truc )  : cet élément est obligatoire (en uml l'autre à une arité de 1 et non 0...1)
 
-----
-
-
-
-contraintes d'unicité
 
 cercle bleu signifie 'doit avoir'    
 
 (Etudiant (Noma))  =  (Etudiant) -[<->,<->] - (Noma)
 
-Unicité : il faut un truc et un autre truc
+En DB, on utilise souvent les ID's pour les données. mais ceux-ci ne doivent pas êtres indiqués dans l'ORM
+
+En shéma : les contraintes d'uncité sont représentées par un soulignement de l'élément 
+
+**Clé candidate** : colone/ combinaison de colones qui permet d'identifier de manière unique les éléments dans la DB.
+
+>Dans le cas ou plusieurs clé candidates existent, on doit en déterminer qui sera la clé primaire. cette clé sera souligné deux fois.
+
+si deux éléments d'une clé candidate ne sont pas côte à côte, on peut utiliser les fleches pour indiquer que la colonne en question n'est pas une clé candidate à elle seule.
+
+Une clé candidate ne permets pas de valeur nulle 
+
+####Règles d'intégrité du modèle relationnel
+##### 1. Règle d'intégrité des entités 
+Clé primaire  != null
+
+##### 2. Règle d'intégrité référentielle 
+chaque valeur non-nulle d'une clé étrangère doit correspondre à la valeur d'une clé primaire.
+
+#### Rmap 
+< Skip > 
+
+
+
+----
 
 
 ## Cours S4 - notes 
