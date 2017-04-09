@@ -91,7 +91,7 @@ Pour déterminer les préfénreces des individus en observant leur comportenment
 ## 1.1 Ensemble de consommation
 ### Panier de consommation
 Un **panier de biens** ou **panier de consommation** est une liste de quantités des différents biens: x = (x1,x2,...,xn)
-> on consière souvent que le pannier n'est composé que de deux biens le bien 2 est le bien que le consommateur peux désirer acheter[*Bien Composite*]
+> on consière souvent que le panier n'est composé que de deux biens le bien 2 est le bien que le consommateur peux désirer acheter[*Bien Composite*]
 
 ### Ensemble de consommation
 Les choix de consommation sont limités des contraintes physiques: la non négativité ou le fait qu'un bien soit **Discret** (*disponible uniquement en nombre entiers*)
@@ -103,10 +103,18 @@ La **contrainte budgéraire** sont les paniers accessibles ou abordables au prix
 L'**ensemble budgétaire** sont l'ensemble des paniers qui appartiennent à l'ensemble de consommation et qui satisfont la contrainte budgétaire.  
 La **droite de budget** et l'ensemble des paniers égaux à px=R (p:prix,x:panier,R:revenu).  
 
-
-
+![](images/2.jpeg)
+### Variations
+![](images/3.jpeg)
+![](images/4.jpeg)
+> L'inverse est aussi vrai. Et il en va de même pour le bien 2
 
 ## 1.3 Préférences
+face à deux paniers, on peut les classer. ces classement peuvent se retranscrire sous la forme de **courbes d'indifférence**. Courbes sur lesquels le consommateur est indifférent.
+> N.B. On peut en principe tracer une courbe d'indifférence à partir de n'importe quel panier
+
+On peut donc être sur la courbe {yEX \| y\~ x}, dans le contour suppérieur {yEX \| y\>\~ x} ou dans le contour inférieur {yEX \| y\<\~ x}
+
 ## 1.4 Utilité
 ## 1.5 Demande individuelle
 ## 1.6 Préférences révélées
