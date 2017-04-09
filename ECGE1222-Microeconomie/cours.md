@@ -81,14 +81,35 @@ Face à une situation décrite par un ensemble d'alternatives réalisables, l'in
 On s'attend à une certaine cohérence dans les choix observés.
 
 ### Principe des préférences révélées
-Pour déterminer les préfénreces des individus en observant leur comportenment, nous devons supposer que les préférences restent inchangées au cours de la période d'observation.
+Pour déterminer les préfénreces des individus en observant leur comportenment, nous devons supposer que les préférences restent inchangées au cours de la période d'observation. Cette hypothèse n'est pas réaliste si on considère des longues périodes. Nous allons donc estimer ces périodes à max 1 ou 3 mois en considérant que les gouts ne peuvent pas changer radicalmement en si peu de temps.
 
-# Chapitre 2 : ???
-...cours 2 ...
-le consommateur choisissent le meilleur panier de biens et services parmi ceux qu'ils peuvent acquérir
+### Deux approches duales
+- Préférences -> Choix (satisfait l'axiome faible des préférences révélées)
+- Choix -> Préférences (elle peut être rationnalisée)
 
-4 regles
+# Chapitre 2 : Consommation
+## 1.1 Ensemble de consommation
+### Panier de consommation
+Un **panier de biens** ou **panier de consommation** est une liste de quantités des différents biens: x = (x1,x2,...,xn)
+> on consière souvent que le pannier n'est composé que de deux biens le bien 2 est le bien que le consommateur peux désirer acheter[*Bien Composite*]
 
-...
-slide 38
-Il existe des preférences telles qu'il n'existe aucune fonction pour les représenter. Si elles peuvent l'être, elles sont complètes et transitives.
+### Ensemble de consommation
+Les choix de consommation sont limités des contraintes physiques: la non négativité ou le fait qu'un bien soit **Discret** (*disponible uniquement en nombre entiers*)
+**L'ensemble de consommation** est l'ensemble des paniers satisfaisant les contraintes physiques. (= Alternatives possibles)
+
+## 1.2 Contraintes Budgétaire
+à chaque panier on peut attribuer une **valeur**.  
+La **contrainte budgéraire** sont les paniers accessibles ou abordables au prix des biens sur le marché comparativement aux revenus du consommateur.  
+L'**ensemble budgétaire** sont l'ensemble des paniers qui appartiennent à l'ensemble de consommation et qui satisfont la contrainte budgétaire.  
+La **droite de budget** et l'ensemble des paniers égaux à px=R (p:prix,x:panier,R:revenu).  
+
+
+
+
+## 1.3 Préférences
+## 1.4 Utilité
+## 1.5 Demande individuelle
+## 1.6 Préférences révélées
+## 1.7 Statique comparative
+## 1.8 Demande agrégée
+## 1.9 Demande inverse
