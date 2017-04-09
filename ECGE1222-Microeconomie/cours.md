@@ -8,8 +8,10 @@
 
 ## 1.1 Problème de décision
 
-**Problème de décision** : Un décideur fait face à un ensemble d’alternatives possibles ( mutuellement exclusives ) dans une situation donnée.  
-![](/images/1.jpeg)
+**Problème de décision** : Un décideur fait face à un ensemble d’alternatives possibles ( mutuellement exclusives ) dans une situation donnée.
+
+![](images/1.jpeg)
+
 **Situation** : contraintes d'un choix.  
 **Alternatives réalisables** : ensemble d'éléments d'une situation.  
 
@@ -54,22 +56,34 @@ Pour faciliter les analyses, nous alons synthétise les préférences au moyen d
 
 Exemple : u(a) \>= u(b) <\-\> a \>\~ b.
 ### Concept ordinal
-
 L'utilité à pour seul vocation  de permettre d'ordonner, classer et comparer les différentes alternatives.
 > N.B. il ne faut pas non plus interpréter les écarts entre les niveaux d'utilité
 
 ### Infinité
-
 il existe une infinité de façon de transformer l'équation d'utilité.    
 **u = f(u)** nous donne	la même	relation de préférence.
 
 #### Existence
+On ne peut pas toujours trouver une fonction d'utilité représentant la relation de préférences. Si nous pouvons, alors la fonction (ou relation ??) est dite complète et transitive.
 
-###1.4 Choix et Contraintes
+## 1.4 Choix et Contraintes
+Face à une situation décrite par un ensemble d'alternatives réalisables, l'individu va essayer de **maximiser ses préférences** en choisissant le **choix optimal**. On dit que l'individu **maximise son utilité sous contraintes.** Ses choix peuvent aussi être synthétisés sous la forme d'une fonction appelée **fonction de choix**. On parle d'**alternatives acceptables** quand l'individu pourrait être amené à choisir cet alternative au lieu d'une autre
+> N.B. si il existe plusieurs alterntatives meilleures, alors l'individu sera indifférent entre elles
 
-###1.5 Préférences révélées
+## 1.5 Préférences révélées
+### Règle de choix
+- Le concept de relation de préférence (mécanisme d'introspection) -> manipulation de l'information possible
+- règle de choix : se base sur l'observation des choix de l'individu
+> On parlera alors de **préférences révélées**  
+> Ces préférences ne correspondent pas toujours aux véritables préférences.
 
-##chapitre 2
+### Axiome faible des préférences révélées
+On s'attend à une certaine cohérence dans les choix observés.
+
+### Principe des préférences révélées
+Pour déterminer les préfénreces des individus en observant leur comportenment, nous devons supposer que les préférences restent inchangées au cours de la période d'observation.
+
+# Chapitre 2 : ???
 ...cours 2 ...
 le consommateur choisissent le meilleur panier de biens et services parmi ceux qu'ils peuvent acquérir
 
