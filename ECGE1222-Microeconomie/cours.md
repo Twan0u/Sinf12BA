@@ -154,10 +154,34 @@ A partir d'une fonction d'utilité il est facile de tracer les courbes d'indiff�
 Rappel : les préférences qui peuvent être représentées en fonction d'utilité sont complètes, transitives et continues
 
 ### Utilité marginale
- te
+//??
+### Taux marginal de substitution (TmS(x))
+Le **taux marginal de substitution** est le taux auquel le consommateur accepte de substituer le bien 2 au bien 1.
+> Ce taux est le rapport des unités marginales des biens considérés.
+> Son signe algébrique est négatif. Souvent, par convention, on utilise la valeur absolue de ce ratio.
 
+**La pente de la courbe d'indifférence** mesurée en n'importe quel point est égale au taux auquel le consommateur désire substituer un bien à un autre en ce point
+
+![](images/10.jpeg)
+
+### Exemples de fonctions d'utilité
+- Substituts parfaits
+Le consommateur ne se préoccupe que de la quantité totale de biens.
+
+![](images/11.jpeg)
+
+- Compléments parfaits
+Le consommateur ne se préoccupe que de la quantité minimale de biens.
+
+![](images/12.jpeg)
+
+- Préférences Cobb-Douglas
+L'exemple classique des courbes d'indifférence dites d'allure normale.
+
+![](images/13.jpeg)
 
 ## 1.5 Demande individuelle
+couille
 ## 1.6 Préférences révélées
 ## 1.7 Statique comparative
 ## 1.8 Demande agrégée
