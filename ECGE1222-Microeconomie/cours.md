@@ -110,10 +110,23 @@ La **droite de budget** et l'ensemble des paniers égaux à px=R (p:prix,x:panie
 > L'inverse est aussi vrai. Et il en va de même pour le bien 2
 
 ## 1.3 Préférences
-face à deux paniers, on peut les classer. ces classement peuvent se retranscrire sous la forme de **courbes d'indifférence**. Courbes sur lesquels le consommateur est indifférent.
+face à deux paniers, on peut les classer. ces classement peuvent se retranscrire sous la forme de **courbes d'indifférence**. Courbe sur laquelle le consommateur est indifférent.
+- Elle indique les quantités nécéssaires pour compenser le consommateur "passant" d'un panier à un autre.
+- elle n'indique  pas quels sont les paniers préférés et quels sont ceux qui sont moins désirables
+
+
 > N.B. On peut en principe tracer une courbe d'indifférence à partir de n'importe quel panier
 
 On peut donc être sur la courbe {yEX \| y\~ x}, dans le contour suppérieur {yEX \| y\>\~ x} ou dans le contour inférieur {yEX \| y\<\~ x}
+### Hypotheses sur les préférences
+Ces hypothèses ont un impact direct sur l'*allure des courbes*. Et si les préférences sont **classiques** (satisfont les Hypotheses), alors les courbes ont une **allure normale**.
+- Toute paire peut être comparée(complétude)
+- Si a\>\~b et b\>\~c alors a>~c  
+![](images/5.jpeg)
+- Aucun petit changement n'inverse le classement entre 2 paniers
+![](images/6.jpeg)
+- Un panier contenant au moins autant de chaque bien est plus d'au moins un bien qu'un autre panier est préféré à celui-ci
+![](images/7.jpeg)
 
 ## 1.4 Utilité
 ## 1.5 Demande individuelle
