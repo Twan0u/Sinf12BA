@@ -125,10 +125,32 @@ Ces hypothèses ont un impact direct sur l'*allure des courbes*. Et si les préf
 ![](images/5.jpeg)
 - Aucun petit changement n'inverse le classement entre 2 paniers
 ![](images/6.jpeg)
-- Un panier contenant au moins autant de chaque bien est plus d'au moins un bien qu'un autre panier est préféré à celui-ci
+- Un panier contenant au moins autant de chaque bien est plus d'au moins un bien qu'un autre panier est préféré à celui-ci  (**Monotonicité**)
 ![](images/7.jpeg)
+> L'hypothèse de Monotonicité exclut le phénomène de saturation ou satiété.   
+Un **point de satiété** est un panier qui est préféré à tous les autres (graphique en cible).
+
+- Les paniers intermédiaires sont préférés aux paniers extrêmes.   
+On dit alors que la relation de préférence est une **relation convexe** et que les préférences sont **convexes**
+
+![](images/8.jpeg)
+
+### Types de biens
+- bien désirable : l'individu préfère *consommer plus* de ce bien
+- bien indésirable : l'individu préfère *consommer moins* de ce bien
+- bien neutre : l'individu est indifférent à consommer plus ou moins de ce bien
 
 ## 1.4 Utilité
+### Utilité et courbes d'indifférence
+A partir d'une fonction d'utilité il est facile de tracer les courbes d'indifférence.
+1. prendre un panier quelconque
+2. trouver le y correspondant à ce panier avec la fct u
+3. Tracer la courbe d'indifférence passant par x et la reliant tous ces points
+4. Appliquer la même méthode un autre panier
+
+![](images/9.jpeg)
+
+
 ## 1.5 Demande individuelle
 ## 1.6 Préférences révélées
 ## 1.7 Statique comparative
