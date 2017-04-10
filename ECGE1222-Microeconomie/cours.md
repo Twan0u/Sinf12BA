@@ -150,6 +150,12 @@ A partir d'une fonction d'utilité il est facile de tracer les courbes d'indiff�
 
 ![](images/9.jpeg)
 
+### Hypothèses
+Rappel : les préférences qui peuvent être représentées en fonction d'utilité sont complètes, transitives et continues
+
+### Utilité marginale
+ te
+
 
 ## 1.5 Demande individuelle
 ## 1.6 Préférences révélées
