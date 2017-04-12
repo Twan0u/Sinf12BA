@@ -181,7 +181,49 @@ L'exemple classique des courbes d'indifférence dites d'allure normale.
 ![](images/13.jpeg)
 
 ## 1.5 Demande individuelle
-couille
+p : **prix** des biens sur le marché    
+R : **revenu** du consommateur    
+x* : **quantité optimale des biens** (paniers demandés par le consommateur)  
+>si p et R bougent, alors x* aussi
+
+**La fonction de demande** : fonction qui relie le choix optimal(x*) aux valeurs des prix et des revenus. ( = *Quantité demandée* , *Fonction de demande individuelle* )
+
+Dans le cas de n biens x*=f(p,R)=(f1(p,R),...,fn(p,R))
+
+Le panier optimal se situe au point de tangence entre la courbe d'indifférence et la droite du budget.
+
+**La courbe d'indifférence ne peut jamais couper la droite de budget**
+
+![](images/14.jpeg)
+![](images/15.jpeg)
+![](images/16.jpeg)
+![](images/17.jpeg)
+
+u -> préférence du consommateur  
+u(x*) > u(x)  
+TmS(x*) = -p1/p2
+
+![](images/18.jpeg)
+
+|TmS(z)>p1/p2| *on doit descendre sur la droite.  
+|TmS(z)<p1/p2| *on doit monter sur la droite.
+
+### Propriétés de la demande individuelle
+1. Continuité : La continuité de la relation de préférence assure la continuité de la fonction de demande.
+2. Homogénéité : L'invariance de la contrainte budgétairepar rapport à l'unité de compte choisie.
+3. Loi de Warlas : La monotonicité de la relation de préférence assure l'identité budgétaire.
+4. Unicité : La convexité stricte de la relation de préférence implique l'unicité de la solution.
+
+### Solution
+Dans le cas d'une solution intérieure, le choix optimal satisfait deux propriétés:
+- L'égaliation du taux marginal de substitution et du rapport des prix
+- L'identité budgetaire
+
+Dans le cas de deux biens, le problème de maximisation sous contraintes s'écrit comme suit :
+
+**p1x1 + p2x2 = R**
+
+
 ## 1.6 Préférences révélées
 ## 1.7 Statique comparative
 ## 1.8 Demande agrégée
