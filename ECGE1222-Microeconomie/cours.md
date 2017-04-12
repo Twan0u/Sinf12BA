@@ -88,7 +88,7 @@ Pour déterminer les préfénreces des individus en observant leur comportenment
 - Choix -> Préférences (elle peut être rationnalisée)
 
 # Chapitre 2 : Consommation
-## 1.1 Ensemble de consommation
+## 2.1 Ensemble de consommation
 ### Panier de consommation
 Un **panier de biens** ou **panier de consommation** est une liste de quantités des différents biens: x = (x1,x2,...,xn)
 > on consière souvent que le panier n'est composé que de deux biens le bien 2 est le bien que le consommateur peux désirer acheter[*Bien Composite*]
@@ -97,7 +97,7 @@ Un **panier de biens** ou **panier de consommation** est une liste de quantités
 Les choix de consommation sont limités des contraintes physiques: la non négativité ou le fait qu'un bien soit **Discret** (*disponible uniquement en nombre entiers*)
 **L'ensemble de consommation** est l'ensemble des paniers satisfaisant les contraintes physiques. (= Alternatives possibles)
 
-## 1.2 Contraintes Budgétaire
+## 2.2 Contraintes Budgétaire
 à chaque panier on peut attribuer une **valeur**.  
 La **contrainte budgéraire** sont les paniers accessibles ou abordables au prix des biens sur le marché comparativement aux revenus du consommateur.  
 L'**ensemble budgétaire** sont l'ensemble des paniers qui appartiennent à l'ensemble de consommation et qui satisfont la contrainte budgétaire.  
@@ -109,7 +109,7 @@ La **droite de budget** et l'ensemble des paniers égaux à px=R (p:prix,x:panie
 ![](images/4.jpeg)
 > L'inverse est aussi vrai. Et il en va de même pour le bien 2
 
-## 1.3 Préférences
+## 2.3 Préférences
 face à deux paniers, on peut les classer. ces classement peuvent se retranscrire sous la forme de **courbes d'indifférence**. Courbe sur laquelle le consommateur est indifférent.
 - Elle indique les quantités nécéssaires pour compenser le consommateur "passant" d'un panier à un autre.
 - elle n'indique  pas quels sont les paniers préférés et quels sont ceux qui sont moins désirables
@@ -140,7 +140,7 @@ On dit alors que la relation de préférence est une **relation convexe** et que
 - bien indésirable : l'individu préfère *consommer moins* de ce bien
 - bien neutre : l'individu est indifférent à consommer plus ou moins de ce bien
 
-## 1.4 Utilité
+## 2.4 Utilité
 ### Utilité et courbes d'indifférence
 A partir d'une fonction d'utilité il est facile de tracer les courbes d'indifférence.
 1. prendre un panier quelconque
@@ -180,7 +180,7 @@ L'exemple classique des courbes d'indifférence dites d'allure normale.
 
 ![](images/13.jpeg)
 
-## 1.5 Demande individuelle
+## 2.5 Demande individuelle
 p : **prix** des biens sur le marché    
 R : **revenu** du consommateur    
 x* : **quantité optimale des biens** (paniers demandés par le consommateur)  
@@ -224,7 +224,20 @@ Dans le cas de deux biens, le problème de maximisation sous contraintes s'écri
 **p1x1 + p2x2 = R**
 
 
-## 1.6 Préférences révélées
-## 1.7 Statique comparative
-## 1.8 Demande agrégée
-## 1.9 Demande inverse
+//## 1.6 Préférences révélées
+//## 1.7 Statique comparative
+//## 1.8 Demande agrégée
+//## 1.9 Demande inverse
+
+# Chapitre 3 : Incertitude et temps
+
+## 3.1 L'objet du choix
+
+
+
+
+## 3.2 Préférences
+## 3.3 Utilité espérée
+## 3.4 Aversion au risque
+## 3.5 Applications
+## 3.6 Epargne
