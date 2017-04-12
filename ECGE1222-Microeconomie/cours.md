@@ -232,9 +232,29 @@ Dans le cas de deux biens, le problème de maximisation sous contraintes s'écri
 # Chapitre 3 : Incertitude et temps
 
 ## 3.1 L'objet du choix
+**Action** : Objet du choix d'un individu dans un univers incertain.  
+**conséquences** : résultats d'actions.
+**état du monde** / **état de nature** : Il s'agit de la réalisation de l'événement qui détermine la conséquence qu'à une action.  
 
+L'individu qui prend des décisions les prends en incertitude.(X univers certain).
 
+**consommations contingentes** / **consommations conditionnelles** / **perspectives conditionnelles de consommation** : description de ce qui sera consommé dans les différents états de la nature.
 
+**Loterie** : distribution de probabilité sur un ensemble de résultats ou lots possibles.
+
+L=($Pi$1, ... , $Pi$n)
+
+![](images/19.jpeg)
+
+**loterie simple** : deux résultats possibles.
+**loterie dégénérée** : si un résultat à une probabilité = 1
+**loterie composée** : si il existe au moins un résultat qui est une loterie non dégénérée.
+
+![](images/20.jpeg)
+
+![](images/21.jpeg)
+
+Une loterie non composée peut s'écrire comme une combinaison de loterie simples
 
 ## 3.2 Préférences
 ## 3.3 Utilité espérée
