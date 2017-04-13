@@ -256,8 +256,56 @@ L=($Pi$1, ... , $Pi$n)
 
 Une loterie non composée peut s'écrire comme une combinaison de loterie simples
 
+![](images/22.jpeg)
+
+### Généralisation
+**variable aléatoire** : résultat d'une action que l'individu peut choisir
+**fonction de distribution** : caractérisation des variables aléatoires
+la distribution de probabilité associé peut être résumée par ses **moments** :
+- sa **moyenne** ou **espérance(mathématique)**
+- sa **variance**
+
 ## 3.2 Préférences
+### Préférences sur les loteries
+Un individu peut classer les loteries.   
+> Postulat conséquantialiste :  seule la distribution de probabilité sur les résultats possibles certains a de l'importance et dès lors, l'individu est indifférent entre toute loterie produisant cette distribution composée ou non.
+
+### Hypothèses sur les préférences
+1. Complétude
+2. Transitivité
+3. Continuité
+4. Indépendance
+
 ## 3.3 Utilité espérée
+L'utilité d'une loterie est égale à la somme pondérée d'une fonction du résultat de chaque état.
+
+U(L) = Somme(de i=1 à n) $Pi$i.v(xi)
+> xi est le résultat i qui se réalise avec probabilité $Pi*i
+
+**Forme d'utilité espérée** / **forme d'utilité attendue** : ce que la fonction d'utilité admet alors
+
+fonction d'utilité dans ce cas est une **fonction d'utilité espérée** / **fonctionn d'utilité attendue** / **fonction d'utilité Von Neumann - Morgenstern**
+
+On dit aussi que la fonction d'utilité possède la **propriété de l'espérance de l'utilité** / **propriété de l'utilité espérée** / **propriété de l'utilité attendue**
+
+### Utilité espérée et choix
+Le décideur choisira la meilleure loterie en fonction de ses préférences. Si il souhaite maximiser ses préférences, alors il maximisera l'utilité espéré des lots qui la compose.
+
+![](images/23.jpeg)
+
+### Concept cardinal
+La propriété d'utilité cardinale est une propriété cardinale. càd : elle permets don, en plus du signe, de récupérer la grandeur d'écart entre les valeurs
+
+### Existance et limites
+*Théorème de l'espérance de l'utilité (von Neuwmann - Morgenstern)* : si les préférences sont continues et indépendantes, alors il existe une fonction d'utilité représenant ces préférences qui possède la propriété de l'utilité espérée.
+
+### Unicité à une transformation affine près
+Toute transformation monotone d'une fonction d'utilité exprime les mêmes préférences mais ne possède pas forcément les mêmes propriétés de l'utilité espérée. Si on conserve les propriétés de l'utilité espérée, alors on a une **transformation affine positive**
+
+F(U) est une **transformation affine positive** et F(U) = $Alpha$U + $Beta$ avec $Alpha$ > 0
+
+> On dit alors qu'une fonction d'utilité espérée est unique à une transformation près.
+
 ## 3.4 Aversion au risque
 ## 3.5 Applications
 ## 3.6 Epargne
