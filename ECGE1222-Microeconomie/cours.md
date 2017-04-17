@@ -344,6 +344,7 @@ La variance seule ne suffit pas à caractériser le risque. il faut tenir compte
 ## 3.5 Applications
 
 ### Application 1 : Demande d'assurance
+#### Du point de vue du demandeur d'assurance
 Un individu à une richesse **W0**, il peut perdre **S** avec une probabilité **π**  
 
 Pour assurer ce patrimoine, il veut couvrir avec le niveau **x**, et sa prime est égale à **&x**
@@ -358,11 +359,28 @@ On va donc tenter de maximiser l'équation suivante :  *π.u(w0-S-&x+x) + (1-π)
 On obtient donc la fonction suivante : 
 
 
+![](images/27.png)
 
+#### Du point de vue de la compagnie d'assurance 
+elle perçoit &x peut importe le sinistre ou non. Donc son profit espéré est donc de *&x-(πx-(1-π))* *<=>* *&x-πx*. On fait ici l'hypothèse que la compagnie  ne fait en moyennne pas de profits, ni de perte. La prime d'assurance sera dite **actuariellement équitable** et donc *& = π*.
 
+Au final, par l'hypothèse d'aversion au risque on obtient : **w0-s-&x* +x* = w0 -&x***  <=> **x* = s**
+La solution du problème de demande d'assurance consiste donc à **couvrir totalement le risque**
 
+### Application 2 : Précaution 
+#### Un individu neutre vis à vis du risque 
+La somme x est ce qu'il est prêt à payer au plus pour réduire la probabilité de π à (π-ε). Dans le cas ou l'individu est neutre vis à vis du risque, alors u(m) = m et x* =εs.
+La solution est donc de **payer le gain espéré de la réduction de la probabilité du risque**. 
+> on se fiche de π et de w
 
+### Application 3 : Choix de portefeuille
+Un individu doit choisir entre un actif risqué et un actif à rendement variable R sur une distribution F. Il inverstira x dans l'actif 
+cet individu a une aversion au risque. 
+On choisira l'actif risqué quand le rendement espéré dépasse le rendement de l'actif certain.
 
+### Application 4 : Risk pooling
+on a ici le cas de deux personnes qui ont chaqu'un un revenu aléatoire. doivent ils mettre leurs ressources en commun et puis diviser par 2? OUI
+ 
 ## 3.6 Epargne
 
 
