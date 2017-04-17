@@ -242,7 +242,7 @@ L'individu qui prend des décisions les prends en incertitude.(X univers certain
 
 **Loterie** : distribution de probabilité sur un ensemble de résultats ou lots possibles.
 
-L=($Pi$1, ... , $Pi$n)
+L=(π1, ... , πn)
 
 ![](images/19.jpeg)
 
@@ -279,8 +279,8 @@ Un individu peut classer les loteries.
 ## 3.3 Utilité espérée
 L'utilité d'une loterie est égale à la somme pondérée d'une fonction du résultat de chaque état.
 
-U(L) = Somme(de i=1 à n) $Pi$i.v(xi)
-> xi est le résultat i qui se réalise avec probabilité $Pi*i
+U(L) = Somme(de i=1 à n) $π$i.v(xi)
+> xi est le résultat i qui se réalise avec probabilité $π*i
 
 **Forme d'utilité espérée** / **forme d'utilité attendue** : ce que la fonction d'utilité admet alors
 
@@ -307,5 +307,91 @@ F(U) est une **transformation affine positive** et F(U) = $Alpha$U + $Beta$ avec
 > On dit alors qu'une fonction d'utilité espérée est unique à une transformation près.
 
 ## 3.4 Aversion au risque
+Aversion : Espérance de la loterie >= loterie 
+Goût : Espérance de la loterie <= loterie 
+
+![](images/24.png)
+
+> On fait l'hypothèse décroissante avec la richesse
+ 
+Concavité stricte : u''(x) < 0
+convexité stricte : u''(x) >0
+
+On peut avoir une aversion au risque sur des petits montents
+![](images/25.png)
+
+On peut mesurer le **degré d'aversion au risque**  = coëf d'aversion absolue pour le risque 
+Mu(x) = -u''(x) /u(x)
+
+aussi appelé **coef d'arrow-Pratt**
+
+### Modèle moyenne-variance
+Ce modèle suppose que les préférences ne dépendent que de **la moyenne** et de **la variance**.
+**L'utilité** est une *distribution des probabilités*. u(µ,£²) ou (µ,1/£²)
+
+1/£² est appelé **précision** 
+> £ = *Ro*
+
+Pour une aversion au risque, les décideurs vont préférer, une moyenne + élevée et une variance plus faible ( = précision + élevée)
+
+![](images/26.png)
+
+Cette approche est utilisée dans le choix d'un portefeuille financier. Les actifs -> (moyenne et variance) et donc par niveau d'utilité, ce qui permets de les classer par la suite.
+
+### Limites de l'appoche
+La variance seule ne suffit pas à caractériser le risque. il faut tenir compte des moments d'ordre >2
+
 ## 3.5 Applications
+
+### Application 1 : Demande d'assurance
+Un individu à une richesse **W0**, il peut perdre **S** avec une probabilité **π**  
+
+Pour assurer ce patrimoine, il veut couvrir avec le niveau **x**, et sa prime est égale à **&x**
+
+On suppose que le décideur à une aversion au risque. Son choix optimal est donc **l'assurance complète**
+
+- Si il y a sinistre : w1(x) = (w0 - s - &x +x)
+- Si il n'y a pas de sinistre : w2(x) = (w0 - &x)
+
+On va donc tenter de maximiser l'équation suivante :  *π.u(w0-S-&x+x) + (1-π).u(w-&x)*
+
+On obtient donc la fonction suivante : 
+
+
+
+
+
+
+
 ## 3.6 Epargne
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
