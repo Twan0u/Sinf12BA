@@ -148,7 +148,60 @@ float matrice[N][N]
 
 #### Caractères et chaines de caractères
 
+ASCII : 7 et 8 bits
+Les lettres étant des char stockés sous la forme d'entiers, on peut donc effectuer des manipulations numériques avec des char.
+L'UNICODE lui, gère **toutes** les langues connues sur terre.
+Une chaine de caractères se termine toujours par un '\0' ( equivalent à 0)
 
+#### Les Pointeurs
+Un pointeur est défini comme étant une variable contenant l'adresse d'une autre variable.
+```c
+&var // adresse à laquelle une variable est stockée
+sizeof(i) // taille en bytes d'une variable
+*ptr // récupère la valeur à l'adresse du pointeur 
+```
+#### Les structures 
+En C, contrairement au java on n'encapsule pas les données dans des classes avec des méthodes propres. 
+
+```c
+struct coord{
+    int x;
+    int y;
+    int z;
+}
+struct coord test = {1,2,3}; // crée une instance 
+test.x = 1 //l'opérateur point accède directement àla variable x de l'instance test.
+(*ptr).x // accède à l'élèm x du ptr 
+ptr->x //idem supp
+
+```
+
+Les anciens compilateurs ne permettaient pas de posséder des tableaux de taille variables à l'intérieure de structures.
+
+On peut redéfinir des noms de structures :
+```c
+typedef int ENTIER; //redéfini int par entier  
+```
+> On peut les utiliser pour  : 
+> la portabilité de l'app
+> diminuer la taille des identifiants
+> redéfinir des pointeurs
+
+#### Les fonctions 
+
+En C les fonctions peuvent être utilisés en argument.
+
+#### Manipulation bits
+```c
+r = ~a;  //négation bit à bit 
+r = a & b; // conjonction bit à bit
+r = a | b; // disjonction bit à bit
+r = a ^ b; // xor bit à bit
+a = n >> B // décale bits 
+```
+
+### Declarations
+Dans les premières versions de C on devait définir les variables au début de chaque bloc
 
 
 

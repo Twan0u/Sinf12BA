@@ -383,7 +383,9 @@ on a ici le cas de deux personnes qui ont chaqu'un un revenu aléatoire. doivent
  
 ## 3.6 Epargne
 
-
+On va diviser le temps en t en T intervales (t=1 est le présent et t=T est l'**horizon décisionnel (infini)** ).
+### Valeurs présentes et futures
+**R1** est un montant sur un compte qui rapporte un interêt **r**. On peut en déduire la valeur présente ou valeur actualisée d'une somme Rt: Rt = (1+r)^(t-1) .R1
 
 
 
