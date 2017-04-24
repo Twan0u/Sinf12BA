@@ -22,8 +22,17 @@ voir Slides pour les différents trucs
 
 OuvrirMission = verbe d'action concret + objet
 
+### Cours  S10 
+
+une double flèche qui pointe vers une phase interactive est un OU
+une double flèche qui pointe vers un point de synchro est un ET
+
+On peut mettre les messages en destination de quelqu'un dans la case producteur ou la case destinataire, au choix ( attention - on doit mettre une flèche quand même vers l'autre)
+
+ATTENTION - au moins un message entre 2 proccessus
 
 
+On peut avoir plusieurs messages initiaux ? oui 
 
 
 
