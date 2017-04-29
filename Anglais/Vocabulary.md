@@ -12,3 +12,17 @@ Flooding : *inondations*
 Huricanes : *ouragans*
 Drought :  *sécheresse*
 Shortages :  *pénurie*
+??allbut : *presque*
+patterns  : *shéma*
+frightening : 
+washed away : *rayé de la carte par les eaux*
+bountiful : *prospère*
+collapse : 
+doom's :  *jugement dernier*
+tide : 
+raised : 
+treshold : *seuil* 
+peaks : 
+cap : 
+twilight : 
+genuine : *véritable* / *authentique* 
