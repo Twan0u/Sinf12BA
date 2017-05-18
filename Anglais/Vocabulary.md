@@ -170,32 +170,27 @@ to caution : *mettre en garde*
 to be ways off : *avoir beaucoup de chemin à parcourir*
 we're nowhere near that : *on n'y est pas du tout*
 steady : *constant* 
-
-
--------
-
-
-
 genuine : *véritable* / *authentique* 
-intern : stagière
-internship : stage
-budding : "commencer", bourgeonner
-foggiest : moindre ( brumeux / confus )
-former-latter : premier, deuxiemme
-regardless : sans tenir compte de / quelque soit 
-tough : difficile
-through /throughout : à travers
+intern : *stagière*
+internship : *stage*
+budding : *"commencer", bourgeonner*
+foggiest : *moindre ( brumeux / confus )*
+former : *premier*
+latter : *deuxiemme*
+regardless : *sans tenir compte de / quelque soit* 
+tough : *difficile*
+through /throughout : *à travers*
 thorough : ----??
-though : bien que 
-currently : actuellement
-eventually : final
-actually : en fait 
-therefor : par conséquent 
-while / whereas : tandis que
-whether : pendant que
-woth : la valeur
-merely : simple
-deal with : traiter de / s'occuper de 
-to wonder : se demander 
-to wander : se ballader
+though : *bien que*
+currently : *actuellement*
+eventually : *final*
+actually : *en fait* 
+therefor : *par conséquent* 
+while / whereas : *tandis que*
+whether : *pendant que*
+woth : *la valeur*
+merely : *simple*
+deal with : *traiter de / s'occuper de* 
+to wonder : *se demander* 
+to wander : *se ballader*
 
