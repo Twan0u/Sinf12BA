@@ -1,0 +1,62 @@
+#Microéconomie (part2)
+##Chapitre 1 : Economie industrielle 
+###1.1 : Introduction
+
+**L'économie industrielle** est l'étude de l'organisation des firmes, de la concurrence entre les firmes et de la structure des marchés qui en résulte.  
+
+
+1. Comprendre (positif)
+2. Conseiller la firme (prescriptif)
+3. Conseiller le régulateur (normatif)
+
+```
+La firme : 
+- produit : y
+- coût total : C(y)
+- prix : p
+```
+La firme essaye de maximiser son profit:  
+$$π = py-C(y)$$
+
+```
+Le marché : 
+- une production totale du bien homogène : Y
+- une demande
+- plusieurs firmes
+```
+Dans ce cours, nous allons simplifier : 
+- le coût marginal constant : 
+			$$C(y) = cy$$
+- la demande linéaire :
+			$$p(Y) = a - bY$$
+
+*a* : disposition à payer
+*b* : mesure de l'élasticité
+
+###1.2 : Concurrence à la Cournot 
+
+**La concurrence à la Cournot** : c'est lorsque deux firmes fixent simultanément les quantités qu'elles souhaitent vendre sur le marché et que le prix d'équilibre est celui qui égalise l'offre et la demande.
+
+
+Dans un duopole, on à : c<sub>1</sub>, c<sub>2</sub> , Y = y<sub>1</sub>+y<sub>2</sub>
+
+Dans ce cas, la firme essaye de maximiser son profit : $$π_2 =p(y^e_1 + y_2).y_2 -c_2.y_2$$
+si on remplace la fonction p, on obtiens : 
+$$π_2 =  a.y_2 - b.(y_2)²-b.y^e_1.y_2 - c_2.y_2$$
+
+Si on veut obtenir la valeur optimale de y<sub>2</sub>, on annule la dérivée de  π<sub>2</sub> et on obtiens la fonction de réaction de la firme 2 : 
+$$ y_2 = (a-b.y^e_1 - c_2) / 2b $$
+
+Ceci est la *fonction de réaction* de la firme 2 : 
+
+![](images2/1.png)
+
+> la courbe d'isoprofit est un lieu de points (y<sub>1</sub>,y<sub>2</sub>)qui procurent le même montant de profit à la firme 2.
+
+b
+b
+b
+b
+b
+b
+ 
