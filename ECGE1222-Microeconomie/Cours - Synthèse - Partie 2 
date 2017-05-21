@@ -62,11 +62,42 @@ On obtiendra donc à l'équilibre :
 $$y^*_1 = (a-2.c_1+c_2)/3b$$
 $$y^*_2 = (a-2.c_2+c_1)/3b$$
 
+![](images2/3.png) 
 
-b
-b
-b
-b
-b
-b
- 
+En cas d'erreur sur les anticipations, celles-ci peuvent être **revues**a ( en sachant que celles-ci vont **converger vers l'équilibre** et c'est ce qui donne un équilibre de Cournot **stable**).
+Si les firmes sont **rationnelles**, alors elles peuvent adopter directement leurs quantités d'équilibre.
+
+#### L'équilibre 
+- Les firmes produisent toutes les deux
+- le prix (avec p>c<sub>1</sub>,c<sub>2</sub>)
+	$$p=a-b(y^*_1+y^*_2)$$
+	$$p=(a+c_1+c_2)/3$$
+- Le surplus/bien être = prêt à payer - coût réel
+- Le bien être est maximal si toute quantité qui fournit plus de bien-être au consommateur que le coût de sa production
+- Il y a donc moins de production de ce qui est socialement désirable
+- les firmes ont un profit positif
+- c<sub>1</sub>=c<sub>2</sub>=c et alors $$Y=2(a-c)/3b$$
+
+#### L'oligopole
+Soit *n* firmes:
+$$p(Y)y_i -c_i.y_i$$
+$$Y = ∑^n_1y_i$$
+
+Au plus il y a de firmes, au moins chaque firme à de parts de marché et donc les moins productives quittent le marché et les  prix tendent vers le coût marginal
+
+###1.3 : Concurrence à la Bertrand
+**La concurrence à la Bertrand** : lorsque elles fixent simultanément les prix et que les quantités d'équilibre sur le marché égalisent l'offre et la demande
+
+
+
+
+
+
+
+
+
+
+
+
+
+
