@@ -31,11 +31,15 @@ Dans ce cours, nous allons simplifier :
 			$$p(Y) = a - bY$$
 
 *a* : disposition à payer
-*b* : mesure de l'élasticité
+*b* : mesure de l'élasticité (élasticité grande si b est petit )
+
+![](images2/2.png) 
 
 ###1.2 : Concurrence à la Cournot 
 
 **La concurrence à la Cournot** : c'est lorsque deux firmes fixent simultanément les quantités qu'elles souhaitent vendre sur le marché et que le prix d'équilibre est celui qui égalise l'offre et la demande.
+
+Dans cette forme de concurrence, les prix sont fonction de la quantitée que les firmes souhaitent vendre et non l'inverse.
 
 
 Dans un duopole, on à : c<sub>1</sub>, c<sub>2</sub> , Y = y<sub>1</sub>+y<sub>2</sub>
@@ -52,6 +56,12 @@ Ceci est la *fonction de réaction* de la firme 2 :
 ![](images2/1.png)
 
 > la courbe d'isoprofit est un lieu de points (y<sub>1</sub>,y<sub>2</sub>)qui procurent le même montant de profit à la firme 2.
+
+
+On obtiendra donc à l'équilibre :  
+$$y^*_1 = (a-2.c_1+c_2)/3b$$
+$$y^*_2 = (a-2.c_2+c_1)/3b$$
+
 
 b
 b
