@@ -1,6 +1,6 @@
-#Microéconomie (part2)
-##Chapitre 1 : Economie industrielle 
-###1.1 : Introduction
+# Microéconomie (part2)
+## Chapitre 1 : Economie industrielle 
+### 1.1 : Introduction
 
 **L'économie industrielle** est l'étude de l'organisation des firmes, de la concurrence entre les firmes et de la structure des marchés qui en résulte.  
 
@@ -35,7 +35,7 @@ Dans ce cours, nous allons simplifier :
 
 ![](images2/2.png) 
 
-###1.2 : Concurrence à la Cournot 
+### 1.2 : Concurrence à la Cournot 
 
 **La concurrence à la Cournot** : c'est lorsque deux firmes fixent simultanément les quantités qu'elles souhaitent vendre sur le marché et que le prix d'équilibre est celui qui égalise l'offre et la demande.
 
@@ -88,7 +88,7 @@ Rappel sur l'élasticité : si l'élasticité est égale
 Au plus il y a de firmes, au moins chaque firme à de parts de marché et donc les moins productives quittent le marché et les  prix tendent vers le coût marginal
 
 Le fait est qu'une 
-###1.3 : Concurrence à la Bertrand
+### 1.3 : Concurrence à la Bertrand
 **La concurrence à la Bertrand** : lorsque elles fixent simultanément les prix et que les quantités d'équilibre sur le marché égalisent l'offre et la demande.
 
 Les consommateurs choisissent le **moins cher** . La **concurrence** pousse donc les entreprises à **réduire leurs prix**. La concurrence s'achève des que le prix atteint son coût marginal d'une firme.
@@ -96,7 +96,7 @@ Les consommateurs choisissent le **moins cher** . La **concurrence** pousse donc
 - c<sub>1</sub> = c <sub>2</sub> : le prix est égal au coût marginal, on est donc en concurrence parfaite et le profit sera donc nul.
 Les éléments nécéssaires à la **maximisation du bie-être** est déterminée par le nombre de firmes, leur part de marché et le type de concurrence 
 
-###1.4 : Le cartel
+### 1.4 : Le cartel
 **Le cartel** : deux ou plusieurs firmes sont en cartel lorsqu'elles forment une coalition de façon à se comporter comme un monopoleur qui maximise ses profits.
 
 Dans le cas d'un cartel, les firmes vont faire une alliance pour limiter quantités produites/vendues et donc provoquer une monée des prix. Elles agissent donc comme un monopoleur. 
@@ -109,7 +109,7 @@ Dans le cas ou c<sub>1</sub> == c<sub>2</sub> : les deux firmes ont un interêt 
 
 Un cartel est quelque chose de fondamentalement **instable**. La seule chose qui évite aux firmes de dévier sont les **mécanismes de contrôles** : **punition des déviants**, contrôle des prix, limitation volontaire des quantités,...
 
-###1.5 : L'entrée sur le marché
+### 1.5 : L'entrée sur le marché
 La menace d'entrer sur un marché est une forme de concurrence 
 
 Dans le cas d'une société  M qui est implémentée sur un marché et une société E menace d'entrer: Dans quelle mesure la menace de M peut être crédible.
@@ -125,7 +125,7 @@ Dans le cas d'une société  M qui est implémentée sur un marché et une soci�
 
 Lors d'une analyse du marché, une production excédentaire est le signe d'une volonté agressive à l'égard des entrants potentiels. En plus des prix bas, la production excédentaire est une autre qui peut pousser une entreprise à ne pas rentrer. 
 
-###1.6 : Conclusion
+### 1.6 : Conclusion
 
 1. De toutes les formes de concurrence, **le cartel est la pire** et la concurrence **à la Bertrand est la meilleure**.
 2. Quand la concurrence se fait en quantité, même les firmes inefficientes peuvent survivre. 
@@ -134,8 +134,8 @@ Lors d'une analyse du marché, une production excédentaire est le signe d'une v
 5. Nous n'avons pas étudié: les biens hétérogènes, l'incertiture sur les coûts ni sur la demande. 
 
 
-##Chapitre 2 : Théorie des jeux
-###2.1 : Introduction
+## Chapitre 2 : Théorie des jeux
+### 2.1 : Introduction
 La **théorie des jeux** est un outil d'analyse des interactions stratégiques entre agents rationnels.
 
 On distingue dans les jeux, les **jeux statiques**, où les joueurs jouent une fois et simultanément, des **jeux dynamiques**, où les joueurs jouent à des moments différents et certains joueurs ont des informations sur les choix passés d'autres joueurs. 
@@ -155,8 +155,40 @@ Un jeu statique
 ⎇ l'arbre u jeu
 ⎇ la matrice des paiements (pour chaque extrémité de l'arbre)
 ```
+### 2.2 : Stratégies dominantes
+
+Une **stratégie dominante** est une stratéie qui donne à un joueur un paiement strictement supérieur aux paiements qu'il obtiendrait en jouant une autre stratégie, quelle que soit la stratégie choisie par les autres.
+
+|     |    **Gauche**    |  Droit |
+| ---------- |: ----: | : ----: |
+| Haut | (1,2) | (0,1) |
+| **bas**   | (2,1) | (1,0) |
 
 
+Dans le cas d'un jeu de coopération(cartel), les gens sont succeptibles de coopérer car :
+- Ils aimant coopérer
+- Ils sont obligés de coopérer par la norme 
+- Le jeu est répété, comme à propos du cartel, au chapitre précédent
+
+
+Dans un jeu du type dilemne du prisonnier, les deux ont un *interêt à avouer* même si ils auraient ( au sens de pareto) un avantage à nier tous les deux qui serait autrement plus important. la solution avouer-avouer est inefficace au sens pareto. Si les deux pouvaient se faire confiance, ils auraient un avantage plus grand. Il y a donc un **conflit entre rationalité individuelle et collective.** 
+### 2.3 : Meilleure réponse - Equilibre de Nash
+
+La  **fonction de meilleure réponse** d'un joueur est la fonction qui identifie la stratégie qui procure le meilleu paiement en fonction de la stratégie des autres joueurs.
+
+L'**équilibre de Nash** est donc l'intersectionn des fonctions de meilleure réponse telles qu'**aucun joueur n'a d'interêt à dévier** unilatéralement. Elles permettent une mise en place de la réaction aux pensée des autres joueurs et ainisi une **auto justification** des anticipations.
+
+Il existe cependant des cas ou il y a **deux équilibres** de Nash. Dans ce cas, pour passer d'un équilibre à un autre, il faut **changer de stratégie** et en **convaincre** l'autre.
+
+### 2.4 : Les jeux dynamiques
+
+Dans un jeu dynamique, la réponse des uns est fonction de celle des autres. Pour résonner, il nous suffit de prendre le résonnement **à l'envers**. Dans ce genre de jeux le **timing** est crucial (parfois avantageux, parfois pas)
+Une menace n'est donc pas crédible si elle désavantage plus que la solution commune.
+
+
+## Chapitre 3 : La tarification par un monopoleur
+### 3.1 Introduction
+Dans un marché ou le vendeur a une certaine liberté au niveau des prix, il souhaite connaître la **volonté de payer** de l'achteur (asymétrie de l'information). Nous prendrons ici le cas simple du *monopoleur*. **L'information à de la valeur** car elle permets à certains agents de **s'approprier une partie du surplus** et la manière dont celle-ci est distribuée. Cependant, une perte du surplus total peut être entrainée par cette asymétrie de l'information
 
 
 
