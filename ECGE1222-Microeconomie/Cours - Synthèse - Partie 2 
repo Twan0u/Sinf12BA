@@ -114,13 +114,47 @@ La menace d'entrer sur un marché est une forme de concurrence
 
 Dans le cas d'une société  M qui est implémentée sur un marché et une société E menace d'entrer: Dans quelle mesure la menace de M peut être crédible.
 
-Quand M ne réagit que après que E réagissent. 
+#### Quand M ne réagit que après que E réagissent :
 ![](images2/5.png)
-La firme M n'a pas de menace crédible car si l'autre est déjà rentrée alors M n'as pas d'interêt à combattre et ça, E le sait. 
+*La firme M n'a pas de menace crédible car si l'autre est déjà rentrée alors M n'as pas d'interêt à combattre et ça, E le sait.* 
 
+#### Quand M augmente ses capacités de production à un coût de 2 :
 ![](images2/6.png)
+*La menace est maintenant crédible. E l'anticipe et décide de ne pas entrer.*
 
 
+Lors d'une analyse du marché, une production excédentaire est le signe d'une volonté agressive à l'égard des entrants potentiels. En plus des prix bas, la production excédentaire est une autre qui peut pousser une entreprise à ne pas rentrer. 
+
+###1.6 : Conclusion
+
+1. De toutes les formes de concurrence, **le cartel est la pire** et la concurrence **à la Bertrand est la meilleure**.
+2. Quand la concurrence se fait en quantité, même les firmes inefficientes peuvent survivre. 
+3. Tout cartel est instable à court terme.
+4. Les firmes interagissent même avec d'autres firmes qui ne sont pas sur leur marché.
+5. Nous n'avons pas étudié: les biens hétérogènes, l'incertiture sur les coûts ni sur la demande. 
+
+
+##Chapitre 2 : Théorie des jeux
+###2.1 : Introduction
+La **théorie des jeux** est un outil d'analyse des interactions stratégiques entre agents rationnels.
+
+On distingue dans les jeux, les **jeux statiques**, où les joueurs jouent une fois et simultanément, des **jeux dynamiques**, où les joueurs jouent à des moments différents et certains joueurs ont des informations sur les choix passés d'autres joueurs. 
+
+Des exemples de **jeux statiques** sont la *concurrence à la Cournot* et la *concurrence à la Bertrand*. Ici, une stratégie  = **choix d'une action**.
+
+```
+Un jeu statique
+⎇ la liste des joueurs
+⎇ la liste des actions pour chaque joueur 
+⎇ la matrice des paiements 
+```
+Des exemples de **jeux dynamiques** sont le *jeu d'entrée* et le *jeu de Cournot répété (cartel)*. Ici , une stratégie = dès qu'un joueur à un choix à faire.
+```
+Un jeu statique
+⎇ la liste des joueurs
+⎇ l'arbre u jeu
+⎇ la matrice des paiements (pour chaque extrémité de l'arbre)
+```
 
 
 
