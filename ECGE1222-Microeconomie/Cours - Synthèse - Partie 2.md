@@ -159,9 +159,9 @@ Un jeu statique
 
 Une **stratégie dominante** est une stratéie qui donne à un joueur un paiement strictement supérieur aux paiements qu'il obtiendrait en jouant une autre stratégie, quelle que soit la stratégie choisie par les autres.
 
-|     |    **Gauche**    |  Droit |
-| ---------- |: ----: | : ----: |
-| Haut | (1,2) | (0,1) |
+|  .   |    **Gauche**    |  Droit |  
+| ---------- |: ----: | : ----: |  
+| Haut | (1,2) | (0,1) |  
 | **bas**   | (2,1) | (1,0) |
 
 
