@@ -175,9 +175,15 @@ Dans un jeu du type dilemne du prisonnier, les deux ont un *interêt à avouer* 
 
 La  **fonction de meilleure réponse** d'un joueur est la fonction qui identifie la stratégie qui procure le meilleu paiement en fonction de la stratégie des autres joueurs.
 
+La **fonction de meilleure réponse** n'est pas à confondre avec la **stratégie dominante**. La fonction de meilleure réponse fait appel à l'équilibre de Nash (et donc le fait que il existe une alternative plus profitabe à l'une des firmes mais sans que celle-ci n'ait d'interêt à dévier), alors que la stratégie dominante est la stratégie que les deux vont d'office prendre car, il offre aux deux les meilleurs retours.  
+
 L'**équilibre de Nash** est donc l'intersectionn des fonctions de meilleure réponse telles qu'**aucun joueur n'a d'interêt à dévier** unilatéralement. Elles permettent une mise en place de la réaction aux pensée des autres joueurs et ainisi une **auto justification** des anticipations.
 
 Il existe cependant des cas ou il y a **deux équilibres** de Nash. Dans ce cas, pour passer d'un équilibre à un autre, il faut **changer de stratégie** et en **convaincre** l'autre.
+
+L'équilibre de nash nécéssite une **coordination des stratégies**. 
+
+Bertrand et Cournot sont deux équilibres de nash. 
 
 ### 2.4 : Les jeux dynamiques
 
@@ -190,7 +196,7 @@ Une menace n'est donc pas crédible si elle désavantage plus que la solution co
 Dans un marché ou le vendeur a une certaine liberté au niveau des prix, il souhaite connaître la **volonté de payer** de l'achteur (asymétrie de l'information). Nous prendrons ici le cas simple du *monopoleur*. **L'information à de la valeur** car elle permets à certains agents de **s'approprier une partie du surplus** et la manière dont celle-ci est distribuée. Cependant, une perte du surplus total peut être entrainée par cette asymétrie de l'information
 
 
-
+(...)
 
 
 
