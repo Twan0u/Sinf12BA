@@ -33,7 +33,7 @@ Dans ce cours, nous allons simplifier :
 *a* : disposition à payer
 *b* : mesure de l'élasticité (élasticité grande si b est petit )
 
-![](images2/2.png) 
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images2/2.png)
 
 ### 1.2 : Concurrence à la Cournot 
 
@@ -53,7 +53,7 @@ $$ y_2 = (a-b.y^e_1 - c_2) / 2b $$
 
 Ceci est la *fonction de réaction* de la firme 2 : 
 
-![](images2/1.png)
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images2/1.png)
 
 > la courbe d'isoprofit est un lieu de points (y<sub>1</sub>,y<sub>2</sub>)qui procurent le même montant de profit à la firme 2.
 
@@ -62,7 +62,7 @@ On obtiendra donc à l'équilibre :
 $$y^*_1 = (a-2.c_1+c_2)/3b$$
 $$y^*_2 = (a-2.c_2+c_1)/3b$$
 
-![](images2/3.png) 
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images2/3.png) 
 
 En cas d'erreur sur les anticipations, celles-ci peuvent être **revues**a ( en sachant que celles-ci vont **converger vers l'équilibre** et c'est ce qui donne un équilibre de Cournot **stable**).
 Si les firmes sont **rationnelles**, alors elles peuvent adopter directement leurs quantités d'équilibre.
@@ -105,7 +105,7 @@ maximisation des somms des profits :$$Y^* = (a-c)/2b$$
 Dans le cas ou c<sub>1</sub> ≠ c<sub>2</sub> : seul la plus efficiente devrait produire.
 Dans le cas ou c<sub>1</sub> == c<sub>2</sub> : les deux firmes ont un interêt à dévier .
 
-![](images2/4.png) 
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images2/4.png) 
 
 Un cartel est quelque chose de fondamentalement **instable**. La seule chose qui évite aux firmes de dévier sont les **mécanismes de contrôles** : **punition des déviants**, contrôle des prix, limitation volontaire des quantités,...
 
@@ -115,11 +115,11 @@ La menace d'entrer sur un marché est une forme de concurrence
 Dans le cas d'une société  M qui est implémentée sur un marché et une société E menace d'entrer: Dans quelle mesure la menace de M peut être crédible.
 
 #### Quand M ne réagit que après que E réagissent :
-![](images2/5.png)
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images2/5.png)
 *La firme M n'a pas de menace crédible car si l'autre est déjà rentrée alors M n'as pas d'interêt à combattre et ça, E le sait.* 
 
 #### Quand M augmente ses capacités de production à un coût de 2 :
-![](images2/6.png)
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images2/6.png)
 *La menace est maintenant crédible. E l'anticipe et décide de ne pas entrer.*
 
 
@@ -152,8 +152,8 @@ Des exemples de **jeux dynamiques** sont le *jeu d'entrée* et le *jeu de Courno
 ```
 Un jeu statique
 ⎇ la liste des joueurs
-⎇ l'arbre u jeu
-⎇ la matrice des paiements (pour chaque extrémité de l'arbre)
+⎇ arbre du jeu
+⎇ la matrice des paiements (pour chaque extrémité de l arbre)
 ```
 ### 2.2 : Stratégies dominantes
 
