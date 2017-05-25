@@ -22,7 +22,6 @@ L'individu peut :
 *Toute paire d'alternatives peut être comparée* (relation complète)
  - soit a≿b soit a≾ b soit a≿b et a≾b  
 
-
 *Si une alternative quelconque est au moins aussi désirable qu'une autre et cette autre au moins aussi désirable qu'une troisième, alors la première est au moins aussi désirable que la troisième* (relation de transitivité)
 - si a≿b et b≿c alors a≿c  
 
@@ -75,11 +74,17 @@ Chaque pannier à une valeur qui lui est attribué en fonction du prix de chaqu'
 
 La **contrainte budgéraire** sont les paniers accessibles ou abordables au prix des biens sur le marché comparativement aux revenus du consommateur. 
 
-L'**ensemble budgétaire** sont l'ensemble des paniers qui appartiennent à l'ensemble de consommation et qui satisfont la contrainte budgétaire.  
+L'**ensemble budgétaire** l'ensemble des panniers qui répondent à la fonction $$px≤R$$
 
-La **droite de budget** et l'ensemble des paniers égaux à px=R (p:prix,x:panier,R:revenu).  
+si **px =R** alors on se trouve sur l'**hyperplan de budget**. Dans le cas de deux biens, cette équation est représentée graphiquement par une droite, appelée droite de budget.
 
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/0.png)
+$$pente = -p_1/p_2$$ $$Origine=R/p_2$$
+
+L'équation suivante exprime combien d'unités du bien 2 on peut obtenir à partir du nombre d'unités du bien 1.
+$$x_2 = R/p_2 - (p_1/p_2).x_1$$
+
+
 ### 2.3 Préférences
 face à deux paniers, on peut les classer. ces classement peuvent se retranscrire sous la forme de **courbes d'indifférence**. Courbe sur laquelle le consommateur est indifférent.
 - Elle indique les quantités nécéssaires pour compenser le consommateur "passant" d'un panier à un autre.
