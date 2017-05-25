@@ -6,9 +6,6 @@ Qcm  +1,0,-0.25
 ### 1.1 Problème de décision
 
 **Problème de décision** : Un décideur fait face à un ensemble d’alternatives possibles ( mutuellement exclusives ) dans une situation donnée.
-
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/1.jpeg)
-
 **Situation** : contraintes d'un choix.  
 **Alternatives réalisables** : ensemble d'éléments qui définissent une situation.  
 
@@ -46,7 +43,7 @@ Cette fonction peut donc subir autant de **transformation monotones** qu'elle le
 On ne peut *pas toujours trouver une fonction d'utilité* représentant la relation de préférences. Si nous pouvons, alors la fonction) est dite *complète et transitive*.
 Exemple : u(a) ≥ u(b) ⇌ a ≿ b.
 ### 1.4 Choix et Contraintes
-Face à une situation décrite par un ensemble d'alternatives réalisables, l'individu va essayer de **maximiser ses préférences** en choisissant le **choix optimal**. On dit que l'individu **maximise son utilité sous contraintes.** Ses choix peuvent aussi être synthétisés sous la forme d'une fonction appelée **fonction de choix**. On parle d'**alternatives acceptables** quand l'individu pourrait être amené à choisir cet alternative au lieu d'une autre
+Face à une situation, un décideur choisira la meilleure alternative et ainsi **maximiser ses préférences**. Si il est confronté à des contraintes, alors il effectura une **maximisatin de son utilité sous contraintes**. Ses choix peuvent aussi être synthétisés sous la forme d'une fonction appelée **fonction de choix**. On parle d'**alternatives acceptables** quand l'individu pourrait être amené à choisir cet alternative au lieu d'une autre
 N.B. si il existe plusieurs alterntatives meilleures, alors l'individu sera indifférent entre elles
 
 ### 1.5 Préférences révélées
