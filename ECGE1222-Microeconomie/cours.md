@@ -41,23 +41,19 @@ Ces hypothèses sont si fondamentales que on peut les appeler axiomes ( ou axiom
 Les préférences peuvent être exprimées au moyen de **fonctions d'utilités**. Ces fonctions sont utilisés pour classer les alternatives. C'est le seul but de cette fonction, on ne peut pas donner une interpretation aux écarts d'utilité (**concept ordinal**).
 Cette fonction peut donc subir autant de **transformation monotones** qu'elle le souhaite(transformation qui n'affece pas l'ordre(mult. par un nombre positif, addition d'un nombre quelconque, puissance impaire,... )).
 On ne peut *pas toujours trouver une fonction d'utilité* représentant la relation de préférences. Si nous pouvons, alors la fonction) est dite *complète et transitive*.
+
 Exemple : u(a) ≥ u(b) ⇌ a ≿ b.
 ### 1.4 Choix et Contraintes
 Face à une situation, un décideur choisira la meilleure alternative et ainsi **maximiser ses préférences**. Si il est confronté à des contraintes, alors il effectura une **maximisatin de son utilité sous contraintes**. Ses choix peuvent aussi être synthétisés sous la forme d'une fonction appelée **fonction de choix**. On parle d'**alternatives acceptables** quand l'individu pourrait être amené à choisir cet alternative au lieu d'une autre
 N.B. si il existe plusieurs alterntatives meilleures, alors l'individu sera indifférent entre elles
 
 ### 1.5 Préférences révélées
-#### Règle de choix
 - Le concept de relation de préférence (mécanisme d'introspection) -> manipulation de l'information possible
 - règle de choix : se base sur l'observation des choix de l'individu
 On parlera alors de **préférences révélées**  
-Ces préférences ne correspondent pas toujours aux véritables préférences.
+Ces préférences ne correspondent pas toujours aux véritables préférences. Il est aussi important de bien noter que les préférences des individus ne peuvent **pas changer au cours de la periode d'observation** ( ce qui devient de plus en plus difficile au fur et a mesure que la **période est longue** ) 
 
-#### Axiome faible des préférences révélées
-On s'attend à une certaine cohérence dans les choix observés.
-
-#### Principe des préférences révélées
-Pour déterminer les préfénreces des individus en observant leur comportenment, nous devons supposer que les préférences restent inchangées au cours de la période d'observation. Cette hypothèse n'est pas réaliste si on considère des longues périodes. Nous allons donc estimer ces périodes à max 1 ou 3 mois en considérant que les gouts ne peuvent pas changer radicalmement en si peu de temps.
+**Axiome faible des préférences révélées** : On s'attend à une certaine cohérence dans les choix observés. Il permets aussi de *vérifier la correspondance avec le modèle économique*
 
 #### Deux approches duales
 - Préférences -> Choix (satisfait l'axiome faible des préférences révélées)
@@ -65,26 +61,25 @@ Pour déterminer les préfénreces des individus en observant leur comportenment
 
 ## Chapitre 2 : Consommation
 ### 2.1 Ensemble de consommation
-#### Panier de consommation
-Un **panier de biens** ou **panier de consommation** est une liste de quantités des différents biens: x = (x1,x2,...,xn)
-on consière souvent que le panier n'est composé que de deux biens le bien 2 est le bien que le consommateur peux désirer acheter[*Bien Composite*]
+Le problème de décision (du consommateur) est de devoir choisir quelle quantité de biens il souhaite et est capable de payer. 
 
-#### Ensemble de consommation
+Un **panier de biens** ou **panier de consommation** est une liste de quantités des différents biens: x = (x1,x2,...,xn). On consière souvent que le panier n'est composé que de deux biens, le premier est le bien en question est le second est un agrégé de tous les autres biens(=**bien composite**)
+
 Les choix de consommation sont limités des contraintes physiques: la non négativité ou le fait qu'un bien soit **Discret** (*disponible uniquement en nombre entiers*)
 **L'ensemble de consommation** est l'ensemble des paniers satisfaisant les contraintes physiques. (= Alternatives possibles)
 
 ### 2.2 Contraintes Budgétaire
-à chaque panier on peut attribuer une **valeur**.  
-La **contrainte budgéraire** sont les paniers accessibles ou abordables au prix des biens sur le marché comparativement aux revenus du consommateur.  
+En plus des contraintes physiques, le consommateur est limité aux panniers qu'il est **capable de payer**
+
+Chaque pannier à une valeur qui lui est attribué en fonction du prix de chaqu'un des biens qui le compose.
+
+La **contrainte budgéraire** sont les paniers accessibles ou abordables au prix des biens sur le marché comparativement aux revenus du consommateur. 
+
 L'**ensemble budgétaire** sont l'ensemble des paniers qui appartiennent à l'ensemble de consommation et qui satisfont la contrainte budgétaire.  
+
 La **droite de budget** et l'ensemble des paniers égaux à px=R (p:prix,x:panier,R:revenu).  
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/2.jpeg)
-#### Variations
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/3.jpeg)
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/4.jpeg)
-L'inverse est aussi vrai. Et il en va de même pour le bien 2
-
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/0.png)
 ### 2.3 Préférences
 face à deux paniers, on peut les classer. ces classement peuvent se retranscrire sous la forme de **courbes d'indifférence**. Courbe sur laquelle le consommateur est indifférent.
 - Elle indique les quantités nécéssaires pour compenser le consommateur "passant" d'un panier à un autre.
