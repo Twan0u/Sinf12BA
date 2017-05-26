@@ -101,15 +101,26 @@ Si on souhaite passer du pannier x=(x<sub>1</sub>,x<sub>2</sub>) à un pannier a
 
 Les préférences qui satisfont les hypothèses suivantes sont dites**classiques** et ont des courbes dites d'**allure normale**
 
-1. *Toute paire peut être comparée(complétude)*
+- *Toute paire peut être comparée(complétude)*
+
 graphiquement, en tout point de l'ensemble de consommation passe (au moins) une courbe d'indifférence.
 
-2. *Si un pannier quelconque est au moins aussi désirable qu'un autre et cet autre au moins aussi désirable qu'un troisième, alors le premier est au moins aussi désirable que le troisième  
+- *Si un pannier quelconque est au moins aussi désirable qu'un autre et cet autre au moins aussi désirable qu'un troisième, alors le premier est au moins aussi désirable que le troisième*
 
+graphiquement, les courbes d'indifférence ne se croisent pas car un pannier ne peut être indifférent que pour une seul courbe d'indifférence.
 
- Aucun petit changement n'inverse le classement entre 2 paniers
-- Un panier contenant au moins autant de chaque bien est plus d'au moins un bien qu'un autre panier est préféré à celui-ci  (**Monotonicité**)
-> L'hypothèse de Monotonicité exclut le phénomène de saturation ou satiété.   
+- *Les contours inférieurs et supérieur de chaque panier contiennent leurs frontières* 
+
+graphiquement, la courbe d'indifférence est continue
+
+- *Un panier contenant au moins autant de chaque bien est plus d'au moins un bien qu'un autre panier est préféré à celui-ci* (**Monotonicité**)
+
+graphiquement, à une valeur du bien 1 il ne peut correspondre qu'une valeur du bien 2. 
+
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/1.png)
+
+-------------
+
 Un **point de satiété** est un panier qui est préféré à tous les autres (graphique en cible).
 
 - Les paniers intermédiaires sont préférés aux paniers extrêmes.   
