@@ -117,20 +117,17 @@ graphiquement, la courbe d'indifférence est continue
 
 graphiquement, à une valeur du bien 1 il ne peut correspondre qu'une valeur du bien 2. 
 
+
+
+La monotonicité sous-entend que chaque bien est **désirable**. càd : pas **neutre** (indifférence à plus ou moins consommer du bien) ni **indésirable**(on préfère moins que plus). Et on exclut aussi la **saturation ou satiété** ( point préféré = le fait de consommer plus ou moins d'un des 2 biens est perçu négativement.
+
+- *Les paniers intermédiaires sont préférés aux paniers extrême (relation convexe)*
+
+graphiquement, les courbes sont strictement convexes
+
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/1.png)
 
--------------
-
-Un **point de satiété** est un panier qui est préféré à tous les autres (graphique en cible).
-
-- Les paniers intermédiaires sont préférés aux paniers extrêmes.   
-On dit alors que la relation de préférence est une **relation convexe** et que les préférences sont **convexes**
-
-#### Types de biens
-- bien désirable : l'individu préfère *consommer plus* de ce bien
-- bien indésirable : l'individu préfère *consommer moins* de ce bien
-- bien neutre : l'individu est indifférent à consommer plus ou moins de ce bien
-
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/2.jpeg)
 ### 2.4 Utilité
 #### Utilité et courbes d'indifférence
 A partir d'une fonction d'utilité il est facile de tracer les courbes d'indifférence.
@@ -139,13 +136,11 @@ A partir d'une fonction d'utilité il est facile de tracer les courbes d'indiff�
 3. Tracer la courbe d'indifférence passant par x et la reliant tous ces points
 4. Appliquer la même méthode un autre panier
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/9.jpeg)
-
-#### Hypothèses
 Rappel : les préférences qui peuvent être représentées en fonction d'utilité sont complètes, transitives et continues
 
-#### Utilité marginale
-//??
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/3.png)
+#### Utilité marginale (Um)
+ ----
 #### Taux marginal de substitution (TmS(x))
 Le **taux marginal de substitution** est le taux auquel le consommateur accepte de substituer le bien 2 au bien 1.
 Ce taux est le rapport des unités marginales des biens considérés.
@@ -159,12 +154,9 @@ Son signe algébrique est négatif. Souvent, par convention, on utilise la valeu
 - Substituts parfaits
 Le consommateur ne se préoccupe que de la quantité totale de biens.
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/11.jpeg)
 
 - Compléments parfaits
 Le consommateur ne se préoccupe que de la quantité minimale de biens.
-
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/12.jpeg)
 
 - Préférences Cobb-Douglas
 L'exemple classique des courbes d'indifférence dites d'allure normale.
