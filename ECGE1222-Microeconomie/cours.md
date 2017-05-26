@@ -95,7 +95,11 @@ Les **courbes d'indifférence** regroupent tous les paniers qui satisfont de man
 
 Si on souhaite passer du pannier x=(x<sub>1</sub>,x<sub>2</sub>) à un pannier avec plus du bien 1, alors on obient x'=(x<sub>1</sub>+∆x<sub>1</sub>,x<sub>2</sub>-∆x<sub>2</sub>)
 
-**∆x<sub>2</sub>** est la quantitée qu'il faut retirer au panier sachant que l'on vient d'ajouter ∆x<sub>1</sub>
+**∆x<sub>2</sub>** est la quantitée qu'il faut retirer au panier sachant que l'on vient d'ajouter  la quantité **∆x<sub>1</sub>**
+
+----- 
+
+
 #### Hypotheses sur les préférences
 Ces hypothèses ont un impact direct sur l'*allure des courbes*. Et si les préférences sont **classiques** (satisfont les Hypotheses), alors les courbes ont une **allure normale**.
 - Toute paire peut être comparée(complétude)
