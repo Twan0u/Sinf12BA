@@ -141,15 +141,10 @@ Rappel : les préférences qui peuvent être représentées en fonction d'utilit
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/3.png)
 #### Utilité marginale (Um)
 
+Soit un panier x=(x<sub>1</sub>,x<sub>2</sub>) ∈ X. Si on augmente la quantité du bien 1 de ∆x, quelle est la variation d'utilité (∆U) de cet individu ? 
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/4.png)
 
 
-
-
- ----
- 
- 
- 
- 
  
 #### Taux marginal de substitution (TmS(x))
 Le **taux marginal de substitution** est le taux auquel le consommateur accepte de substituer le bien 2 au bien 1.
