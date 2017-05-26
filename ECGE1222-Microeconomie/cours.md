@@ -140,7 +140,17 @@ Rappel : les préférences qui peuvent être représentées en fonction d'utilit
 
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/3.png)
 #### Utilité marginale (Um)
+
+
+
+
+
  ----
+ 
+ 
+ 
+ 
+ 
 #### Taux marginal de substitution (TmS(x))
 Le **taux marginal de substitution** est le taux auquel le consommateur accepte de substituer le bien 2 au bien 1.
 Ce taux est le rapport des unités marginales des biens considérés.
@@ -177,16 +187,11 @@ Le panier optimal se situe au point de tangence entre la courbe d'indifférence 
 
 **La courbe d'indifférence ne peut jamais couper la droite de budget**
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/14.jpeg)
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/15.jpeg)
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/16.jpeg)
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/17.jpeg)
-
 u -> préférence du consommateur  
 u(x*) > u(x)  
 TmS(x*) = -p1/p2
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/18.jpeg)
+
 
 |TmS(z)>p1/p2| *on doit descendre sur la droite.  
 |TmS(z) croco droitep1/p2| *on doit monter sur la droite.
@@ -227,19 +232,14 @@ L'individu qui prend des décisions les prends en incertitude.(X univers certain
 
 L=(π1, ... , πn)
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/19.jpeg)
 
 **loterie simple** : deux résultats possibles.
 **loterie dégénérée** : si un résultat à une probabilité = 1
 **loterie composée** : si il existe au moins un résultat qui est une loterie non dégénérée.
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/20.jpeg)
-
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/21.jpeg)
 
 Une loterie non composée peut s'écrire comme une combinaison de loterie simples
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/22.jpeg)
 
 #### Généralisation
 **variable aléatoire** : résultat d'une action que l'individu peut choisir
@@ -274,7 +274,7 @@ On dit aussi que la fonction d'utilité possède la **propriété de l'espéranc
 #### Utilité espérée et choix
 Le décideur choisira la meilleure loterie en fonction de ses préférences. Si il souhaite maximiser ses préférences, alors il maximisera l'utilité espéré des lots qui la compose.
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/23.jpeg)
+
 
 #### Concept cardinal
 La propriété d'utilité cardinale est une propriété cardinale. càd : elle permets don, en plus du signe, de récupérer la grandeur d'écart entre les valeurs
@@ -293,7 +293,7 @@ F(U) est une **transformation affine positive** et F(U) = $Alpha$U + $Beta$ avec
 Aversion : Espérance de la loterie >= loterie 
 Goût : Espérance de la loterie <= loterie 
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/24.png)
+
 
 > On fait l'hypothèse décroissante avec la richesse
  
@@ -301,7 +301,7 @@ Concavité stricte : u''(x) < 0
 convexité stricte : u''(x) >0
 
 On peut avoir une aversion au risque sur des petits montents
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/25.png)
+
 
 On peut mesurer le **degré d'aversion au risque**  = coëf d'aversion absolue pour le risque 
 Mu(x) = -u''(x) /u(x)
@@ -316,8 +316,6 @@ Ce modèle suppose que les préférences ne dépendent que de **la moyenne** et 
 > £ = *Ro*
 
 Pour une aversion au risque, les décideurs vont préférer, une moyenne + élevée et une variance plus faible ( = précision + élevée)
-
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/26.png)
 
 Cette approche est utilisée dans le choix d'un portefeuille financier. Les actifs -> (moyenne et variance) et donc par niveau d'utilité, ce qui permets de les classer par la suite.
 
@@ -342,7 +340,6 @@ On va donc tenter de maximiser l'équation suivante :  *π.u(w0-S-&x+x) + (1-π)
 On obtient donc la fonction suivante : 
 
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/27.png)
 
 ##### Du point de vue de la compagnie d'assurance 
 elle perçoit &x peut importe le sinistre ou non. Donc son profit espéré est donc de *&x-(πx-(1-π))* *<=>* *&x-πx*. On fait ici l'hypothèse que la compagnie  ne fait en moyennne pas de profits, ni de perte. La prime d'assurance sera dite **actuariellement équitable** et donc *& = π*.
