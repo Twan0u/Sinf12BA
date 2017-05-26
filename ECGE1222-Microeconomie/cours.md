@@ -97,13 +97,17 @@ Si on souhaite passer du pannier x=(x<sub>1</sub>,x<sub>2</sub>) à un pannier a
 
 **∆x<sub>2</sub>** est la quantitée qu'il faut retirer au panier sachant que l'on vient d'ajouter  la quantité **∆x<sub>1</sub>**
 
------ 
-
-
 #### Hypotheses sur les préférences
-Ces hypothèses ont un impact direct sur l'*allure des courbes*. Et si les préférences sont **classiques** (satisfont les Hypotheses), alors les courbes ont une **allure normale**.
-- Toute paire peut être comparée(complétude)
-- Aucun petit changement n'inverse le classement entre 2 paniers
+
+Les préférences qui satisfont les hypothèses suivantes sont dites**classiques** et ont des courbes dites d'**allure normale**
+
+1. *Toute paire peut être comparée(complétude)*
+graphiquement, en tout point de l'ensemble de consommation passe (au moins) une courbe d'indifférence.
+
+2. *Si un pannier quelconque est au moins aussi désirable qu'un autre et cet autre au moins aussi désirable qu'un troisième, alors le premier est au moins aussi désirable que le troisième  
+
+
+ Aucun petit changement n'inverse le classement entre 2 paniers
 - Un panier contenant au moins autant de chaque bien est plus d'au moins un bien qu'un autre panier est préféré à celui-ci  (**Monotonicité**)
 > L'hypothèse de Monotonicité exclut le phénomène de saturation ou satiété.   
 Un **point de satiété** est un panier qui est préféré à tous les autres (graphique en cible).
