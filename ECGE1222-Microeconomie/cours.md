@@ -157,21 +157,25 @@ Son signe algébrique est négatif. Souvent, par convention, on utilise la valeu
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/6.png)
 
 #### Exemples de fonctions d'utilité
-- Substituts parfaits
-Le consommateur ne se préoccupe que de la quantité totale de biens.
+- Substituts parfaits (on ne se préocupe que de la quantité totale des biens)
 
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/8.png)
+$$Tms = -1$$
 
-- Compléments parfaits
-Le consommateur ne se préoccupe que de la quantité minimale de biens.
+- Compléments parfaits (On ne se préoccupe que de la quantité minimale de biens)
 
-- Préférences Cobb-Douglas
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/9.png)
+$$Tms = non-défini$$
+
+- Préférences Cobb-Douglas(u(x<sub>1</sub>,x<sub>2</sub>) = x<sup>c</sup><sub>1</sub>x<sup>d</sup><sub>2</sub>
 L'exemple classique des courbes d'indifférence dites d'allure normale.
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/13.jpeg)
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/10.png)
+$$Tms = -(c.x_2)/(d.x_1)$$
+
+-----
 
 ### 2.5 Demande individuelle
-p : **prix** des biens sur le marché    
-R : **revenu** du consommateur    
 x* : **quantité optimale des biens** (paniers demandés par le consommateur)  
 si p et R bougent, alors x* aussi
 
