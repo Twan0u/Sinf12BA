@@ -143,17 +143,18 @@ Rappel : les préférences qui peuvent être représentées en fonction d'utilit
 
 Soit un panier x=(x<sub>1</sub>,x<sub>2</sub>) ∈ X. Si on augmente la quantité du bien 1 de ∆x, quelle est la variation d'utilité (∆U) de cet individu ? 
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/4.png)
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/5.png)
 
-
- 
 #### Taux marginal de substitution (TmS(x))
 Le **taux marginal de substitution** est le taux auquel le consommateur accepte de substituer le bien 2 au bien 1.
 Ce taux est le rapport des unités marginales des biens considérés.
 Son signe algébrique est négatif. Souvent, par convention, on utilise la valeur absolue de ce ratio.
 
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/7.png)
+
 **La pente de la courbe d'indifférence** mesurée en n'importe quel point est égale au taux auquel le consommateur désire substituer un bien à un autre en ce point
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/10.jpeg)
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/6.png)
 
 #### Exemples de fonctions d'utilité
 - Substituts parfaits
