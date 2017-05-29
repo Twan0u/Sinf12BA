@@ -1,0 +1,917 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Made with Remarkable!
+  </title>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/github.min.css" rel="stylesheet"/>
+  <style type="text/css">
+   @import "https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,700,700i&subset=latin-ext";
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono:300,400&subset=latin-ext";
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css";
+
+:root {
+    font-size: 15px;
+}
+
+body { /* TEXT PARENT */
+    width: 35em;
+    margin: 0 auto;
+    font-family: "Fira Sans", "Verdana", "Geneva", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+}
+
+body * {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 3.25rem;
+}
+
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+h5 {
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+h6 {
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+a {
+    background-image: linear-gradient(#449, #449);
+    background-size: 0.06em 0.06em;
+    background-repeat: repeat-x;
+    background-position-y: 93%;
+    background-position-x: 0;
+    color: #449;
+    text-decoration: none;
+    /* text-shadow: white 0.7px 0.7px 0.1px, white 0 1px 0.1px, white -.7px 0.7px 0.1px, white -.7px 0 0.1px, white -.7px -.7px 0.1px, white 0 -.7px 0.1px, white 0.7px -.7px 0.1px, white 0.7px 0 0.1px; */
+    transition: 0.15s;
+}
+
+a:active {
+    background-color: #eee;
+    color: #555;
+    text-decoration: none;
+    /* text-shadow: #eee 0.7px 0.7px 0.1px, #eee 0 1px 0.1px, #eee -.7px 0.7px 0.1px, #eee -.7px 0 0.1px, #eee -.7px -.7px 0.1px, #eee 0 -.7px 0.1px, #eee 0.7px -.7px 0.1px, #eee 0.7px 0 0.1px; */
+}
+
+a:hover {
+    background-image: linear-gradient(#66e, #66e);
+    color: #66e;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+del,
+s,
+strike {
+    text-decoration: none;
+    background-image: linear-gradient(#000, #000);
+    background-size: 0.06em 0.06em;
+    background-repeat: repeat-x;
+    background-position-y: 65%;
+    background-position-x: 0;
+}
+
+code,
+pre,
+samp,
+var {
+    font-size: 95%;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    color: #666;
+}
+
+pre {
+    display: block;
+    margin: 1rem -2rem;
+    padding: 1rem 2rem;
+    background-color: #eee;
+    border-left: 0.1rem solid #888;
+}
+
+p code {
+    padding: 0 0.2em 0.1em;
+    background-color: #eee;
+}
+
+p var {
+    padding: 0 0.2em 0.1em;
+    background-color: #eee;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+p samp {
+  padding: 0 0.2em 0.1em;
+  margin: 0 0.1em;
+  background-color: #666;
+  color: #eee;
+}
+
+kbd {
+  position: relative;
+  padding: 0.2em 0.2em 0.1em 0.2em;
+  margin: 0 0.1em;
+  bottom: 0.125em;
+  font-family: "Fira Sans", "Verdana", "Geneva", sans-serif;
+  font-size: 0.8em;
+  background-color: #eee;
+  border-radius: 0.2em;
+  border-bottom: 0.05em solid #aaa;
+}
+
+blockquote {
+    margin: 1rem -2rem;
+    padding: 1rem 2rem;
+    background-color: #eee;
+    color: #666;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+blockquote::before {
+    content: "\201C";
+    display: block;
+    position: relative;
+    height: 0;
+    left: -1.3rem;
+    top: -0.5rem;
+    font-size: 2em;
+    color: #888;
+}
+
+blockquote::after {
+    content: "\201D";
+    display: inline-block;
+    position: relative;
+    height: 0;
+    top: 1.6rem;
+    left: 0.2rem;
+    font-size: 2em;
+    line-height: 0;
+    color: #888;
+}
+
+abbr[title] {
+    text-decoration: none;
+    background-image: linear-gradient(90deg, gray 50%, transparent 50%);
+    background-size: 0.1em 0.06em;
+    background-repeat: repeat-x;
+    background-position-y: 100%;
+    background-position-x: 0;
+    font-feature-settings: "smcp";
+}
+
+ul {
+    list-style: none;
+    margin-left: -2em;
+    padding-left: 2em;
+}
+
+ul > li {
+    padding-left: 0;
+}
+
+ul > li::before {
+    content: "»";
+    display: block;
+    position: relative;
+    height: 0;
+    width: 2em;
+    margin-left: -2.5em;
+    font-weight: bolder;
+    color: #888;
+    text-align: right;
+}
+
+ul ul > li::before {
+    content: "›";
+    display: block;
+    position: relative;
+    height: 0;
+    width: 2em;
+    margin-left: -2.5em;
+    font-weight: bolder;
+    color: #888;
+    text-align: right;
+}
+
+ol {
+    list-style: none;
+    margin-left: -2em;
+    padding-left: 2em;
+}
+
+ol > li {
+    padding-left: 0;
+    counter-increment: ol-count;
+}
+
+ol > li:first-child {
+    counter-reset: ol-count;
+}
+
+ol > li::before {
+    content: counter(ol-count)".";
+    display: block;
+    position: relative;
+    height: 0;
+    width: 2em;
+    margin-left: -2.5em;
+    font-weight: bolder;
+    color: #888;
+    text-align: right;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin: 0.5em 0;
+}
+
+img {
+    display: block;
+    width: calc(100% + 4rem);
+    margin: 1rem -2rem;
+}
+
+figure {
+    display: inline-table;
+    margin: 0rem -2rem 1rem -2rem;
+    padding: 2rem 2rem;
+    background-color: #eee;
+}
+
+figure img {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+figure img + img {
+  margin-left: 1rem;
+}
+
+figure figcaption {
+    max-width: 100%;
+    margin: 1rem auto -1rem auto;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+table {
+    margin: 0 -1rem 1rem -1rem;
+    width: calc(100% + 2rem);
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+table caption {
+  padding-top: 0.5rem;
+  border-top: 1px solid #eee;
+  caption-side: bottom;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+tr {
+    transition: 0.15s;
+}
+
+thead tr {
+    border-bottom: 2px solid #888;
+}
+
+tfoot tr {
+    border-bottom: none;
+    border-top: 1px solid #eee;
+    font-weight: bolder;
+}
+
+tbody tr:hover,
+tfoot tr:hover {
+    background-color: #eee;
+}
+
+td, th {
+    position: relative;
+    padding: 0.3rem 1rem;
+}
+
+th {
+    font-weight: bolder;
+}
+
+tbody tr:first-of-type td,
+tbody tr:first-of-type th {
+    padding-top: 0.5rem;
+}
+
+hr {
+    height: 0;
+    width: 10rem;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,1);
+    margin: 2rem auto;
+}
+
+/*hr::after {
+    content: "* *";
+    display: block;
+    position: relative;
+    bottom: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+}*/
+  </style>
+ </head>
+ <body>
+  <h1 id="conception-orientee-objet">
+   Conception Orientée Objet
+  </h1>
+  <h2 id="objectifs-du-cours">
+   Objectifs du Cours
+  </h2>
+  <p>
+   prof : Kim Mens
+  </p>
+  <h3 id="themes">
+   Thèmes
+  </h3>
+  <ul>
+   <li>
+    <p>
+     Introduction aux bases de données et modélisation de données
+    </p>
+   </li>
+   <li>
+    <p>
+     Conception de programmes orientés objet
+    </p>
+   </li>
+   <li>
+    <p>
+     Méthodologie d’aide au développement de programmes
+    </p>
+   </li>
+   <li>
+    <p>
+     Réalisation ( analyse et implémentation ) de programmes Java ( android ) de
+     <br/>
+     complexité moyenne
+    </p>
+   </li>
+  </ul>
+  <h3 id="duree">
+   Durée
+  </h3>
+  <p>
+   <strong>
+    9 semaines
+   </strong>
+   à raison de 2H/semaine
+  </p>
+  <h3 id="projet-ezmeal">
+   Projet - EZMeal
+  </h3>
+  <ol>
+   <li>
+    <p>
+     Ecran de Login
+    </p>
+   </li>
+   <li>
+    <p>
+     Gestion du profil utilisateur
+    </p>
+   </li>
+   <li>
+    <p>
+     Menu d’accueil
+    </p>
+   </li>
+   <li>
+    <p>
+     Recettes recommandées
+    </p>
+   </li>
+   <li>
+    <p>
+     Catalogue de recettes
+    </p>
+   </li>
+   <li>
+    <p>
+     Détail d’une recette
+    </p>
+   </li>
+   <li>
+    <p>
+     Recherche de recettes
+    </p>
+   </li>
+   <li>
+    <p>
+     différentes extensions possibles
+    </p>
+   </li>
+  </ol>
+  <h3 id="contenu-du-cours">
+   Contenu du cours
+  </h3>
+  <ol>
+   <li>
+    <p>
+     Gestionn de données
+    </p>
+   </li>
+   <li>
+    <p>
+     Conception orientée Objet
+    </p>
+   </li>
+   <li>
+    <p>
+     Programmation Android
+    </p>
+   </li>
+  </ol>
+  <h3 id="evaluation">
+   Evaluation
+  </h3>
+  <p>
+   50 % projet et 50 % Travail
+   <br/>
+   Il faut un minimum de 10/20 à chaqu’un d’entre eux pour réussir
+  </p>
+  <h3 id="examen">
+   Examen
+  </h3>
+  <p>
+   Modélisation et conception d’une application similaire à l’étude de cas
+   <br/>
+   développée dans les séances pratiques
+  </p>
+  <p>
+   5 questions sur des sujets vus au cours
+  </p>
+  <p>
+   ORM, SQL, diagrammes de classes, diagrammes de séquences, …
+  </p>
+  <ul>
+   <li>
+    Question type: à partir d’un modèle incomplet
+   </li>
+   <li>
+    corrigez / critiquez / discutez ce modèle
+   </li>
+   <li>
+    complétez ou raffinez le modèle pour une extension donnée
+   </li>
+  </ul>
+  <h2 id="introduction">
+   Introduction
+  </h2>
+  <p>
+   <strong>
+    Une Base de Donnée
+   </strong>
+   : est un système informatique de stockage d’informations. Les plus utilisés s’appuient sur le
+   <strong>
+    modèle relationnel
+   </strong>
+   et utilisent le
+   <strong>
+    language SQL
+   </strong>
+  </p>
+  <pre><code class="sql">select Item1, Item2, Item3 
+from DataBase
+where condition
+</code></pre>
+  <p>
+   ceci retourne un tableau de 3 colonnes et d’autant de lignes qu’il y a
+   <br/>
+   d’éléments dans la BD qui satisfont la condition.
+  </p>
+  <pre><code class="sql">select D1.ITEM2, D2.ITEM3, sum(D.QUANTITE*P.PRIX)
+from CLIENT D1 , DETAIL D , PRODUIT P
+where C.CLI + D.NCLI
+and D.NPRO = P.NPRO
+group by C.LOCALITE, P.NPRO
+</code></pre>
+  <p>
+   Une
+   <strong>
+    base de données
+   </strong>
+   est constituée d’un ensemble de
+   <strong>
+    tables
+   </strong>
+   .
+   <br/>
+   Une
+   <strong>
+    table
+   </strong>
+   contient les données relatives à une
+   <strong>
+    collection d ’entités
+   </strong>
+   de même nature.
+   <br/>
+   Chaque
+   <strong>
+    ligne
+   </strong>
+   d’une table reprend les données relatives à une
+   <strong>
+    entité
+   </strong>
+   .
+   <br/>
+   Chaque
+   <strong>
+    colonne
+   </strong>
+   d’une table décrit une propriété commune des entités.
+   <br/>
+   Un
+   <strong>
+    identifiant
+   </strong>
+   de la table est Le jeu de colonnes dont les valeurs sont uniques.
+   <br/>
+   Une
+   <strong>
+    clé étrangère
+   </strong>
+   vers cette autre table sont les lignes d’une table peuvent faire référence chacune à une ligne d’une autre table.
+   <br/>
+   On évite d’enregistrer des données qu’il est possible de calculer à partir d’autres données enregistrées.
+  </p>
+  <h3 id="les-sgbd-systemes-de-gestion-de-bases-de-donees">
+   Les SGBD ( Systèmes de Gestion de Bases de Donées )
+  </h3>
+  <p>
+   Un système de gestion de bases de données est un système informatique permettant
+   <br/>
+   de gérer une BD.(maintenir la DB &amp; répondre à des requêtes)
+  </p>
+  <ul>
+   <li>
+    Organisation des données
+   </li>
+   <li>
+    Gestion des données
+   </li>
+   <li>
+    Accès aux données
+   </li>
+   <li>
+    Protection contre les accidents
+   </li>
+   <li>
+    Gestion des accès concurrents
+   </li>
+   <li>
+    Contrôle des accès
+   </li>
+  </ul>
+  <h3 id="sqlite">
+   SQLite
+  </h3>
+  <p>
+   Le moteur de
+   <strong>
+    base de données relationnelles
+   </strong>
+   est accessible par le language
+   <br/>
+   SQL.
+  </p>
+  <ul>
+   <li>
+    il doit être intégré aux programmes et n’a pas besoin de serveur séparé.
+   </li>
+   <li>
+    Sa particularité est de stocker toutes ses données dans un seul fichier .sqlite sur le disque
+   </li>
+   <li>
+    Sqlite est utilisé pour les données des applications de type Android et IPhone
+   </li>
+  </ul>
+  <h3 id="univers-de-discours-uod">
+   Univers de discours (UoD)
+  </h3>
+  <p>
+   L’UoD décrit le domaine de l’application. Cet univers décrit typiquement une
+   <br/>
+   partie du monde “réel”.
+  </p>
+  <h3 id="orm">
+   ORM
+  </h3>
+  <p>
+   <strong>
+    ORM
+   </strong>
+   = Object-Role Modeling
+   <br/>
+   <strong>
+    Base de données
+   </strong>
+   = ensemble de relations n-aires
+   <br/>
+   <strong>
+    Schéma de base de données
+   </strong>
+   = constitué de l’ensemble des signatures des relations de la base.
+  </p>
+  <p>
+   Le modèle relationnel ne se base pas sur la notation positionelle (1,2,3… comme un tableau) mais sur les identificateur pour identifier les entitées.
+  </p>
+  <p>
+   L’ORM est
+   <em>
+    fact-oriented
+   </em>
+   = modélise l’info comme des
+   <strong>
+    faits
+   </strong>
+   suivant des
+   <strong>
+    règles
+   </strong>
+   .
+  </p>
+  <h4 id="exemples">
+   Exemples
+  </h4>
+  <p>
+   (12,Antoine,Lambert,SINF12BA) :
+   <strong>
+    Tuple
+   </strong>
+   <br/>
+   (ID,NOM,PRENOM,UCL_INFO) :
+   <strong>
+    Shéma de la relation
+   </strong>
+   <br/>
+   STUDENT(ID,NOM,PRENOM,UCL_INFO) :
+   <strong>
+    Signature de la relation n-aire
+   </strong>
+  </p>
+  <h4 id="modelisation-orm">
+   Modélisation ORM
+  </h4>
+  <p>
+   Suivant le processus
+   <em>
+    Conceptual Schema Design Procedure
+   </em>
+  </p>
+  <ol>
+   <li>
+    <p>
+     Trouver les faits élémentaires à partir des exemples de données
+    </p>
+    <ul>
+     <li>
+      prendre des exemples concrets
+     </li>
+     <li>
+      les transforer en faits élémentaires
+     </li>
+    </ul>
+   </li>
+  </ol>
+  <p>
+   <strong>
+    Les entités
+   </strong>
+   :  Type(‘Client’) - (Mode de référence(‘nom’))- Valeur(‘Bob’)
+   <br/>
+   <strong>
+    Les faits élémentaires
+   </strong>
+   expriment des relations entre les objets et ne peuvent être divisés.
+   <br/>
+   Ils peuvent être unaire (propriété de l’objet[…est…]), binaire (relation entre 2 objets[…a…]) ou n-aire
+  </p>
+  <ol>
+   <li>
+    <p>
+     Dessiner les types de faits et ajouter une population au diagramme &gt;
+     <br/>
+     <em>
+      entités
+     </em>
+     : cercles plein (entité) &gt;
+     <em>
+      valeurs
+     </em>
+     : cercle pointillé ou
+     <br/>
+     (valeur) en dessous des entités : (…valeur…) &gt; référencement des
+     <br/>
+     éléments : -[][]- &gt; rôle : []
+    </p>
+   </li>
+   <li>
+    <p>
+     Combiner des types d’entités et noter des dérivations arithmétiques
+    </p>
+   </li>
+   <li>
+    <p>
+     Ajouter des contraintes d’unicité et vérifier les arités des types de faits
+     <br/>
+     <strong>
+      Les contriantes d’unicité
+     </strong>
+     : définissent les éléments qui peuvent
+     <br/>
+     apparaitre 2 fois dans une base de donnée et ceux qui sont uniques
+     <br/>
+     &gt;
+     <strong>
+      Attention !!
+     </strong>
+     : l’emplacement des contriantes est l’inverse du
+     <br/>
+     diagramme UML
+    </p>
+   </li>
+  </ol>
+  <p>
+   L’arité des contraintes doit toujours être de n-1. Sinon, soit il y a une erreur
+   <br/>
+   soit on peut subdiviser
+  </p>
+  <p>
+   -°(Truc ) : cet élément est obligatoire (en uml l’autre à une arité de 1 et non
+   <br/>
+   0…1)
+  </p>
+  <p>
+   cercle bleu signifie ‘doit avoir’
+  </p>
+  <p>
+   (Etudiant (Noma)) = (Etudiant) -[\&lt;-&gt;,\&lt;-&gt;] - (Noma)
+  </p>
+  <p>
+   En DB, on utilise souvent les ID’s pour les données. mais ceux-ci ne doivent pas
+   <br/>
+   êtres indiqués dans l’ORM
+  </p>
+  <p>
+   En shéma : les contraintes d’uncité sont représentées par un soulignement de
+   <br/>
+   l’élément
+  </p>
+  <p>
+   <strong>
+    Clé candidate
+   </strong>
+   : colone/ combinaison de colones qui permet d’identifier de
+   <br/>
+   manière unique les éléments dans la DB.
+  </p>
+  <blockquote>
+   <p>
+    Dans le cas ou plusieurs clé candidates existent, on doit en déterminer qui
+    <br/>
+    sera la clé primaire. cette clé sera souligné deux fois.
+   </p>
+  </blockquote>
+  <p>
+   si deux éléments d’une clé candidate ne sont pas côte à côte, on peut utiliser
+   <br/>
+   les fleches pour indiquer que la colonne en question n’est pas une clé candidate
+   <br/>
+   à elle seule.
+  </p>
+  <p>
+   Une clé candidate ne permets pas de valeur nulle
+  </p>
+  <h4 id="regles-dintegrite-du-modele-relationnel">
+   Règles d’intégrité du modèle relationnel
+  </h4>
+  <h5 id="1-regle-dintegrite-des-entites">
+   1. Règle d’intégrité des entités
+  </h5>
+  <p>
+   Clé primaire != null
+  </p>
+  <h5 id="2-regle-dintegrite-referentielle">
+   2. Règle d’intégrité référentielle
+  </h5>
+  <p>
+   chaque valeur non-nulle d’une clé étrangère doit correspondre à la valeur d’une
+   <br/>
+   clé primaire.
+  </p>
+  <h4 id="rmap">
+   Rmap
+  </h4>
+  <p>
+   \&lt; Skip &gt;
+  </p>
+  <h2 id="cours-s4-notes">
+   Cours S4 - notes
+  </h2>
+  <p>
+   Le sous la guage DDL permets de créer des structures de données et les modifier.
+   <br/>
+   Data Description Language
+  </p>
+  <h2 id="cours-s6-notes">
+   cours S6 - notes
+  </h2>
+  <p>
+   UML = Unified Modelling language - language architecture (ex: package) - UML
+   <br/>
+   class diagrams - UMZ sequence diagrams -… User stories = récit utilisateurs
+  </p>
+  <h1>
+  </h1>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   MathJax.Hub.Config({"showProcessingMessages" : false,"messageStyle" : "none","tex2jax": { inlineMath: [ [ "$", "$" ] ] }});
+  </script>
+ </body>
+</html>

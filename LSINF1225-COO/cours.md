@@ -1,10 +1,8 @@
-Conception Orientée Objet
-=========================
+#Conception Orientée Objet
 
-Objectifs du Cours
-------------------
+## Objectifs du Cours
 
->   prof : Kim Mens
+  prof : Kim Mens
 
 ### Thèmes
 
@@ -46,7 +44,7 @@ Objectifs du Cours
 
 7.  Recherche de recettes
 
-différentes extensions possibles
+8. différentes extensions possibles
 
 ### Contenu du cours
 
@@ -61,7 +59,7 @@ différentes extensions possibles
 ### Evaluation
 
 50 % projet et 50 % Travail  
-\>Il faut un minimum de 10/20 à chaqu'un d'entre eux pour réussir
+Il faut un minimum de 10/20 à chaqu'un d'entre eux pour réussir
 
 ### Examen
 
@@ -72,104 +70,59 @@ développée dans les séances pratiques
 
 ORM, SQL, diagrammes de classes, diagrammes de séquences, ...
 
-Question type: à partir d’un modèle incomplet
+- Question type: à partir d’un modèle incomplet
+- corrigez / critiquez / discutez ce modèle
+- complétez ou raffinez le modèle pour une extension donnée
 
-corrigez / critiquez / discutez ce modèle
+## Introduction
 
-complétez ou raffinez le modèle pour une extension donnée
 
-Introduction
-------------
+**Une Base de Donnée** : est un système informatique de stockage d'informations. Les plus utilisés s'appuient sur le **modèle relationnel** et utilisent le  **language SQL**
 
-**Une Base de Donnée** : est unsystème informatique de stockage d'informations
-
->   Il existe une grande variété de base de données.  
->   Les plus utilisés s'appuient sur le **modèle relationnel** et utilisent le
->   **language SQL**
-
-Si une donnée est redondante, c'est qu'elle peut être mise dans une BD.
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ sql
+``` sql
 select Item1, Item2, Item3 
 from DataBase
 where condition
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 ceci retourne un tableau de 3 colonnes et d'autant de lignes qu'il y a
 d'éléments dans la BD qui satisfont la condition.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ sql
+``` sql
 select D1.ITEM2, D2.ITEM3, sum(D.QUANTITE*P.PRIX)
 from CLIENT D1 , DETAIL D , PRODUIT P
 where C.CLI + D.NCLI
 and D.NPRO = P.NPRO
 group by C.LOCALITE, P.NPRO
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``` 
 
->   Une **base de données** est constituée d’un ensemble de **tables**
-
->   Une **table** contient les données relatives à une **collection d ’entités**
->   de même nature
-
->   Chaque **ligne** d’une table reprend les données relatives à une **entité**
-
->   Chaque **colonne** d’une table décrit une propriété commune des entités
-
->   Un **identifiant** de la table est Le jeu de colonnes dont les valeurs sont
->   uniques
-
->   Une **clé étrangère** vers cette autre table sont les lignes d’une table
->   peuvent faire référence chacune à une ligne d’une autre table.
-
->   On évite d’enregistrer des données qu’il est possible de calculer à partir
->   d’autres données enregistrées.
+Une **base de données** est constituée d’un ensemble de **tables**.
+Une **table** contient les données relatives à une **collection d ’entités** de même nature.
+Chaque **ligne** d’une table reprend les données relatives à une **entité**.
+Chaque **colonne** d’une table décrit une propriété commune des entités.
+Un **identifiant** de la table est Le jeu de colonnes dont les valeurs sont uniques.
+Une **clé étrangère** vers cette autre table sont les lignes d’une table peuvent faire référence chacune à une ligne d’une autre table.
+On évite d’enregistrer des données qu’il est possible de calculer à partir d’autres données enregistrées.
 
 ### Les SGBD ( Systèmes de Gestion de Bases de Donées )
 
-Un système de gestion de bases de données est un système informatiue permettant
+Un système de gestion de bases de données est un système informatique permettant
 de gérer une BD.(maintenir la DB & répondre à des requêtes)
 
--   Organisation des données \> le SGBD :  
-    \> - organise les données en tables permanentes stockées sur disques.  
-    \> - crée les mécanismes garantissant un accès rapide aux données.  
-    \> - informe les utilisateurs sur ces structures.
-
--   Gestion des données : \> le SGBD :  
-    \> - garantit l'évolution cohérente des données.  
-    \> - vérifie que les contraintes (unicité, références entre tables, etc.)
-    sont respectées.
-
--   Accès aux données : \> le SGBD :  
-    \> - permet l'accès aux données à la fois par l'utilisateur occasionnel et
-    par les programmes de traitement de données.
-
--   Protection contre les accidents :  
-    \> le SGBD :  
-    \> - garantit l'intégrité et l'accessibilité des données en cas d'incident
-    ou d'attaque.
-
--   Gestion des accès concurrents :  
-    \> le SGBD :  
-    \> - permet l'accès simultané aux données par des centaines voire des
-    milliers d'utilisateurs.  
-    \> - contrôle rigoureusement les opérations simultanées sur les mêmes
-    données.
-
--   Contrôle des accès :  
-    \> le SGBD  
-    \> - garantit que seuls les utilisateurs autorisés peuvent accéder aux
-    données et les modifier.
-
+-   Organisation des données 
+-   Gestion des données 
+-   Accès aux données 
+-   Protection contre les accidents 
+-   Gestion des accès concurrents 
+-   Contrôle des accès
 ### SQLite
 
 Le moteur de **base de données relationnelles** est accessible par le language
 SQL.
 
->   il doit être intégré aux programmes et n'a pas besoin de serveur séparé.  
->   *Sa particularité est de stocker toutes ses données dans un seul fichier
->   .sqlite sur le disque*  
->   Sqlite est utilisé pour les données des applications de type Android et
->   IPhone
+-   il doit être intégré aux programmes et n'a pas besoin de serveur séparé.
+-   Sa particularité est de stocker toutes ses données dans un seul fichier .sqlite sur le disque
+-   Sqlite est utilisé pour les données des applications de type Android et IPhone
 
 ### Univers de discours (UoD)
 
@@ -178,37 +131,32 @@ partie du monde "réel".
 
 ### ORM
 
-**ORM** = Object-Role Modeling **Base de données** = ensemble de relations
-n-aires **Schéma de base de données** : constitué de l'ensemble des signatures
-des relations de la base.
+**ORM** = Object-Role Modeling
+ **Base de données** = ensemble de relations n-aires 
+ **Schéma de base de données** = constitué de l'ensemble des signatures des relations de la base.
 
->   L'ORM est une approche *fact-oriented* càd : modélisation de l'info comme
->   des **faits** suivant des **règles**
+Le modèle relationnel ne se base pas sur la notation positionelle (1,2,3... comme un tableau) mais sur les identificateur pour identifier les entitées.
 
-Le modèle relationnel exprime de façon **déclarative** (non opérationnelle) les
-requêtes.
-
-*Comment accéder à ces tuples ?* Dans le modèle relationnel, on utilise des
-**identificateurs** ( pas la position)
+L'ORM est *fact-oriented* = modélise l'info comme des **faits** suivant des **règles**.
 
 #### Exemples
 
-(12,Antoine,Lambert,SINF12BA) : **Tuple** (ID,NOM,PRENOM,UCL_INFO) : **Shéma de
-la relation** STUDENT(ID,NOM,PRENOM,UCL_INFO) : **Signature de la relation
-n-aire**
+(12,Antoine,Lambert,SINF12BA) : **Tuple**
+ (ID,NOM,PRENOM,UCL_INFO) : **Shéma de la relation** 
+ STUDENT(ID,NOM,PRENOM,UCL_INFO) : **Signature de la relation n-aire**
 
 #### Modélisation ORM
 
->   suivant le processus *Conceptual Schema Design Procedure*
+Suivant le processus *Conceptual Schema Design Procedure*
 
 1.  Trouver les faits élémentaires à partir des exemples de données
 
     -   prendre des exemples concrets
-
-    -   les transforer en faits élémentaires Type - (Mode)- Valeur \> Les faits
-        élémentaires expriment des relations entre les objets et ne peuvent être
-        divisés. \> Ils peuvent être unaire (propriété de l'objet[...est...]) ,
-        binaire (relation entre 2 objets[...a...]) ou n-aire
+    -   les transforer en faits élémentaires
+    
+   **Les entités** :  Type('Client') - (Mode de référence('nom'))- Valeur('Bob')
+   **Les faits élémentaires** expriment des relations entre les objets et ne peuvent être divisés. 
+   Ils peuvent être unaire (propriété de l'objet[...est...]), binaire (relation entre 2 objets[...a...]) ou n-aire
 
 2.  Dessiner les types de faits et ajouter une population au diagramme \>
     *entités* : cercles plein (entité) \> *valeurs* : cercle pointillé ou
