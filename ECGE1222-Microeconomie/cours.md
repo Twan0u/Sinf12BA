@@ -185,14 +185,7 @@ f(p,R) est la **fonction de choix**. La quantitée demandée individuelle d'un b
 
 **La courbe d'indifférence ne peut jamais couper la droite de budget**
 
-u -> préférence du consommateur  
-u(x*) > u(x)  
-TmS(x*) = -p1/p2
 
-
-
-|TmS(z)>p1/p2| *on doit descendre sur la droite.  
-|TmS(z) croco droitep1/p2| *on doit monter sur la droite.
 
 #### Propriétés de la demande individuelle
 1. Continuité : La continuité de la relation de préférence assure la continuité de la fonction de demande.
