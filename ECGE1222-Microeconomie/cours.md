@@ -173,17 +173,15 @@ L'exemple classique des courbes d'indifférence dites d'allure normale.
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/10.png)
 $$Tms = -(c.x_2)/(d.x_1)$$
 
------
-
 ### 2.5 Demande individuelle
-x* : **quantité optimale des biens** (paniers demandés par le consommateur)  
-si p et R bougent, alors x* aussi
+Dans l'hypothèse ou le consommateur maximise ses préférences en choisissant le pannier x\*(B(p,R)).
 
-**La fonction de demande** : fonction qui relie le choix optimal(x*) aux valeurs des prix et des revenus. ( = *Quantité demandée* , *Fonction de demande individuelle* )
+$$u(x*) = max(B(p,R))$$
 
-Dans le cas de n biens x*=f(p,R)=(f1(p,R),...,fn(p,R))
+Dans le cas de n biens x*=f(p,R)=(f1(p,R),...,fn(p,R)).
+f(p,R) est la **fonction de choix**. La quantitée demandée individuelle d'un bien, spécifiée par cette fonction de choix, est donc la quantitée de ce bien  que le consommateur souhaite et est capable de se payer. Le panier optimal se situe au point de tangence entre la courbe d'indifférence et la droite du budget.
 
-Le panier optimal se situe au point de tangence entre la courbe d'indifférence et la droite du budget.
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/11.png)
 
 **La courbe d'indifférence ne peut jamais couper la droite de budget**
 
