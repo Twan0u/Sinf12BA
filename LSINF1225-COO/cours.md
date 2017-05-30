@@ -149,37 +149,33 @@ L'ORM est *fact-oriented* = modélise l'info comme des **faits** suivant des **r
 
 Suivant le processus *Conceptual Schema Design Procedure*
 
-1.  Trouver les faits élémentaires à partir des exemples de données
-   - prendre des exemples concrets
-   - les transforer en faits élémentaires
+1.  Trouver les **faits élémentaires** à partir des **exemples de données**.
    **Les entités** :  Type('Client') - (Mode de référence('nom'))- Valeur('Bob')
    **Les faits élémentaires** expriment des relations entre les objets et ne peuvent être divisés. 
    Ils peuvent être unaire (propriété de l'objet[...est...]), binaire (relation entre 2 objets[...a...]) ou n-aire
 
-2.  Dessiner les types de faits et ajouter une population au diagramme 
-   -  *entités* : cercles plein (entité) 
-   - *valeurs* : cercle pointillé ou (valeur) en dessous des entités : (...valeur...) 
-   -  référencement des éléments : -[][]- 
-   -  rôle : []
+2.  Dessiner les **types de faits** et ajouter une **population** au diagramme 
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1225-COO/images/1.png) 
 
 3.  Combiner des types d'entités et noter des dérivations arithmétiques
 4.  Ajouter des contraintes d'unicité et vérifier les arités des types de faits
-    **Les contriantes d'unicité** : définissent les éléments qui peuvent apparaitre 2 fois dans une base de donnée et ceux qui sont uniques.
-    **!!Attention !!** : l'emplacement des contriantes est l'inverse du
-    diagramme UML
+Les **contraintes d'unicité** définissent quelles colonnes peuvent avoir des doublons. Elles sont représentées par une flèche au dessus d'un rôle.
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1225-COO/images/2.png) 
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1225-COO/images/3.png)
 
-L'arité des contraintes doit toujours être de n-1. Sinon, soit il y a une erreur
-soit on peut subdiviser
+Une relation ternaire ne peut avoir de contrainte d'unicité simple. Si tel est le cas on peut la split en 2 relation binaires.
 
-\-°(Truc ) : cet élément est obligatoire (en uml l'autre à une arité de 1 et non
-0...1)
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1225-COO/images/4.png) 
 
-cercle bleu signifie 'doit avoir'
+L'arité des contraintes doit toujours être de n-1. Sinon on peut les subdiviser en plusieurs autres. 
+**!!Attention !!** : l'emplacement des contriantes est l'inverse du diagramme UML
 
-(Etudiant (Noma)) = (Etudiant) -[\<-\>,\<-\>] - (Noma)
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1225-COO/images/5.png) 
+ Ce rôle est obligatoire(arité de l'uml = 1 voir plus)
 
-En DB, on utilise souvent les ID's pour les données. mais ceux-ci ne doivent pas
-êtres indiqués dans l'ORM
+Dans une Base de donnée, on utilise souvent des ID's pour les données ( pas mis dans l'ORM sauf si ID existe déjà dans l'univers du discours) ( ex: Noma, ISBN )
+
+------------
 
 En shéma : les contraintes d'uncité sont représentées par un soulignement de
 l'élément
