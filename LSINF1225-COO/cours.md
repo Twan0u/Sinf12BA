@@ -150,25 +150,22 @@ L'ORM est *fact-oriented* = modélise l'info comme des **faits** suivant des **r
 Suivant le processus *Conceptual Schema Design Procedure*
 
 1.  Trouver les faits élémentaires à partir des exemples de données
-
-    -   prendre des exemples concrets
-    -   les transforer en faits élémentaires
-    
+   - prendre des exemples concrets
+   - les transforer en faits élémentaires
    **Les entités** :  Type('Client') - (Mode de référence('nom'))- Valeur('Bob')
    **Les faits élémentaires** expriment des relations entre les objets et ne peuvent être divisés. 
    Ils peuvent être unaire (propriété de l'objet[...est...]), binaire (relation entre 2 objets[...a...]) ou n-aire
 
-2.  Dessiner les types de faits et ajouter une population au diagramme \>
-    *entités* : cercles plein (entité) \> *valeurs* : cercle pointillé ou
-    (valeur) en dessous des entités : (...valeur...) \> référencement des
-    éléments : -[][]- \> rôle : []
+2.  Dessiner les types de faits et ajouter une population au diagramme 
+   -  *entités* : cercles plein (entité) 
+   - *valeurs* : cercle pointillé ou (valeur) en dessous des entités : (...valeur...) 
+   -  référencement des éléments : -[][]- 
+   -  rôle : []
 
 3.  Combiner des types d'entités et noter des dérivations arithmétiques
-
 4.  Ajouter des contraintes d'unicité et vérifier les arités des types de faits
-    **Les contriantes d'unicité** : définissent les éléments qui peuvent
-    apparaitre 2 fois dans une base de donnée et ceux qui sont uniques
-    \>**Attention !!** : l'emplacement des contriantes est l'inverse du
+    **Les contriantes d'unicité** : définissent les éléments qui peuvent apparaitre 2 fois dans une base de donnée et ceux qui sont uniques.
+    **!!Attention !!** : l'emplacement des contriantes est l'inverse du
     diagramme UML
 
 L'arité des contraintes doit toujours être de n-1. Sinon, soit il y a une erreur
