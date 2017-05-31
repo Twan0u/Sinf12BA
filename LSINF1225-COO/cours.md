@@ -171,32 +171,23 @@ L'arité des contraintes doit toujours être de n-1. Sinon on peut les subdivise
 **!!Attention !!** : l'emplacement des contriantes est l'inverse du diagramme UML
 
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1225-COO/images/5.png) 
- Ce rôle est obligatoire(arité de l'uml = 1 voir plus)
+ Ce rôle est **obligatoire** (arité de l'uml = 1 voir plus)
 
 Dans une Base de donnée, on utilise souvent des ID's pour les données ( pas mis dans l'ORM sauf si ID existe déjà dans l'univers du discours) ( ex: Noma, ISBN )
 
-------------
+Les **clés candidates** sont, dans le shémas de la BDD, on souligne le nom de colonnes (ou de paires de colonnes) qui permettent d'identifier de manière unique chaque élément.
 
-En shéma : les contraintes d'uncité sont représentées par un soulignement de
-l'élément
+Il peut exister une série de clés candidates, il est donc important de définir une clé candidate qui deviendra une **clé primaire**. (elle est soulignée deux fois)
 
-**Clé candidate** : colone/ combinaison de colones qui permet d'identifier de
-manière unique les éléments dans la DB.
+Si une clé est composée de plusieurs colonnes qui ne sont pas listées consécutivement, des *flèches doivent être ajoutés pour indiquer quels colonnes font parties d’une même clé*
 
->   Dans le cas ou plusieurs clé candidates existent, on doit en déterminer qui
->   sera la clé primaire. cette clé sera souligné deux fois.
-
-si deux éléments d'une clé candidate ne sont pas côte à côte, on peut utiliser
-les fleches pour indiquer que la colonne en question n'est pas une clé candidate
-à elle seule.
-
-Une clé candidate ne permets pas de valeur nulle
+Une clé candidate ne permets **pas de valeur nulle**
+Les colonnes optionnelles sont indiqués entre [ ... ], (ex. :Employee( empNr, empName, address, sex, [phone] ))
 
 #### Règles d'intégrité du modèle relationnel
-
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1225-COO/images/6.png) 
 ##### 1. Règle d'intégrité des entités
-
-Clé primaire != null
+La règle de l’intégrité référentielle : chaque valeur non-null d’une clé étrangère doit correspondre à la valeur d’une clé primaire
 
 ##### 2. Règle d'intégrité référentielle
 
