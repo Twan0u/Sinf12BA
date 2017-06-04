@@ -99,7 +99,7 @@ Si on souhaite passer du pannier x=(x<sub>1</sub>,x<sub>2</sub>) à un pannier a
 
 #### Hypotheses sur les préférences
 
-Les préférences qui satisfont les hypothèses suivantes sont dites**classiques** et ont des courbes dites d'**allure normale**
+Les préférences qui satisfont les hypothèses suivantes sont dites **classiques** et ont des courbes dites d'**allure normale**
 
 - *Toute paire peut être comparée(complétude)*
 
@@ -185,28 +185,35 @@ f(p,R) est la **fonction de choix**. La quantitée demandée individuelle d'un b
 
 **La courbe d'indifférence ne peut jamais couper la droite de budget**
 
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/12.png)
+
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images/13.png)
 
 
 #### Propriétés de la demande individuelle
-1. Continuité : La continuité de la relation de préférence assure la continuité de la fonction de demande.
-2. Homogénéité : L'invariance de la contrainte budgétairepar rapport à l'unité de compte choisie.
-3. Loi de Warlas : La monotonicité de la relation de préférence assure l'identité budgétaire.
-4. Unicité : La convexité stricte de la relation de préférence implique l'unicité de la solution.
+1. *Continuité* : assure la continuité de la fonction et l'**existence d'un optimum**
+2. *Homogénéité* : L'invariance de la contrainte budgétairepar rapport à l'unité de compte choisie (pas d'**illusion monétaire**).
+3. *Loi de Warlas* : La monotonicité de la relation de préférence assure l'identité budgétaire (pour tout p,R et tout x\* on a px\*=R).
+4. *Unicité *: La **convexité stricte** de la relation de préférence **implique l'unicité de la solution**.
 
-#### Solution
-Dans le cas d'une solution intérieure, le choix optimal satisfait deux propriétés:
-- L'égaliation du taux marginal de substitution et du rapport des prix
-- L'identité budgetaire
+Le choix optimal satisfait l'**égaliation du taux marginal de substitution et du rapport des prix** (preuve par annulation de la dérivéepremière par rapport à x<sub>1</sub> dans l'équation d'identité budgétaire)  et  **l'identité budgetaire**
 
-Dans le cas de deux biens, le problème de maximisation sous contraintes s'écrit comme suit :
+### 2.6 Préférences révélées
+L'axiome faible des préférences révélées : Si **p'x ≤ R** alors **p'x \> R'** 
+### 2.7 Statique comparative
+Les **statistiques comparatives** étudient les modifications des choix suite à des changements dans l'environnement économique. Dans ce cours, nous avons les **prix** et le **revenu**.
+#### Variations de revenu
+L'augmentation du revenu introduit un déplacement parallèle vers le haut de la droite de budget. (inverse pour une diminution) 
 
-**p1x1 + p2x2 = R**
 
 
-//## 1.6 Préférences révélées
-//## 1.7 Statique comparative
-//## 1.8 Demande agrégée
-//## 1.9 Demande inverse
+
+
+
+----
+
+### 2.8 Demande agrégée
+### 2.9 Demande inverse
 
 ## Chapitre 3 : Incertitude et temps
 
