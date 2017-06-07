@@ -256,7 +256,7 @@ skip par manque de temps et de courrage
 
 --------
 
-## Chapitre 3 : Incertitude et temps
+c## Chapitre 3 : Incertitude et temps
 
 ### 3.1 L'objet du choix
 **Action** : Objet du choix d'un individu dans un univers incertain.  
@@ -457,25 +457,23 @@ Dans ce cours, nous allons simplifier :
 
 ### 1.2 : Concurrence à la Cournot 
 
-**La concurrence à la Cournot** : c'est lorsque deux firmes fixent simultanément les quantités qu'elles souhaitent vendre sur le marché et que le prix d'équilibre est celui qui égalise l'offre et la demande.
+**La concurrence à la Cournot** : c'est lorsque deux firmes **fixent simultanément** les quantités qu'elles souhaitent vendre sur le marché et que le prix d'équilibre est celui qui **égalise l'offre et la demande**.
 
-Dans cette forme de concurrence, les prix sont fonction de la quantitée que les firmes souhaitent vendre et non l'inverse.
-
+Les prix sont fonctions de la quantité
 
 Dans un duopole, on à : c<sub>1</sub>, c<sub>2</sub> , Y = y<sub>1</sub>+y<sub>2</sub>
 
 Dans ce cas, la firme essaye de maximiser son profit : $$π_2 =p(y^e_1 + y_2).y_2 -c_2.y_2$$
-si on remplace la fonction p, on obtiens : 
-$$π_2 =  a.y_2 - b.(y_2)²-b.y^e_1.y_2 - c_2.y_2$$
 
-Si on veut obtenir la valeur optimale de y<sub>2</sub>, on annule la dérivée de  π<sub>2</sub> et on obtiens la fonction de réaction de la firme 2 : 
+
+La valeur optimale de y<sub>2</sub>: 
 $$ y_2 = (a-b.y^e_1 - c_2) / 2b $$
 
 Ceci est la *fonction de réaction* de la firme 2 : 
 
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images2/1.png)
 
-> la courbe d'isoprofit est un lieu de points (y<sub>1</sub>,y<sub>2</sub>)qui procurent le même montant de profit à la firme 2.
+la courbe d'isoprofit est un lieu de points (y<sub>1</sub>,y<sub>2</sub>)qui procurent le même montant de profit à la firme 2.
 
 
 On obtiendra donc à l'équilibre :  
@@ -484,7 +482,7 @@ $$y^*_2 = (a-2.c_2+c_1)/3b$$
 
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images2/3.png) 
 
-En cas d'erreur sur les anticipations, celles-ci peuvent être **revues**a ( en sachant que celles-ci vont **converger vers l'équilibre** et c'est ce qui donne un équilibre de Cournot **stable**).
+En cas d'erreur sur les anticipations, celles-ci peuvent être **revues**  ( en sachant que celles-ci vont **converger vers l'équilibre** et c'est ce qui donne un équilibre de Cournot **stable**).
 Si les firmes sont **rationnelles**, alors elles peuvent adopter directement leurs quantités d'équilibre.
 
 #### L'équilibre 
