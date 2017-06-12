@@ -7,14 +7,8 @@
 ### Thèmes
 
 -   Introduction aux bases de données et modélisation de données  
-    
-
 -   Conception de programmes orientés objet  
-    
-
 -   Méthodologie d'aide au développement de programmes  
-    
-
 -   Réalisation ( analyse et implémentation ) de programmes Java ( android ) de
     complexité moyenne
 
@@ -25,35 +19,18 @@
 ### Projet - EZMeal
 
 1.  Ecran de Login  
-    
-
 2.  Gestion du profil utilisateur  
-    
-
 3.  Menu d'accueil  
-    
-
 4.  Recettes recommandées  
-    
-
 5.  Catalogue de recettes  
-    
-
 6.  Détail d'une recette  
-    
-
 7.  Recherche de recettes
-
 8. différentes extensions possibles
 
 ### Contenu du cours
 
 1.  Gestionn de données  
-    
-
 2.  Conception orientée Objet  
-    
-
 3.  Programmation Android
 
 ### Evaluation
@@ -75,7 +52,6 @@ ORM, SQL, diagrammes de classes, diagrammes de séquences, ...
 - complétez ou raffinez le modèle pour une extension donnée
 
 ## Introduction
-
 
 **Une Base de Donnée** : est un système informatique de stockage d'informations. Les plus utilisés s'appuient sur le **modèle relationnel** et utilisent le  **language SQL**
 
@@ -195,22 +171,170 @@ chaque valeur non-nulle d'une clé étrangère doit correspondre à la valeur d'
 clé primaire.
 
 #### Rmap
+(Pas à étudier)
 
-\< Skip \>
+----------------------
 
-Cours S4 - notes
-----------------
+## Le Sql
+### Le language DDL (Data Description Language)
+Le sous language DDL permets de créer des structures de données et les modifier.
 
-Le sous la guage DDL permets de créer des structures de données et les modifier.
-Data Description Language
+**Creation d'une table**
+```sql
+create table CLIENT (	NCLI char(10) not null primary, 
+ 					NOM char(32) not null  default 'John',
+ 					ADRESSE char(60) unique,
+);
+```
+```sql
+create table COMMANDE (	NCOM char(10) not null primary key, 
+ 						NCLI char(10) not null reference CLIENT,
+ 						DATECOM date not  null,
+);
+```
+Les types 
 
-cours S6 - notes
-----------------
 
-UML = Unified Modelling language - language architecture (ex: package) - UML
-class diagrams - UMZ sequence diagrams -... User stories = récit utilisateurs
+| valeur |  sql |
+|---|---|
+| Valeur null |  NULL |
+| numérique exact | INTEGER |
+| numérique approché | REAL |
+| chaîne de bits | BLOB |
+| chaîne de caractères | TEXT |
 
- 
-=
+temps : TEXT, REAL, ITEGER
+boolean : INTEGER (0 ou 1)
 
- 
+#### Suppression d'une table
+```sql
+DROP TABLE (IF EXISTS) (database-name.)table-name
+```
+**Bien vérifier que la table n'est plus référencée par une clé étrangère**
+
+#### Modification d'une table 
+**Renomer la table**
+```sql
+ALTER TABLE (database-name.)table-name RENAME TO new-table-name
+```
+**Ajouter une colonne**
+```sql
+ALTER TABLE (database-name.)table-name ADD (COLUMN) column_def
+```
+
+En Sql on ne peut  : 
+* renommer /supprimer une colonne
+* ajouter ou supprimer des contraintes d'une table
+
+### Le language DML (Data Manipulation Language)
+
+Toute requête *select* renvoie un résultat sous la forme d'une table
+
+#### Extraction 
+```sql
+select QUOI_AFFICHER 
+from TABLE
+where CONDITION
+```
+select distinct QUOI_AFFICHER -> évite les doublons
+
+#### Conditions 
+**Sur valeurs null**
+null ne peut être comparé que avec : is/is not (ex:NUM is null, NUM is not null)
+
+**Condition in / between**
+- in /not in (ex: CAT in ('C1','C2','C3','C4'))
+- between (ex: between 00 and 200)
+
+**Conditions avec masques**
+avec l'indicatif like
+- _ (ex: Cat like 'B_') -> masque un caractère à cet endroit précisément
+- % (ex: CAT like '%truc%') -> masque une chaîne de caracrères 
+
+**caractère d'échapement**
+- !
+
+**Conditions logiques**
+Cond **and** Cond
+
+**alias**
+Une colonne peut avoir un alias : a+b as Truc remplace la colone a+b par truc même et le résultat de cette colonne est a+b
+
+**fonctions sql**
+- Arithmétique : abs, random, round
+- Chaînes de caractère : lenght, replace, trim, upper, lower, substr
+- Temps : date, time, datetime
+- Agrègative : avg, count, max, min, sum, total
+
+count  produit 0 mais les autres fonctions agrégatives produisent null
+attention ou l'on utilise le *distinct*
+
+
+```sql
+select count(NCLI), CAT
+from CLIENT
+group by CAT
+```
+#### Les sous-requêtes
+Les sous requêtes utilisent le retour sous forme de table d'un select pour imbriquer et ainsi avoir une sélection plus précise
+
+ 
+#### Les jointures 
+
+COMMANDE.NCLI = CLIENT.NCLI -> condition de jointure
+
+Les conditions de jointure peuvent s'additionner avec des conditions de sélection
+
+Les sous-requêtes peuvent avoir la même finalité que les jointures
+
+#### Insertion
+```sql
+insert into DETAIL 
+values('a','b','c')
+ 
+ 
+insert into DETAIL (NOM,PRENOM,AGE)
+values('a','b','c')
+
+insert into CLIENT 
+select ... +condition de table
+```
+#### Delete
+```sql
+delete from TABLE
+where COND
+```
+#### Update
+
+```sql
+update TABLE
+set INFO-A-AJOUTER='BOB'
+where COND
+```
+
+## Android (implémentation voir cours
+Utilisation du **MVC** (Model-view-controler) qui consiste en la séparation de la représentation de l'info par rapport à la présentation à l'utilisateur. Ce qui rends les applications flexibles et extensibles.
+Modèle : ce que l'app fait 
+vue : présentation de l'info
+controler : couche de code liant les vues et les modèles (évennement, choix de la vue à afficher
+
+La persistance des données est assurée par JDBC (java Database Connectivity) 
+
+## Processus de développement (orienté objet)
+Le processus dépend de plusieurs facteurs. 
+Dans le language orienté objet, c'est l'UML qui est généralement utilisé pour représenter des objet et des classes.
+Pourquoi L'UML ? car c'est une notation graphique standard
+
+### Processus de développement 
+#### Analyse
+Quel est le problème et quels sont les besoins ?
+#### Conception
+#### Implémentation
+#### Tests et documentation
+ 
+
+ 
+
+
+
+
