@@ -3,10 +3,7 @@
 ## Chapitre 1 : Introduction
 ### Section 1.1 : Introduction
 #### Composition d'un système informatique
-Le système informatique le plus simple est **un processeur** (*cpu*) et **une mémoire**. Ce prosesseur est capable de : *lire et écrire* de l'information en mémoire et de *réaliser des calculs*. 
-
-L'architecture des ordinateurs est basée sur le modèle Von Neumann.
-![](images/Von_Neumann_architecture.png) 
+Le système informatique le plus simple est **un processeur** (*cpu*) et **une mémoire**. Ce prosesseur est capable de : *lire et écrire* des l'informations en mémoire et de *réaliser des calculs*. 
 
 #### Systèmes Unix
 Unix est un nom générique donné à une famille de systèmes d'exploitations. On y retrouve MacOS, FreeBSD et Linux qui sont les plus utilisés.
@@ -15,12 +12,22 @@ Un système unix est composé de trois grands types de logiciels:
 1. **Le noyau du système d'exploitation** : chargé au démarage de la machine, il se charge de toutes les interactions entre les logiciels et le matériel.
 2. **Les librairies** :Nombreuses, elles facilitent l'écriture et le développement d'applications
 3. **Les programmes utilitaires** : utilisés pour résoudre une série de problèmes
+ *API* signifie *Application Programming Interface* 
 
-> *API* signifie *Application Programming Interface* 
-
-> Sous unix, les processus qui se terminent correctement retourne 0 et une valeur différente sinon
-ntes physiques de la machine et les applications.
-
+ **/usr** : utilitaires et librairies installées sur le système
+ **/bin** et **/sbin** : utilitaires de base nécéssaire à l'admin. syst.
+ **/tmp** : fichiers temporaires ( effacé au redémarrage )
+ **/etc** : configuration du système 
+ **/home** : répertoire personnel des utilisateurs
+ **/dev** : fichiers spéciaux
+ **/root** : administrateur système
+ 
+En Unix une application est composée de un ou plusieurs processus.   
+ **Un processus** :  ensemble cohérent d'instructions qui utilisent une partie de la mémoire et sont exécutées sur un processeur.
+ 
+ Les processus peuvent 
+ 
+ 
 ##### Commandes de base 
 **ls** : affiche la liste des fichiers et dossiers du répertoire spécifié.  
 **mv** : utilitaire pour renommer ou déplacer un fichier ou dossier.  
@@ -491,4 +498,4 @@ fork : copie presque identique en mémoire (pid !=) copie ses data (contexte != 
 père waitpid()
 execve("hello"): remplace le programme par un exécutable . suicide par execve (pid = ) 
 ensuite il fait appel à exit 
-préviens le  père qu'il a fini
+préviens le  père qu'il a fini****
