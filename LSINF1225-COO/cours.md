@@ -326,15 +326,21 @@ Dans le language orienté objet, c'est l'UML qui est généralement utilisé pou
 Pourquoi L'UML ? car c'est une notation graphique standard
 
 ### Processus de développement 
-#### Analyse
+#### Analyse (quoi faire ?)
 Quel est le problème et quels sont les besoins ?
-#### Conception
+Il s'agit d'une analyse des besoins (fonctionnels et non-fonctionnels)
+ainsi qu'une analyse orientée objet
+#### Conception (comment faire ?)
+Mise en place d'une solution conceptuelle, via diagramme de classes, schéma de base de données...
 #### Implémentation
+Mise en oeuvre, en incluant les détails de bas niveau dans un language orienté objet en particulier
 #### Tests et documentation
  
 
- 
-
-
-
-
+### Cycles de développement
+#### Modèle en cascade avec retour
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1225-COO/images/7.png) 
+#### Modèle en v
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1225-COO/images/8.png) 
+#### La spirale
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1225-COO/images/9.png) 
