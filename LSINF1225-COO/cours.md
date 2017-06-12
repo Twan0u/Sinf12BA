@@ -344,3 +344,86 @@ Mise en oeuvre, en incluant les détails de bas niveau dans un language orienté
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1225-COO/images/8.png) 
 #### La spirale
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1225-COO/images/9.png) 
+
+#### Le cycle semi-iteratif 
+- Inception : description de l'objectf et de l'ampleur du projet
+- Elaboration : analyse, architecture, planing
+- Fabrication : la construction itérative et incrémental du projet
+- Transition : tout ce qui va faciliter la transmission au client : beta-testing, user trainig, performance tuning
+
+Dans la phase de fabrication, on morcele le logiciel et on produit chaque morceau via des itérations.
+##### Iterations
+- Analyse (récits d'utilisateurs, carte CRC)
+- Conception (Diagrammes de classes UML, Diagrammes de séquence UML)
+- Implémentations
+- Tests
+
+## Analyse des besoins
+Une des causes répandues de l'echec de projets est l'identification des besoins.
+
+
+| Rates of Software Engineering Failure |
+| ------------- |------------- | 
+| Requirements analysis | Very High | 
+| Specification | Low |
+| Design | Low |
+| Implémentation | Low |
+| Installation | High |
+| Operation | Enormous |
+| Maintenance | Very High |
+
+### Types de besoins
+#### Besoins fonctionnels
+- comportement d'une application 
+#### Besoins non-fonctionnels
+- besoin de fiabilité (fréquence de bugs)
+- besoin de performance (temps de réponse)
+- besoin d'implémentation (système sous linux)
+
+### Récits utilisateur
+"user story"
+typiquement utilisé avec les méthodes agiles et le développement itératif
+```User-story
+
+En tant que ROLE
+je veux ACTION
+afin de OBJECTIF
+```
+sans language technique
+chaque user-story a un nom, une estimation de durée et une description
+ 
+#### Invest
+- Independant
+- Negotiable
+- Valuable
+- Estimable
+- Small
+- Testable
+
+### Plannification 
+poker planning
+choisir les récits à implémenter, plannifier et allouer des têches à effectuer pour chaque itération.
+
+## Les cartes CRC
+CRC = Classes, responsabilités et collaborations
+objectif : déterminer **les classe**s les plus importantes de l'application et leurs **responsabilités** + **collaborations** potentielles
+
+Une carte CRC se compose de : Classe, Description, Responsabilités, Collaborations
+
+## Conception orienté objet - UML
+**Diagrammes de classes UML** et **Diagrammes de séquence UML**
+ L'UML résulte d'une standardisation de l'OMG(Object Management Group)
+
+### Diagramme de classes
+Représente la **structure statique** d'un système.
+
+Classes : nom, attributs, opérations
+
+**Attributs** : visibilité nom:Type [multiplicité] = ValeurInitiale
+**Opérations** : visibilité nom(nomArg:Type=Valeur,...) : Type 
+Les opérations inutiles ne sont pas obligatoires (ex: CRUD)
+
+**visibilité** : 
+* Public (+) : toutes les classes
+* Protégé (#) : par les sous classes
+* Privé (-) : par la classe seule
