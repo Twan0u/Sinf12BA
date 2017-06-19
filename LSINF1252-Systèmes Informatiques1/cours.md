@@ -239,13 +239,33 @@ u.i = 12; // si cette variable contient un int, elle ne peut plus contenir de ch
 ```
  
 ### Section 2.5 : L'organisation de la mémoire
+
+La mémoire peut-être divisée en six zones principales : 
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1252-Syst%C3%A8mes%20Informatiques1/img/2.png) 
-------
 
-### Organisation des processus en mémoire
-OS - arg, envp - Stack & Heap - données non-initialisées - données initialisées - code(texte) - OS   
+#### Le segment text
+Contient toutes les instruction qui sont exécutées par le microprocesseur. (uniquement accessible en lecture)
 
-### Alocations dynamiques en mémoire
+#### Le segment des données initialisées 
+Contient l'ensemble des données et chaînes de caractères qui sont utilisées dans le programme. (il comprend l'ensemble des variables globales déjà initialisées)
+
+#### Le segment des données non-initialisées 
+Contient les valeurs des variables non-globales
+
+#### Le tas (ou heap)
+C'est dans une des 2 zones dans laquelle un programme peur obtenir de la mémoire supplémentaire pour y stocker de l'information. Un programmeur peut réserver une zone permettant de stocker des données et y associer un pointeur. (brk(2) et sbrk(2) modifient la taille du heap).
+En pratique, on utilise malloc(3) pour allouer de la mémoire et free(3) pour la libérer.
+------------------------------------
+```C
+
+```
+
+#### La pile (ou stack)
+
+#### Les arguments et variables d'environnement
+
+
+
 
 Stack : allouées en automatiquement en  mémoire  (functions)
 Heap : alouées manuellement en mémoire (variables)
