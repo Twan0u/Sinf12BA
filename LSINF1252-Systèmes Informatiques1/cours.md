@@ -73,13 +73,6 @@ Au moment de la compilation, le compilateur va exécuter les directives préproc
 #define ZERO 0 // replace tout les ZERO par 0 au moment de la compilation
 ```
 
-#### String
-Le langage C n'integre pas d'office les boolean et les strings. En C, les strings sont des tableaux de caractères dont le dernier élément contient la valeur '\0'.
-```C
-char string[20]= "text";
-printf("%s \n",string);
-```
-
 #### Constructons Syntaxiques
 ```C
 if (COND){}else{}
@@ -126,30 +119,58 @@ Les **nombres signés** sont représentés sous la forme : Signe (négatif si = 
 
 #### Standard IEEE 754
 
--------
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1252-Syst%C3%A8mes%20Informatiques1/img/1.png) 
+
 
 #### Les tableaux
 Dans les anciennes version du langage langage C, les tableaux étaient de taille fixe.
 **Attention** pas de Tab.length en C  il faut donc prévoir de garder la taille du tableau en mémoire si on veut l'utiliser par la suite
 ```C
 #define N 10
+float vecteur[N]
 float matrice[N][N]
 ```
 
 #### Caractères et chaines de caractères
+Le langage C n'integre pas d'office les boolean et les strings. En C, les strings sont des tableaux de caractères dont le dernier élément contient la valeur '\0'.
+```C
+char string[20]= "text";
+printf("%s \n",string);
+```
 
-ASCII : 7 et 8 bits
-Les lettres étant des char stockés sous la forme d'entiers, on peut donc effectuer des manipulations numériques avec des char.
-L'UNICODE lui, gère **toutes** les langues connues sur terre.
+
+Les lettres étant des char (ASCII de 7 ou 8 bits) stockés sous la forme d'entiers, on peut donc effectuer des manipulations numériques avec des char.
+
+| Encodage | Particularité |
+| ------------- |: -------------: | 
+| ASCII | caractère Anglais | 
+| ISO8859 | Latin avec Accents |
+| UNICODE | Tous les caractères dans toutes les langues |
+
+Il n'existe pas de mécanisme d'exception en C. Celà pose des problèmes sécurité & des possibilités de Buffer Overflow.
 Une chaine de caractères se termine toujours par un '\0' ( equivalent à 0)
 
 #### Les Pointeurs
-Un pointeur est défini comme étant une variable contenant l'adresse d'une autre variable.
+En C, le programmeur peut interragir directement avec la mémoire où les données qu'un programme manipule sont stockés. En C, contrairement au java. Il n'y a pas de garbage collection qui retire de la mémoire les objets qui ne sont plus utilisés.
+
+La mémoire est une zone qui est définie et accessible via son adresse.
+
+
+**Un pointeur** est une variable contenant l'adresse d'une autre variable.
+
 ```c
 &var // adresse à laquelle une variable est stockée
-sizeof(i) // taille en bytes d'une variable
+var // variable en mémoire
 *ptr // récupère la valeur à l'adresse du pointeur 
 ```
+
+
+
+
+---------
+
+
+
 #### Les structures 
 En C, contrairement au java on n'encapsule pas les données dans des classes avec des méthodes propres. 
 
