@@ -170,11 +170,6 @@ La règle de l’intégrité référentielle : chaque valeur non-null d’une cl
 chaque valeur non-nulle d'une clé étrangère doit correspondre à la valeur d'une
 clé primaire.
 
-#### Rmap
-(Pas à étudier)
-
-----------------------
-
 ## Le Sql
 ### Le language DDL (Data Description Language)
 Le sous language DDL permets de créer des structures de données et les modifier.
@@ -427,3 +422,5 @@ Les opérations inutiles ne sont pas obligatoires (ex: CRUD)
 * Public (+) : toutes les classes
 * Protégé (#) : par les sous classes
 * Privé (-) : par la classe seule
+
+(...not finished)

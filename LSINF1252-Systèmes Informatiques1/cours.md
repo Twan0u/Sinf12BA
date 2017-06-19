@@ -25,62 +25,82 @@ Un système unix est composé de trois grands types de logiciels:
 En Unix une application est composée de un ou plusieurs processus.   
  **Un processus** :  ensemble cohérent d'instructions qui utilisent une partie de la mémoire et sont exécutées sur un processeur.
  
- Les processus peuvent 
+ Les processus peuvent utiliser des ressources en mémoire. lorsque le processus va se terminer, il va libérer ces ressources et retourner un entier au processus parent ( 0 si Ok sinon autre )
  
  
-##### Commandes de base 
-**ls** : affiche la liste des fichiers et dossiers du répertoire spécifié.  
+##### Shell
+généralement appelée console ou terminal. Un **shell** est un programme qui à été spécialement conçu pour faciliter l'utilisation d'un système Unix via le clavier. Sa puissance vient de sa capacité à écrire des commandes enchaînées : <,>,>>,|
+Une **pipe** ;) est une redirection de la sortie standartd d'un programme vers l'entrée std d'un autre sans passer apr un fichier intermédiaire.  
 **mv** : utilitaire pour renommer ou déplacer un fichier ou dossier.  
+**head** et **tail** : extrait le debut et la fin d'un fichier.
+**wc** : compte le nombre de (lignes, mots, caractères).
+**sort** : trie le fichier par ordre alphabétique
+**uniq** : retire les doublons *(Attention : fichier trié au préalable)* 
+**gzip**/**gunzip** : compression / décompression d'un fichier .gz
 **cp** : copie un fichier ou dossier (-r pour les dossiers).   
 **rm** : efface un fichier ou dossier.  
 **mkdir** : crée un répertoire.  
 **rmdir** : efface un répertoire vide.  
 **cd** : change le répertoire courant.  
 **pwd** : affiche le répertoire courant.  
-**grep** : permet de faire des recherches sur le contenu des fichiers.  
 **./prog** : est utilisé pour lancer le programme prog.  
-**grep** : utilitaire permettant d'extraire d'un fichier les lignes qui contiennent ou non une chaine de caractèrepassée en argument.   
+**grep** : utilitaire permettant d'extraire d'un fichier les lignes qui contiennent ou non une chaine de caractère passée en argument.   
 **echo "Blabla" >> file.txt** copie le texte Blabla dans le fichier file.txt.  
 **man** :lire les pages de manuel d’un système Unix.  
-##### Compilateur
-``` 
-gcc -Werror code.c -o prog 
+
+Un script bash commence par  
 ```
->gcc : compilateur  
->-Werror : affiche les erreurs  
->code.c : fichier qui contient le code en c à compiler  
->prog : nom du programme de sortie  
+#!/bin/bash
+$# #nombre d'args
+$1 #arg1 ..
+$@ # liste des args
+if [Cond]; then ...fi
+exit 0
+```
 
-
-##### Shell 
-Le shell (Terminal/console) est un programme qui à été concu pour l'utilisation d'un système Unix via le clavier. 
-
-Le shell permets d'écrire des scripts(ensemble de commandes shell écrites dans un fichier) qui peuvent être lancées.
-
-On y retrouve nottament 
-``` Shell
-THING = 12 // int variable
-OTHERTHNG = "string" //string variable
-$THING // récupère les infos dans la variable 
-$# // retourne le nombre d'arguments
-$1 // retourne l'argument 1
-$2 // retourne l'argument 2 
-$@ // liste des arguments 
-if [ ]; then
-	// something 
-fi
-``` 
 ## Chapitre 2 : Langage C
 ### Section 2.1 : Le langage C
+Le langage C cest un langage rapide qui compose la plus part des systèmes d'exploitations actuels.
+
 Le langage machine  : langage binaire pour le processeur.
 Le langage assembleur est converti en langage machine grâce à un assebleur. Ce langage est le plus proche du processeur.
+Chaque famille de processeur possède un language d'assemblage qui lui est propre
+
+#### Préprocesseur
 Au moment de la compilation, le compilateur va exécuter les directives préprocesseur.
 ```C
-#define <stdio.h> //ajoute les librairies au moment de la compilation
-#define <stdlib.h>
+#define <...> //ajoute les librairies au moment de la compilation
+#define ZERO 0 // replace tout les ZERO par 0 au moment de la compilation
 ```
 
-###### Manuel
+#### String
+Le langage C n'integre pas d'office les boolean et les strings. En C, les strings sont des tableaux de caractères dont le dernier élément contient la valeur '\0'.
+```C
+char string[20]= "text";
+printf("%s \n",string);
+```
+
+#### Constructons Syntaxiques
+```C
+if (COND){}else{}
+while(COND){} //if cond false do nothing
+do {} while(COND); if cond is false then 
+for(INIT;COND;INCR){}
+```
+
+
+```c
+#include<stdio.h>
+
+int main ( intarg c , char ∗ argv [ ] ){
+    printf ( "Hello , %s!\n" , NAME) ;// affiche sur la sortie standard le 
+    // \n c'est pour le retour à la ligne le %s c'est pour la variable 
+    return 0;//Un programme retourne toujours une valeur (en C : return ou exit ).
+}
+```
+
+
+#### Manuel
 accessible via la commande man 
 1. Utilitaire disponible pour tous les utilisateurs
 2. Appels systèmes en C
@@ -91,63 +111,26 @@ accessible via la commande man
 7. Utilitaires de manipulation de fichiers textes
 8. Commandes et procédure de gestion du système
 
-> ``` & ``` signifie : et logique  
-> ``` | ``` signifie : ou logique  
-> ``` ^ ``` signifie : ou logique  
-
-```c
-#include<stdio.h>
-#define NAME " World "
-
-int main ( intarg c , char ∗ argv [ ] ){//la fonction main est appelée pré-processeur, elle est exécutée en premier et tout programme en c doit la contenir. 
-    printf ( "Hello , %s!\n" , NAME) ;// affiche sur la sortie standard le \n c'est pour le retour à la ligne le %s c'est pour la variable 
-    return 0;//Un programme retourne toujours une valeur (en C : return ou exit ).
-}
-```
-
-
-
 ### Section 2.2 : Types de données
 Les types de données et leur représentation en mémoire
->decimal : 123  
->Binaire : **0b**1111011  
->Octal : **0**173   
->Hexadécimal :**0x**7B  
+- decimal : 123  
+- Binaire : **0b**1111011  
+- Octal : **0**173   
+- Hexadécimal :**0x**7B  
 
-#### Nombre entiers
-##### Unsigned
-en C on a des nombres non signés,  
-- unsigned short minimum 16 bits  
-- unsigned int minimum 16 bits  
-- unsigned long minimum 32 bits  
-- unsigned long long minimum 64 bits  
-- sizeof(...) permet de connaitre la taille d’un type en nombre d’octets (8 bits).   
-
-Par exemple : 
+On peut obtenir la taille en mémoire d'un type de données avec 
 ``` c
-sizeof( unsigned int ) = 4 
-sizeof ( unsigned short ) = 2    
+sizeof(DATA_TYPE) 
 ```
-**Attention** pas de Tab.length en C  il faut donc prévoir de garder la taille du tableau en mémoire si on veut l'utiliser par la suite
+Les **nombres signés** sont représentés sous la forme : Signe (négatif si = 1) - Nombre 
 
-##### Signed
-Les bits signés sont représentés sous la forme : Signe (négatif si = 1) - Nombre 
-- short minimum 16 bits  
-- int minimum 16 bits  
-- long minimum 32 bits  
-- long long minimum 64 bits  
+#### Standard IEEE 754
 
-Réels
-1 bit pour le signe  
-8 (resp. 11) bits pour l’exposant  
-23 (resp. 52) bits pour la fraction  
+-------
 
-``` c
-sizeof(float) 4 bytes  //32 bits  
-sizeof(double) 8 bytes  //64 bits
-``` 
 #### Les tableaux
-Dans les anciennes version du langage langage C, les tableaux étaient de taille fixe
+Dans les anciennes version du langage langage C, les tableaux étaient de taille fixe.
+**Attention** pas de Tab.length en C  il faut donc prévoir de garder la taille du tableau en mémoire si on veut l'utiliser par la suite
 ```C
 #define N 10
 float matrice[N][N]
