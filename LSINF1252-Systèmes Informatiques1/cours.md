@@ -164,43 +164,37 @@ var // variable en mémoire
 *ptr // récupère la valeur à l'adresse du pointeur 
 ```
 
-
-
-
----------
-
-
-
 #### Les structures 
-En C, contrairement au java on n'encapsule pas les données dans des classes avec des méthodes propres. 
+En C, contrairement au java (et autres langages orientés objet) on ne peut pas créer d'objets mais on peut créer des types de données (appelés structures). Les Structures n'ont pas de méthodes liés via l'encapsulation dans la classe.
+
+Une **structure** est une combinaison de différents types de données simples ou structurés. 
+Dans les premières version du langage, les structures avaiant une taille fixe
 
 ```c
-struct coord{
-    int x;
-    int y;
-    int z;
+struct NOM-STRUCTURE
+    int VARIABLE1;
+    int VARIABLE2;
 }
-struct coord test = {1,2,3}; // crée une instance 
-test.x = 1 //l'opérateur point accède directement àla variable x de l'instance test.
+
+struct NOM-STRUCTURE NOM-INSTANCE = {1,2}; // crée une instance 
+NOM-INSTANCE.VARIABLE1= 2 // accède directement à la variable en mémoire
 (*ptr).x // accède à l'élèm x du ptr 
 ptr->x //idem supp
 
 ```
-
-Les anciens compilateurs ne permettaient pas de posséder des tableaux de taille variables à l'intérieure de structures.
-
+#### Les Alias
 On peut redéfinir des noms de structures :
 ```c
 typedef int ENTIER; //redéfini int par entier  
 ```
-> On peut les utiliser pour  : 
-> la portabilité de l'app
-> diminuer la taille des identifiants
-> redéfinir des pointeurs
+On peut les utiliser pour  : 
+- la portabilité de l'app
+- diminuer la taille des identifiants
+- redéfinir des pointeurs (attention car un ptr reste un ptr ) 
 
 #### Les fonctions 
 
-En C les fonctions peuvent être utilisés en argument.
+En C les fonctions et les pointeurs peuvent être utilisés en argument.
 
 #### Manipulation bits
 ```c
@@ -208,193 +202,45 @@ r = ~a;  //négation bit à bit
 r = a & b; // conjonction bit à bit
 r = a | b; // disjonction bit à bit
 r = a ^ b; // xor bit à bit
-a = n >> B // décale bits 
+a = n >> B // décale bits n de B bits
 ```
 
-### Declarations
+### Section 2.3 : Declarations
+Les variables sont définies par leur portée. **La portée d'une variable** peut-être définie comme la partie du programme ou la variable est accessible et où sa valaur peut-être modifiée.
+
+Les variables globales sont des variables accessibles de partout dans le programme. Elles doivent être utilisées de façon parcimonieuses (utilisation mémoire + importante). Pour les variables locales, les premières versions du langage C imposaient leur définition au début des blocs.
+
+Pour définir des constantes on peut : 
+```
+#define M_PI 3.14159265 //préprocesseur
+const double pi=3.14159265 // constante
+```
+
 Dans les premières versions de C on devait définir les variables au début de chaque bloc
 
+### Section 2.4 : Unions et énumérations
+**enum** est utilisé pour définir un type de donées énumérées. càd un nombre fixe de valeurs possibles. (val stockées sous la forme d'entiers)
 
-
-
-
-
-
---------
-
-
-
-
-
-
-
-
-
-
-
-
-### Caractères et chaines de caractères
-
-**ASCII** - 7 bits mais représenté sur 8 bits.   
-**ISO-8859** 8bits   
-**Unicode** Permet de représenter tous les caractères connus de toutes les langues. il utilise plus de 8 bits par caractères     
-
-En C chaque chaine de caractère se termine avec '\0'  
-La taille d'une chaine de caractères est donc de 'chaine' + '\0' = 'taille de la chaine' + 1   
-
-### Variables 
-
-```c
-int x // initialise le x comme un entier
-x = 2 // affecte 2 à la variable 2
-printf("%p\n",&x); //afficher une variable en mémoire dans un print:
+```C
+typedef enum{
+	monday, tuesday, wednesday, thursday, friday, saturnday, sunday 
+}day;
+day jour = monday;
 ```
 
-### Pointeurs 
-En C la mémoire est gérée avec des pointeurs.  
+**union** permet de réserver une zone en mémoire pour stocker plusieurs types de variables possibles
 
-Déclaration d’un pointeur :
-```c
-int i = 5;
-int ∗ptr = &i ;
+```C
+union u_t{
+	int i;
+	char c;
+}u;
+u.i = 12; // si cette variable contient un int, elle ne peut plus contenir de char sans supprimer la valeur du int
 ```
-Récupérer la valeur stockée à l’adresse du pointeur :
-```c
-int j = ∗ ptr ;
-printf ( "%d\n" , j ) ; // affichera 5
-```
-Modifier la valeur stockée à l’adresse du pointeur :
-```c
-∗ ptr = 10;
-printf ( "%d == %d\n" , ∗ ptr, i ) ; // affichera 10
-== 10
-```
-
-
-
-### Structures
-
-**Definition d’une structure**  
-```c
-struct student {  
-int matricule ;  
-char prenom [ 2 0 ] ;  
-char nom [ 3 0 ] ;  
-} ;  
-```
-
-**Declaration + Initialization**  
-
-```c
-struct student linus = { 1 , " Linus " , " Torvalds " } ;  
-struct student richard = { .matricule = 2, .prenom = " Richard " , . nom = " Stallman " } ;  
-struct student evil ;  
-evil . noma = 3 ;  
-evil . prenom = "Bill" ;  
-evil . nom = " Gates " ;  
-```
->typedef //permet de redéfinir le nom des types de données.  
-
-Les éléments d’une structure peuvent être accédés via l’opérateur ‘.’
-(point)
-
-Les éléments référencés par un pointeur vers une structure peuvent
-être accédés via l’opérateur ‘−>’
-
-### Déclaration
-Indique au compilateur le type (en cas de variables) ou les
-arguments et le type de la valeur de retour (en cas de
-fonctions). Toutes fonctions ou variables doivent être
-déclarées avant d’être utilisées.
-
-```c
-int timestwo( *n);
-unsigned long my long ;
-```
-
-### Définition
-Le corps de la fonction spécifié dans la déclaration, ou en
-cas d’une variable son initialisation.
-```c
-it times two(int ∗n) {
-return((∗n)+(∗n)) ;
-}
-my long = 5 ;
-
-```
-
-### Tableaux  
-```c
-int tab[3]; //puis allocation par la suite 
-int tab2[3] = {1,2,3};
-int tab[]= {1,2,3};
-```
-**Attention** :	on ne peut pas récuérer	la taille d'un tableau avec la variable	tab.length.        
-
-
-### Pointeurs
-**Attention** : quand on place un pointeur comme argument d'une fonction on ne peut la modifier.
-
-```c 
-&var // permets e récupérer la variable 
-*ptr = &var // on déclare un pointeur
-```
-
-
-```c
-int times_two ( i nt ∗n) {
-return((∗n)+(∗n));
-}
-int timestwo (int ∗n) {
-∗n=(∗n ) +(∗n ) ;
-return ( ∗n ) ;
-}
-```
-
-###Structures 
-
-```c
-struct student{
-int matricule;
-char prenom[20];
-char nom[30];
-}
-```
-```c
-struct student bob ={42,"Bob","Truc"} 
-```
-Les éléments d'une structure de référence par un **(\*e).nom** ou **e->nom**  
-
-### modificationdes type d'élément 
-```c
-typedef int entier;
-```
-
-
-### Manipulation des bits 
-```c
-~a // négation  : inverse tous les bits 
-```
-
-> Bit shift : Action de déplaçer les bits vers la gauche ou la droite.  
-> plus optimisé pour "effecturer des opérations"
-
-
-## Cours 3 
-### Partie des variables
-- Variable globales    
-- Variable locales   
-
-### Main 
-```c
-int main (int argc, char *argv[])
-```
-
-### Constantes et enum  
-```c
-const int vie = 42; //défini une variable qui ne peut changer
-typedef enum {lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche};
-```
+ 
+### Section 2.5 : L'organisation de la mémoire
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1252-Syst%C3%A8mes%20Informatiques1/img/2.png) 
+------
 
 ### Organisation des processus en mémoire
 OS - arg, envp - Stack & Heap - données non-initialisées - données initialisées - code(texte) - OS   
