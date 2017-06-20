@@ -240,7 +240,8 @@ u.i = 12; // si cette variable contient un int, elle ne peut plus contenir de ch
  
 ### Section 2.5 : L'organisation de la mémoire
 
-La mémoire peut-être divisée en six zones principales : 
+La mémoire peut-être divisée en six zones principales :
+ 
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1252-Syst%C3%A8mes%20Informatiques1/img/2.png) 
 
 #### Le segment text
@@ -257,13 +258,18 @@ C'est dans une des 2 zones dans laquelle un programme peur obtenir de la mémoir
 En pratique, on utilise malloc(3) pour allouer de la mémoire et free(3) pour la libérer.
 ------------------------------------
 ```C
-
+string= (char *) malloc(length*sizeof(char))//malloc retourne un ptr void qu'il faut caster ensuite
+free(string);
 ```
 
 #### La pile (ou stack)
+Cette zone est très importante, elle sotcke l'ensemble des variables locales mais également les variables de retour de toutes ls fonction qui sont appelées. Cette zone est gérée comme une pile
 
 #### Les arguments et variables d'environnement
-
+argc : nombre d'arguments 
+char* argv[] : les arguments
+argv[0]: nom du programme exécuté
+ 
 
 
 
