@@ -256,14 +256,26 @@ Contient les valeurs des variables non-globales
 #### Le tas (ou heap)
 C'est dans une des 2 zones dans laquelle un programme peur obtenir de la mémoire supplémentaire pour y stocker de l'information. Un programmeur peut réserver une zone permettant de stocker des données et y associer un pointeur. (brk(2) et sbrk(2) modifient la taille du heap).
 En pratique, on utilise malloc(3) pour allouer de la mémoire et free(3) pour la libérer.
-------------------------------------
+aloué manuellement en mémoire (variables)
+
+Malloc, contrairement à calloc ne réinitialise pas la zone mémoire libérée.
+##### Malloc
+
 ```C
 string= (char *) malloc(length*sizeof(char))//malloc retourne un ptr void qu'il faut caster ensuite
 free(string);
 ```
 
+##### Calloc
+
+```c
+void *calloc(size_t num_element, size_t size); // base
+char *ptr = calloc(15,size(char));//exemple
+```
+
 #### La pile (ou stack)
-Cette zone est très importante, elle sotcke l'ensemble des variables locales mais également les variables de retour de toutes ls fonction qui sont appelées. Cette zone est gérée comme une pile
+Cette zone est très importante, elle sotcke l'ensemble des variables locales mais également les variables de retour de toutes ls fonction qui sont appelées. Cette zone est gérée comme une pile.
+alloué en automatiquement en  mémoire  (functions)
 
 #### Les arguments et variables d'environnement
 argc : nombre d'arguments 
@@ -271,38 +283,9 @@ char* argv[] : les arguments
 argv[0]: nom du programme exécuté
  
 
+-------------------
 
 
-Stack : allouées en automatiquement en  mémoire  (functions)
-Heap : alouées manuellement en mémoire (variables)
- 
-#### brk & sbrk 
-> \#include <unistd.h>   
-```c
-int brk(void*addr);
-void*sbrk(intptr_t incrément);
-```
-ces deux éléments permettent de modifier la taille du data segment size mais ils ne sont que très peu utilisées
-
-#### Calloc
-
-```c
-void *calloc(size_t num_element, size_t size); // base
-char *ptr = calloc(15,size(char));//exemple
-```
-la fonction calloc alloue de la mémoire préalablement initialisée à 0. 
-
-#### Malloc
-```c
-void *malloc(size_t size); // base
-char *ptr = malloc(15*size(char));//exemple
-```
-**Attention** : cette fonction ne fait que libérer de l'espace en mémoire, il ne reinitialise pas les données à 0.
-
-#### Realloc (BONUS)
-```c
-...
-```
 ## Cours S4
 
 Dram : condensateur - gourmand en énergie,  50ns
