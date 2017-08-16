@@ -127,14 +127,126 @@ l'indépendance entre A et B (notée A ⊥ B)
 $$A ⊥ B ⇋ P(A∩B)=P(A).P(B)$$
 
 Pour vérifier des indépendances plus grandes, il suffit de procéder par paires( si A⊥B⊥C) alors, on vérifira A⊥(B⊥C); B⊥(C⊥A) ; C⊥(A⊥B) 
-## Chapitre 3: Variables aléatoires ∪∩⊂Ω∅ωℕ∈≠∑⊥⇋
+## Chapitre 3: Variables aléatoires 
+L'objectif est de remplaçer chaque événement ω∈ℝ par un Nombre x∈ℝ.
 ### 3.1 Définition
+Une **variable aléatoire** X est une application de Ω dans ℝ telle qu'à tout ω correspond une valeur X(ω)=x
 
+Le **domaine de variation**(=le support)Rx est l'ensemble des valeurs que la variable aléatoire X peut prendre
 ### 3.2 Variable aléatoire discrète
-### 3.3 variable aléatoire continue
-### 3.4 Approximation d'une loi par une autre 
-## Chapitre 4: Grandeurs caractéristiques
-## Chapitre 5: Fonction d'une variable aléatoire
+x est une **variable aléatoire dscrète** (VAD) quand Rx comprend un bombre fini ou ue infinité dénombrable de valeurs possibles ( généralement, il s'agit de nombres entiers)
+#### 3.2.1 Fonction de probabilité
+P(x) est une fonction de probabilité ( elle caractérise une VAD)
+$$p(x)≡P(X=x)$$
+cette fonction spécifie la probabilité de la VAD 
+
+----------------------IMG 2 -----------------------
+
+∑<sup>n</sup><sub>i=1</sub>  p(xi) =1
+
+#### 3.2.2 Fonction de répartition
+
+F(x) associe à chaque valeur de x de la variable aléatoire X la probabilité de ne pas excéder cette valeur 
+
+$$F(x)=p(X≤x)$$
+
+----------------------IMG 3 -----------------------
+
+#### 3.2.3 Loi de Bernouilli
+Expérience ou il y a réalisation ou non d'un événement A. p est la probabilité de A
+
+$$X~Be(p)$$
+
+#### 3.2.4 Répétitions de l'épreuve de Bernouilli
+##### Loi binomiale 
+Après n expériences à la probabilité p, combien de fois l'expérience de bernouilli à-t-elle réussi ? 
+
+$$X~Bi(n,p)$$
+##### Loi Hypergéométrique (tirage sans remise)
+X = nombre d'objet parmi les n qui réalisent cet événement
+N = total des objets 
+n = nombres d'objets retirés
+k = nombres de défectueux
+$$X~Hy(N,n,k)$$
+
+##### Loi géométrique (nombre de répétition pour obtenir 1 réussite)
+$$X~Ge(p)$$
+
+##### Loi de Pascal ou loi binomiale négative(nombre de répétition pour obtenir k réussites)
+
+$$X~Pa(k,p)$$
+
+##### Loi de Poisson  
+quand la P(A) est très faible
+$$X~Po(µ)$$
+
+Cette loi est utilisée pour déterminer le nombre d'occurence / unité de temps ou d'espace
+
+##### Approcimation de la loi binomiale
+lorsque n est grand et p petit ( np étant une valeur finie)
+
+$$X~Po(n.p), (n➝∞)$$
+
+### 3.3 variable aléatoire continue 
+Rx est maintenant dans ℝ
+
+#### 3.3.1 et 3.3.2 Fonction de répartition et fct de densité de proba
+F(x) n'est plus une fonction en escalier mais une fct continue et idem pour p(x)
+
+----------------------IMG 4 -----------------------
+
+#### 3.3.3 Loi uniforme 
+Si la loi de densité est Ct sur [a,b] est nulle ailleur on parle de loi uniforme. 
+
+----------------------IMG 5 -----------------------
+
+#### 3.3.4 Loi exponentielle
+$$X~Exp(λ)
+? 
+#### 3.3.5 loi normale ou loi de Gauss-Laplace  
+
+$$X~N(µ,σ²)$$
+
+µ = moyenne 
+σ = variance autour de cette moyenne
+
+------------------------Loi normale réduite-------------------------
+
+### 3.4 Approximation d'une loi par une autre
+
+je skip 
+## Chapitre 4: Grandeurs caractéristiques 
+### 4.1 Mode
+Le mode x~m~ d'une variable aléatoire est la valeur la plus probable que peut prendre la variable aléatoire ( maximum de la fonction p(x) et f(x))
+
+----------------------IMG 6 -----------------------
+
+### 4.2 Médiane
+Une médiane est une mesure de centralité. ~m~   assure que l'on ait une chance sur 2 d'observer une valeur x plus grande ou plus petite à ~m~
+
+----------------------IMG 7 -----------------------
+
+### 4.3 Quantiles
+Comme pour la médiane, sauf qu'ils subdivisent différement 
+
+|Nom|quantilles|nombre d'intervalles|
+|----:|:----:|:----:|
+|Médiane|0,5quantile|2|
+|Quartiles|x~0,25~,x~0,5~,...|4|
+|Déciles|x~0,1~,x~0,2~,...|10|
+|Centiles|x~0,01~,x~0,02~,...|100|
+
+### 4.4 Espérance (µ ou E[x])
+valeur qe l'on s'attend à observer en moyenne pour la variable aléatoire X.
+(c'est une sorte de moyenne pondérée)
+
+### 4.5 Variance(σ² ou Var[x])
+σ est appelée écart-type ou déviation standart. c'est une mesure de la dispersion de la variable autour de sa moyenne.
+
+
+## Chapitre 5: Fonction d'une variable aléatoire ∪∩⊂Ω∅ωℕ∈≠∑⊥⇋ℝ≡≤≥λ➝∞σ
+
+
 ## Chapitre 6: Couples aléatoires
 ## Chapitre 7: Vecteurs aléatoires
 ## Chapitre 8: Nombres aléatoires *
