@@ -36,6 +36,7 @@ Dans ce cours, nous allons simplifier :
 
 **La concurrence à la Cournot** : c'est lorsque deux firmes **fixent simultanément** les quantités qu'elles souhaitent vendre sur le marché et que le prix d'équilibre est celui qui **égalise l'offre et la demande**.
 
+#### Duopole
 Les prix sont fonctions de la quantité
 
 Dans un duopole, on à : c<sub>1</sub>, c<sub>2</sub> , Y = y<sub>1</sub>+y<sub>2</sub>
@@ -43,7 +44,7 @@ Dans un duopole, on à : c<sub>1</sub>, c<sub>2</sub> , Y = y<sub>1</sub>+y<sub>
 Dans ce cas, la firme essaye de maximiser son profit : $$π_2 =p(y^e_1 + y_2).y_2 -c_2.y_2$$
 
 
-La valeur optimale de y<sub>2</sub>: 
+La valeur optimale de y<sub>2</sub> est donnée par la fonction de réaction de la firme 2: 
 $$ y_2 = (a-b.y^e_1 - c_2) / 2b $$
 
 Ceci est la *fonction de réaction* de la firme 2 : 
@@ -82,14 +83,13 @@ Rappel sur l'élasticité : si l'élasticité est égale
 
 Au plus il y a de firmes, au moins chaque firme à de parts de marché et donc les moins productives quittent le marché et les  prix tendent vers le coût marginal
 
-Le fait est qu'une 
 ### 1.3 : Concurrence à la Bertrand
-**La concurrence à la Bertrand** : lorsque elles fixent simultanément les prix et que les quantités d'équilibre sur le marché égalisent l'offre et la demande.
+**La concurrence à la Bertrand** : lorsque elles fixent simultanément les prix et que les quantités d'équilibre sur le marché sont celles qui égalisent l'offre et la demande.
 
 Les consommateurs choisissent le **moins cher** . La **concurrence** pousse donc les entreprises à **réduire leurs prix**. La concurrence s'achève des que le prix atteint son coût marginal d'une firme.
 - c<sub>1</sub> < c <sub>2</sub> : seul la firme 1 est efficiente, le prix sera donc égal à p=c<sub>2</sub>
 - c<sub>1</sub> = c <sub>2</sub> : le prix est égal au coût marginal, on est donc en concurrence parfaite et le profit sera donc nul.
-Les éléments nécéssaires à la **maximisation du bie-être** est déterminée par le nombre de firmes, leur part de marché et le type de concurrence 
+Les éléments nécéssaires à la **maximisation du bien-être** est déterminée par le nombre de firmes, leur part de marché et le type de concurrence 
 
 ### 1.4 : Le cartel
 **Le cartel** : deux ou plusieurs firmes sont en cartel lorsqu'elles forment une coalition de façon à se comporter comme un monopoleur qui maximise ses profits.
@@ -102,7 +102,7 @@ Dans le cas ou c<sub>1</sub> == c<sub>2</sub> : les deux firmes ont un interêt 
 
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images2/4.png) 
 
-Un cartel est quelque chose de fondamentalement **instable**. La seule chose qui évite aux firmes de dévier sont les **mécanismes de contrôles** : **punition des déviants**, contrôle des prix, limitation volontaire des quantités,...
+Un cartel est **instable**. La seule chose qui évite aux firmes de dévier sont les **mécanismes de contrôles** : **punition des déviants**, contrôle des prix, limitation volontaire des quantités,...
 
 ### 1.5 : L'entrée sur le marché
 La menace d'entrer sur un marché est une forme de concurrence 
@@ -117,8 +117,7 @@ Dans le cas d'une société  M qui est implémentée sur un marché et une soci�
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images2/6.png)
 *La menace est maintenant crédible. E l'anticipe et décide de ne pas entrer.*
 
-
-Lors d'une analyse du marché, une production excédentaire est le signe d'une volonté agressive à l'égard des entrants potentiels. En plus des prix bas, la production excédentaire est une autre qui peut pousser une entreprise à ne pas rentrer. 
+Lors d'une analyse du marché, une **production excédentaire** est le signe d'une **  à l'égard des entrants potentiels. En plus des prix bas, la production excédentaire est une autre qui peut pousser une entreprise à ne pas rentrer. 
 
 ### 1.6 : Conclusion
 
@@ -152,25 +151,24 @@ Un jeu statique
 ```
 ### 2.2 : Stratégies dominantes
 
-Une **stratégie dominante** est une stratéie qui donne à un joueur un paiement strictement supérieur aux paiements qu'il obtiendrait en jouant une autre stratégie, quelle que soit la stratégie choisie par les autres.
+Une **stratégie dominante** est une stratégie qui donne à un joueur un paiement strictement supérieur aux paiements qu'il obtiendrait en jouant une autre stratégie, quelle que soit la stratégie choisie par les autres.
 
-|  .   |    **Gauche**    |  Droit |  
+|  .   |   Avouer    | Nier |  
 | ---------- |: ----: | : ----: |  
-| Haut | (1,2) | (0,1) |  
-| **bas**   | (2,1) | (1,0) |
-
-
-Dans le cas d'un jeu de coopération(cartel), les gens sont succeptibles de coopérer car le jeu est répété, comme à propos du cartel, au chapitre précédent. et non car :
- - Ils aimant coopérer
-- Ils sont obligés de coopérer par la norme 
-
+| Avouer | (-3,-3) | (0,6) |  
+| Nier   | (-6,0) | (-1,-1) |
 
 Dans un jeu du type dilemne du prisonnier, les deux ont un *interêt à avouer* même si ils auraient ( au sens de pareto) un avantage à nier tous les deux qui serait autrement plus important. la solution avouer-avouer est inefficace au sens pareto. Si les deux pouvaient se faire confiance, ils auraient un avantage plus grand. Il y a donc un **conflit entre rationalité individuelle et collective.** 
+
+Dans le cas d'un jeu de coopération(cartel), les gens sont succeptibles de coopérer car le jeu est répété, comme à propos du cartel, au chapitre précédent. et non car :
+- Ils aimant coopérer
+- Ils sont obligés de coopérer par la norme 
+
 ### 2.3 : Meilleure réponse - Equilibre de Nash
 
-La  **fonction de meilleure réponse** d'un joueur est la fonction qui identifie la stratégie qui procure le meilleu paiement en fonction de la stratégie des autres joueurs.
+La  **fonction de meilleure réponse** d'un joueur est la fonction qui identifie la stratégie qui procure le meilleur paiement en fonction de la stratégie des autres joueurs.
 
-La **fonction de meilleure réponse** n'est pas à confondre avec la **stratégie dominante**. La fonction de meilleure réponse fait appel à l'équilibre de Nash (et donc le fait que il existe une alternative plus profitabe à l'une des firmes mais sans que celle-ci n'ait d'interêt à dévier), alors que la stratégie dominante est la stratégie que les deux vont d'office prendre car, il offre aux deux les meilleurs retours.  
+La **fonction de meilleure réponse** fait appel à l'équilibre de Nash (et donc le fait que il existe une alternative plus profitabe à l'une des firmes mais sans que celle-ci n'ait d'interêt à dévier), alors que la stratégie dominante est la stratégie que les deux vont d'office prendre car, il offre aux deux les meilleurs retours.  
 
 L'**équilibre de Nash** est donc l'intersectionn des fonctions de meilleure réponse telles qu'**aucun joueur n'a d'interêt à dévier** unilatéralement. Elles permettent une mise en place de la réaction aux pensée des autres joueurs et ainisi une **auto justification** des anticipations.
 
@@ -201,3 +199,10 @@ cherche à maximiser son profit
 #### Le consommateur 
 consomme x, quantité du bien 1 et le coût de la transaction m (le plus petit possible)
 U(x <sub>1</sub> ,-m)=v(x<sub>1</sub>)-m
+ Le problème est que des consommateurs d'un type peuvent se faire passer pour des consommateurs d'un autre type
+ 
+ -SKIP- 19 à 35
+ 
+## Chapitre 4 : ...
+
+  
