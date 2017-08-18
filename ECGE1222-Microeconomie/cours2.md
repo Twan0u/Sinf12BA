@@ -201,8 +201,58 @@ consomme x, quantité du bien 1 et le coût de la transaction m (le plus petit p
 U(x <sub>1</sub> ,-m)=v(x<sub>1</sub>)-m
  Le problème est que des consommateurs d'un type peuvent se faire passer pour des consommateurs d'un autre type
  
- -SKIP- 19 à 35
+ Si on augmente le revenu (ex: via un bon d'achat). On change m<sup> * </sup> en m<sup> * </sup> +B, mais la quantité x<sup> * </sup> <sub>1</sub> reste identique
  
-## Chapitre 4 : ...
+Au moins le produit est cher, au plus il est désirable et au plus il sera acheté.
+Un bon d'achat ou une modification du revenu est représenté par un glissement de la fonction horizontalement 
+ ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images2/7.png)
+ 
+ L'utilité est la disposition à payer du consommateur
+ 
+### 3.3 Un consommateur, un producteur et un plannificateur
 
-  
+Le plannificateur souhaite produite x, et répartir le surplus entre le producteur et le consommateur
+**rappel**: $$max(U=v(x_{1}-F)), avec (F-cx_{1}≥Π)
+
+$$v'(x^*_1) = c$$
+,peu importe Π
+
+### 3.4 Un consommateur, un monopoleur en information complète
+Le monopoleur choisira la tarification qui maximise son profit.
+Le consommateur acceptera tant que la transaction u(x1,-m)≥u(0,0)
+$$v(x_1)-m≥v(0)+0=0$$
+Cette contrainte est appelée contrainte de participation(cp).
+(m=F),v'(x*1) = c 
+Tarification avec abonnement / prix Ct / A prendre ou à laisser
+
+### 3.5 Plusieurs consommateurs, un monopoleur, information complète
+supposons 2 types de consommateurs (ga, gb) ga>gb et supposons que l'on peut ordonner les consommateurs selon leur goût $$u=g_a v(x_1) -m$$
+#### Analyse 
+Dans le cas ou ga>gb nous avons un **single crossing** (croise au plus 1 fois, en tout point suppérieur à l'autre).
+Comme l'information est complète, le monopoleur peut proposer 2 contracts différents $$(x^*_a, F^*_a) et (x^*_b, F^*_b )$$. On imagine donc faire offre avec les 2 séparéments ( on applique la solution précédente).
+ ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222-Microeconomie/images2/8.png)
+ A payent plus que B
+ 
+ Cette solution est avantageuse pour le monopoleur car : tout le surplus potentiel est crée et accaparé par le monopoleur
+ (Cette solution est généralisable à plus de 2 agents)
+Si le monopoleur ne peut faire entre les consommateurs a et b, les a vont profiter des contrats de type b.
+
+### 3.6 Plusieurs consommateurs, un monopoleur, information incomplète
+Si le monopoleur ne peut distinguer les consomateurs de type a et b. Alors un consommateur de type a peut se faire passer pour un consommateur de type b pour payer moins. 
+Si le monopoleur se limite à des offres à prendre ou à laisser : $$ (x^i _a, F^i _a) et (x^i _b, F^i _b)$$
+
+face à ces agents,son objectif est de maximiser $$Π=q_a (F^i _a - cx^i _a)+q_b (F^i _b - cx^i _b)$$ 
+tout en prêtant attention aux contraintes de participation CPa et CPb:
+$$U _a =g _av(x^i _a)-F^i _a≥U _a (0,0)=0$$
+$$U _b =g _bv(x^i _b)-F^i _b≥U _b (0,0)=0$$
+Il faut aussi que chaque consommateur prenne un contract qui lui est destiné. Ce sont les contraintes de **compatibilité avec les incitants** (CIa et CIb) 
+$$U_a (x^i _a, F^i _a)≥U _a(x^i _b, F^i _b)$$
+$$U_b (x^i _b, F^i _b)≥U _b(x^i _a, F^i _a)$$
+#### Analyse et Résolution
+si CPb et Cia sont vérifiés, alors on peut en déduire CPa
+Il n'est jamais optimal pour un monopoleur de n'offrir qu'un seul contract.
+Une autre technique pour limiter la fraude de a en diminuant le surplus offert à b
+#### Solution optimale
+* autant de conracts que d'agents
+* l'équilibre est dit séparant (le type de goût determine le type d'achteur)
+* qta- que si l'info était complète 
