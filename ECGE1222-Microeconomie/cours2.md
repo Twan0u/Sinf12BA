@@ -255,4 +255,30 @@ Une autre technique pour limiter la fraude de a en diminuant le surplus offert �
 #### Solution optimale
 * autant de conracts que d'agents
 * l'équilibre est dit séparant (le type de goût determine le type d'achteur)
-* qta- que si l'info était complète 
+* qta =  complète ou non 
+* prix a plus faible que si l'info était complète
+* qt b plus faible
+* prix b plus faible
+Quand le surplus total  est moindre, on parle de solution de second rang. Une solution optimale de premier rang est quand on est en information complète
+#### Second rang 
+* moins d'activité économique
+* moins de bien-être
+#### Premier rang
+il est innaccessible, non pas à cause de la technlogie oudes préférences, mais à cause de la distribution de l'information.
+
+### 3.7 Applications
+*Pourquoi observe-t-on des tarifications largement plus grandes que c?*
+car si l'on permets aux "petits" achteurs (ceux avec le moins de moyens) de payer, on s'expose au fait que les autres peuvent se faire passer pour eux.
+La qualitée de certains biens est plus basse que ce qui pourrait être offert pour un prix à peine plus élevé. (ex: différence entre première et deuxiemme classe, logements sociaux de mauvaise qualitée)
+
+### 3.8 Concurrence parfaite
+si p=c, alors les firmes sont dites **price takers**
+$$x^* _a et x^* _b payent cx^* _a et cx^* _b$$
+cet équilibre est efficace, le surplus est maximal et il est entièrement accaparé par les consommateurs.
+La **distribution de l'info** est donc devenue **non pertinente**
+ 
+### 3.9 En Résumé
+ * tout équilibre est séparant 
+ * les agents possèdant la "bonne" information obtiennent une rente informationnelle.
+ * Une Asymétrie de l'information entraine une perte du surplus total
+ * en concurrence parfaite, l'équilibre est efficace, le surplus va au consommateur et l'information devient non pertinente
