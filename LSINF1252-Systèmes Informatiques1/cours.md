@@ -52,7 +52,8 @@ Une **pipe** ;) est une redirection de la sortie standartd d'un programme vers l
 **man** :lire les pages de manuel d’un système Unix.  
 
 Un script bash commence par  
-```shell
+
+```
 #!/bin/bash
 $# # nombre d args
 $1 # arg1 ..
@@ -61,7 +62,8 @@ if [Cond]; then ...fi
 exit 0
 ```
 
-```shell
+
+```
 $i-eq $j # vrai si les deux variables sont différentes
 $i -eq $j # vrai si les deux variables sont équivalentes
 $s = $t #vrai quand les deux chaines de caractères sont équivalentes
@@ -70,18 +72,37 @@ $i -ge $j # vrai si i est suppérieure inférieure à j
 -z $s #vrai si la variable est vide
 ```
 
+
 ## Chapitre 2 : Langage C
 ### Section 2.1 : Le langage C
 
-Le langage C cest un langage rapide qui compose la plus part des systèmes d'exploitations actuels.
+Un **langage** permets d'écire des programmes qui seront *compilés* pour être *exécutables* par le processeur (binaires = language Machine). L'**assembleur** quand à lui est un langage proche de la machine pour être le plus rapide possible. (Chaque famille de processeur à son language d'assemblage qui lui est propre. On converti le **langage d'assemblage** en langage Machine via un *assembleur*).
+Le C (inventé dans les années 70), pour le système Unix, est rapide et permets d'interagir directement avec le matériel.
 
-**Le langage machine**  : langage binaire pour le processeur.  
-**Le langage assembleur** est converti en langage machine grâce à un *assebleur*. Ce langage est le plus proche du processeur.  
-*Chaque famille de processeur possède un language d'assemblage qui lui est propre*
+#### 2.1.1 Programme de base
+``` C
+#include <stdio.h>
+
+int main ( intarg c , char ∗ argv [ ] ){
+    printf ( "Hello World!") ;// affiche sur la sortie standard le message
+    return 0; //Un programme retourne toujours une valeur (en C : return ou exit ).
+}
+```
+#### 2.1.2 Compilation
+La compilation du fichier hello.c en un exécutable s'effectue sur un système Unix comme suit:
+```
+gcc -Wall -o hello hello.
+
+```
+l'argument *-Wall* affiche tous les warnings  
+l'argument *-o hello* donne le nom de sortie de l'exécutable
+
+
+*** update 21/02/18
 
 #### Préprocesseur
 Au moment de la compilation, le compilateur va exécuter les directives préprocesseur.
-```C
+``` C
 #define <...> //ajoute les librairies au moment de la compilation
 #define ZERO 0 // replace tout les ZERO par 0 au moment de la compilation
 ```
@@ -90,21 +111,9 @@ Au moment de la compilation, le compilateur va exécuter les directives préproc
 ```C
 if (COND){}else{}
 while(COND){} //if cond false do nothing
-do {} while(COND); if cond is false then
+do {} while(COND); //if cond is false then don't repeat
 for(INIT;COND;INCR){}
 ```
-
-
-```c
-#include<stdio.h>
-
-int main ( intarg c , char ∗ argv [ ] ){
-    printf ( "Hello , %s!\n" , NAME) ;// affiche sur la sortie standard le
-    // \n c'est pour le retour à la ligne le %s c'est pour la variable
-    return 0;//Un programme retourne toujours une valeur (en C : return ou exit ).
-}
-```
-
 
 #### Manuel
 accessible via la commande man
