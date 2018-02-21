@@ -2,40 +2,43 @@
 
 ## Chapitre 1 : Introduction
 ### Section 1.1 : Introduction
-#### Composition d'un système informatique
-Le système informatique le plus simple est **un processeur** (*cpu*) et **une mémoire**. Ce prosesseur est capable de : *lire et écrire* des l'informations en mémoire et de *réaliser des calculs*. 
+#### 1.1.1 Composition d'un système informatique
+Le système informatique le plus simple est **un processeur** (*cpu*) et **une mémoire**. Ce prosesseur est capable de : *lire et écrire* des l'informations en mémoire et de *réaliser des calculs*.
 
 #### Systèmes Unix
 Unix est un nom générique donné à une famille de systèmes d'exploitations. On y retrouve MacOS, FreeBSD et Linux qui sont les plus utilisés.
 
-Un système unix est composé de trois grands types de logiciels: 
+Un système unix est composé de trois grands types de logiciels:
 1. **Le noyau du système d'exploitation** : chargé au démarage de la machine, il se charge de toutes les interactions entre les logiciels et le matériel.
 2. **Les librairies** :Nombreuses, elles facilitent l'écriture et le développement d'applications
 3. **Les programmes utilitaires** : utilisés pour résoudre une série de problèmes
- *API* signifie *Application Programming Interface* 
+ *API* signifie *Application Programming Interface*
 
  **/usr** : utilitaires et librairies installées sur le système
  **/bin** et **/sbin** : utilitaires de base nécéssaire à l'admin. syst.
  **/tmp** : fichiers temporaires ( effacé au redémarrage )
- **/etc** : configuration du système 
+ **/etc** : configuration du système
  **/home** : répertoire personnel des utilisateurs
  **/dev** : fichiers spéciaux
  **/root** : administrateur système
- 
+
 En Unix une application est composée de un ou plusieurs processus.   
  **Un processus** :  ensemble cohérent d'instructions qui utilisent une partie de la mémoire et sont exécutées sur un processeur.
- 
- Les processus peuvent utiliser des ressources en mémoire. lorsque le processus va se terminer, il va libérer ces ressources et retourner un entier au processus parent ( 0 si Ok sinon autre )
- 
- 
+
+ Les processus peuvent utiliser des ressources en mémoire. lorsque le processus va se terminer, il va libérer ces ressources et retourner un entier au processus parent ( 0 si Ok sinon autre chose )
+
+
 ##### Shell
-généralement appelée console ou terminal. Un **shell** est un programme qui à été spécialement conçu pour faciliter l'utilisation d'un système Unix via le clavier. Sa puissance vient de sa capacité à écrire des commandes enchaînées : <,>,>>,|
+Généralement appelée console ou terminal. Un **shell** est un programme qui à été spécialement conçu pour faciliter l'utilisation d'un système Unix via le clavier. Sa puissance vient de sa capacité à écrire des commandes enchaînées : <,>,>>,|
 Une **pipe** ;) est une redirection de la sortie standartd d'un programme vers l'entrée std d'un autre sans passer apr un fichier intermédiaire.  
+**cat** : affiche le contenu d'un fichier sur la sortie Standard  
+**sort** : trie les lignes d'un fichier
 **mv** : utilitaire pour renommer ou déplacer un fichier ou dossier.  
 **head** et **tail** : extrait le debut et la fin d'un fichier.
 **wc** : compte le nombre de (lignes, mots, caractères).
 **sort** : trie le fichier par ordre alphabétique
-**uniq** : retire les doublons *(Attention : fichier trié au préalable)* 
+**uniq** : retire les doublons *(Attention : fichier trié au préalable)*
+**tar** : permets de regrouper des fichiers dans une archive (fonctionne souvent avec gzip)  
 **gzip**/**gunzip** : compression / décompression d'un fichier .gz
 **cp** : copie un fichier ou dossier (-r pour les dossiers).   
 **rm** : efface un fichier ou dossier.  
@@ -49,22 +52,32 @@ Une **pipe** ;) est une redirection de la sortie standartd d'un programme vers l
 **man** :lire les pages de manuel d’un système Unix.  
 
 Un script bash commence par  
-```
+```shell
 #!/bin/bash
-$# #nombre d'args
-$1 #arg1 ..
+$# # nombre d args
+$1 # arg1 ..
 $@ # liste des args
 if [Cond]; then ...fi
 exit 0
 ```
 
+```shell
+$i-eq $j # vrai si les deux variables sont différentes
+$i -eq $j # vrai si les deux variables sont équivalentes
+$s = $t #vrai quand les deux chaines de caractères sont équivalentes
+$i -lt $j # vrai si i est strictement inférieure à j
+$i -ge $j # vrai si i est suppérieure inférieure à j
+-z $s #vrai si la variable est vide
+```
+
 ## Chapitre 2 : Langage C
 ### Section 2.1 : Le langage C
+
 Le langage C cest un langage rapide qui compose la plus part des systèmes d'exploitations actuels.
 
-Le langage machine  : langage binaire pour le processeur.
-Le langage assembleur est converti en langage machine grâce à un assebleur. Ce langage est le plus proche du processeur.
-Chaque famille de processeur possède un language d'assemblage qui lui est propre
+**Le langage machine**  : langage binaire pour le processeur.  
+**Le langage assembleur** est converti en langage machine grâce à un *assebleur*. Ce langage est le plus proche du processeur.  
+*Chaque famille de processeur possède un language d'assemblage qui lui est propre*
 
 #### Préprocesseur
 Au moment de la compilation, le compilateur va exécuter les directives préprocesseur.
@@ -77,7 +90,7 @@ Au moment de la compilation, le compilateur va exécuter les directives préproc
 ```C
 if (COND){}else{}
 while(COND){} //if cond false do nothing
-do {} while(COND); if cond is false then 
+do {} while(COND); if cond is false then
 for(INIT;COND;INCR){}
 ```
 
@@ -86,15 +99,15 @@ for(INIT;COND;INCR){}
 #include<stdio.h>
 
 int main ( intarg c , char ∗ argv [ ] ){
-    printf ( "Hello , %s!\n" , NAME) ;// affiche sur la sortie standard le 
-    // \n c'est pour le retour à la ligne le %s c'est pour la variable 
+    printf ( "Hello , %s!\n" , NAME) ;// affiche sur la sortie standard le
+    // \n c'est pour le retour à la ligne le %s c'est pour la variable
     return 0;//Un programme retourne toujours une valeur (en C : return ou exit ).
 }
 ```
 
 
 #### Manuel
-accessible via la commande man 
+accessible via la commande man
 1. Utilitaire disponible pour tous les utilisateurs
 2. Appels systèmes en C
 3. Fonctions de la librairie
@@ -111,15 +124,15 @@ Les types de données et leur représentation en mémoire
 - Octal : **0**173   
 - Hexadécimal :**0x**7B  
 
-On peut obtenir la taille en mémoire d'un type de données avec 
+On peut obtenir la taille en mémoire d'un type de données avec
 ``` c
-sizeof(DATA_TYPE) 
+sizeof(DATA_TYPE)
 ```
-Les **nombres signés** sont représentés sous la forme : Signe (négatif si = 1) - Nombre 
+Les **nombres signés** sont représentés sous la forme : Signe (négatif si = 1) - Nombre
 
 #### Standard IEEE 754
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1252-Syst%C3%A8mes%20Informatiques1/img/1.png) 
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1252-Syst%C3%A8mes%20Informatiques1/img/1.png)
 
 
 #### Les tableaux
@@ -142,8 +155,8 @@ printf("%s \n",string);
 Les lettres étant des char (ASCII de 7 ou 8 bits) stockés sous la forme d'entiers, on peut donc effectuer des manipulations numériques avec des char.
 
 | Encodage | Particularité |
-| ------------- |: -------------: | 
-| ASCII | caractère Anglais | 
+| ------------- |: -------------: |
+| ASCII | caractère Anglais |
 | ISO8859 | Latin avec Accents |
 | UNICODE | Tous les caractères dans toutes les langues |
 
@@ -161,13 +174,13 @@ La mémoire est une zone qui est définie et accessible via son adresse.
 ```c
 &var // adresse à laquelle une variable est stockée
 var // variable en mémoire
-*ptr // récupère la valeur à l'adresse du pointeur 
+*ptr // récupère la valeur à l'adresse du pointeur
 ```
 
-#### Les structures 
+#### Les structures
 En C, contrairement au java (et autres langages orientés objet) on ne peut pas créer d'objets mais on peut créer des types de données (appelés structures). Les Structures n'ont pas de méthodes liés via l'encapsulation dans la classe.
 
-Une **structure** est une combinaison de différents types de données simples ou structurés. 
+Une **structure** est une combinaison de différents types de données simples ou structurés.
 Dans les premières version du langage, les structures avaiant une taille fixe
 
 ```c
@@ -176,9 +189,9 @@ struct NOM-STRUCTURE
     int VARIABLE2;
 }
 
-struct NOM-STRUCTURE NOM-INSTANCE = {1,2}; // crée une instance 
+struct NOM-STRUCTURE NOM-INSTANCE = {1,2}; // crée une instance
 NOM-INSTANCE.VARIABLE1= 2 // accède directement à la variable en mémoire
-(*ptr).x // accède à l'élèm x du ptr 
+(*ptr).x // accède à l'élèm x du ptr
 ptr->x //idem supp
 
 ```
@@ -187,18 +200,18 @@ On peut redéfinir des noms de structures :
 ```c
 typedef int ENTIER; //redéfini int par entier  
 ```
-On peut les utiliser pour  : 
+On peut les utiliser pour  :
 - la portabilité de l'app
 - diminuer la taille des identifiants
-- redéfinir des pointeurs (attention car un ptr reste un ptr ) 
+- redéfinir des pointeurs (attention car un ptr reste un ptr )
 
-#### Les fonctions 
+#### Les fonctions
 
 En C les fonctions et les pointeurs peuvent être utilisés en argument.
 
 #### Manipulation bits
 ```c
-r = ~a;  //négation bit à bit 
+r = ~a;  //négation bit à bit
 r = a & b; // conjonction bit à bit
 r = a | b; // disjonction bit à bit
 r = a ^ b; // xor bit à bit
@@ -210,7 +223,7 @@ Les variables sont définies par leur portée. **La portée d'une variable** peu
 
 Les variables globales sont des variables accessibles de partout dans le programme. Elles doivent être utilisées de façon parcimonieuses (utilisation mémoire + importante). Pour les variables locales, les premières versions du langage C imposaient leur définition au début des blocs.
 
-Pour définir des constantes on peut : 
+Pour définir des constantes on peut :
 ```
 #define M_PI 3.14159265 //préprocesseur
 const double pi=3.14159265 // constante
@@ -223,7 +236,7 @@ Dans les premières versions de C on devait définir les variables au début de 
 
 ```C
 typedef enum{
-	monday, tuesday, wednesday, thursday, friday, saturnday, sunday 
+	monday, tuesday, wednesday, thursday, friday, saturnday, sunday
 }day;
 day jour = monday;
 ```
@@ -237,20 +250,20 @@ union u_t{
 }u;
 u.i = 12; // si cette variable contient un int, elle ne peut plus contenir de char sans supprimer la valeur du int
 ```
- 
+
 ### Section 2.5 : L'organisation de la mémoire
 
 La mémoire peut-être divisée en six zones principales :
- 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1252-Syst%C3%A8mes%20Informatiques1/img/2.png) 
+
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1252-Syst%C3%A8mes%20Informatiques1/img/2.png)
 
 #### Le segment text
 Contient toutes les instruction qui sont exécutées par le microprocesseur. (uniquement accessible en lecture)
 
-#### Le segment des données initialisées 
+#### Le segment des données initialisées
 Contient l'ensemble des données et chaînes de caractères qui sont utilisées dans le programme. (il comprend l'ensemble des variables globales déjà initialisées)
 
-#### Le segment des données non-initialisées 
+#### Le segment des données non-initialisées
 Contient les valeurs des variables non-globales
 
 #### Le tas (ou heap)
@@ -278,10 +291,10 @@ Cette zone est très importante, elle sotcke l'ensemble des variables locales ma
 alloué en automatiquement en  mémoire  (functions)
 
 #### Les arguments et variables d'environnement
-argc : nombre d'arguments 
+argc : nombre d'arguments
 char* argv[] : les arguments
 argv[0]: nom du programme exécuté
- 
+
 
 -------------------
 
@@ -295,66 +308,66 @@ Sram : MB
 Posibilité d'avoir les deux avantages ?
 on doit mettre dans la sram les données en cours d'utilisation ( aussi appelé Cache )
 
-### Mémoire 
+### Mémoire
 *Code*-*Données*-*Heap*-*Stack*
 
 **Principe de localité** :
 - spatiale : si on edite un élément, il est courrant d'accéder à une variable proche en mémoire
-- Si on a accédé à l'adresse X à l'instant t, il est commun d'accéder à la même adresse X à l'instant t+1 
+- Si on a accédé à l'adresse X à l'instant t, il est commun d'accéder à la même adresse X à l'instant t+1
 
-En pratique, on a une hierarchie de mémoire caches. on sépare la cache insruction de la cache données. 
+En pratique, on a une hierarchie de mémoire caches. on sépare la cache insruction de la cache données.
 
 il existe une cache dans le processeur.
- 
+
 
 
 ## Cours S5
 ## Cours S6
-livelock = le processeur tourne mais rien n'est exécuté 
+livelock = le processeur tourne mais rien n'est exécuté
 
-## Cours S7 
+## Cours S7
 voir slide
 
 ## Cours S8
 
-ar -> archive 
+ar -> archive
 
 2 formes de lib
 -stat
-	on incl les librairies manuellement dans le makefile 
+	on incl les librairies manuellement dans le makefile
 -dynamiques
-	il est inutile de sauvegarder des librairies dans chaque exécutable si la librairie est présente dans tous les fichiers 
-	référence vers une librairie en mémoire 
+	il est inutile de sauvegarder des librairies dans chaque exécutable si la librairie est présente dans tous les fichiers
+	référence vers une librairie en mémoire
 	+efficace : mémoire
-	Attentoion que elle soit bien présente sur le système 
+	Attentoion que elle soit bien présente sur le système
 
-* Matériel 
+* Matériel
 * Kernel(drivers[abstraction du matériel], interruptions, ...)
 * processus système
-* Applications 
+* Applications
 
- 
+
 Image sur les slides
 
 appels systèmes : abstraction pour intéragir avec le noyau
 dnas la section 2 du manuel
- * getpid : n° du processus système 
+ * getpid : n° du processus système
  * read : lire des fichiers
  * kill : tuer le processus
  * brk : mémoire ( utilisé par malloc)
- 
-appel système : 
-1. Appeler le kernel 
+
+appel système :
+1. Appeler le kernel
 2. Quel appel système ?
 3. Passer les arguments
-4. Exécuter appel système 
+4. Exécuter appel système
 5. Retourner le résultat
-6. Retour au processus 
+6. Retour au processus
 
-fork : copie presque identique en mémoire (pid !=) copie ses data (contexte != stack et heap ...) 
+fork : copie presque identique en mémoire (pid !=) copie ses data (contexte != stack et heap ...)
 
 
 père waitpid()
-execve("hello"): remplace le programme par un exécutable . suicide par execve (pid = ) 
-ensuite il fait appel à exit 
+execve("hello"): remplace le programme par un exécutable . suicide par execve (pid = )
+ensuite il fait appel à exit
 préviens le  père qu'il a fini****
