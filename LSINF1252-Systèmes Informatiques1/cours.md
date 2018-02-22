@@ -144,11 +144,14 @@ int main(int argc, char *argv[]){
   return EXIT_SUCESS;
 }
 ```
+<<<<<<< HEAD
 
 ***
 *** update 22/02/18
 ***
 
+=======
+>>>>>>> 58bae765c3d86e6d22779ece7231bcc28ce87ca6
 
 #### Manuel
 accessible via la commande man
