@@ -92,7 +92,6 @@ int main ( intarg c , char ∗ argv [ ] ){
 La compilation du fichier hello.c en un exécutable s'effectue sur un système Unix comme suit:
 ```
 gcc -Wall -o hello hello.
-
 ```
 l'argument *-Wall* affiche tous les warnings  
 l'argument *-o hello* donne le nom de sortie de l'exécutable
@@ -100,20 +99,56 @@ l'argument *-o hello* donne le nom de sortie de l'exécutable
 
 *** update 21/02/18
 
-#### Préprocesseur
-Au moment de la compilation, le compilateur va exécuter les directives préprocesseur.
-``` C
-#define <...> //ajoute les librairies au moment de la compilation
-#define ZERO 0 // replace tout les ZERO par 0 au moment de la compilation
-```
+#### 2.1.3 Préprocesseur
+Au moment de la compilation, le compilateur va exécuter les directives préprocesseur. il s'agit de macros qui sont effectuées en amont de la compilation finale du programme.  
+* **#define** : permets la définitionn de substitution et est fréquemment utilisé pour définir des constantes qui sont valables dans l'ensemble du programme.  
+* **#include** : macro permettant l'inclusion de fichiers.
+  * *< stdio.h >* : librairie de fonctions standard permettant d'interragir avec les entrées et sorties standard et notament *printf*
+  * *< stdlib.h >* : fonction et constantes de la librairie standard
 
-#### Constructons Syntaxiques
+``` C
+#include <...> //ajoute les librairies au moment de la compilation
+#define ZERO 0 // replace ZERO par 0 au moment de la compilation
+```
+#### 2.1.4 Strings
+Les strings sont des tableaux de caractères. en C, ils se terminent par la valeur '\0'
+``` C
+char string[10];
+string[0]='j';
+string[1]='a';
+string[2]='v';
+string[3]='a';
+string[4]='\0';
+printf("le string est : %s \n", string);
+// %s fait référence à la variable string qui est un string
+// %d fait référence à une variable de type int
+// %c fait référence à une variable de type char
+```
+#### 2.1.5 Constructons Syntaxiques
 ```C
 if (COND){}else{}
 while(COND){} //if cond false do nothing
 do {} while(COND); //if cond is false then don't repeat
 for(INIT;COND;INCR){}
 ```
+#### 2.1.6 Les arguments d'un programme
+un programme peut (comme en java) retourner un int (cfr infra) ou void (rien)
+``` C  
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char *argv[]){
+  int i;
+  for(i=0;i<argc;i++){
+    printf("argument[%d] : %s\n", i, argv[i]);
+  }
+  return EXIT_SUCESS;
+}
+```
+
+***
+*** update 22/02/18
+***
+
 
 #### Manuel
 accessible via la commande man
