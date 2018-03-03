@@ -313,25 +313,27 @@ La mémoire peut-être divisée en six zones principales :
 
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1252-Syst%C3%A8mes%20Informatiques1/img/2.png)
 
-#### Le segment text
+#### 2.5.1 Le segment text
 Contient toutes les instruction qui sont exécutées par le microprocesseur. (uniquement accessible en lecture)
 
-#### Le segment des données initialisées
+#### 2.5.2 Le segment des données initialisées
 Contient l'ensemble des données et chaînes de caractères qui sont utilisées dans le programme. (il comprend l'ensemble des variables globales déjà initialisées)
 
-#### Le segment des données non-initialisées
+#### 2.5.3 Le segment des données non-initialisées
 Contient les valeurs des variables non-globales
 
-#### Le tas (ou heap)
+#### 2.5.4 Le tas (ou heap)
 C'est dans une des 2 zones dans laquelle un programme peur obtenir de la mémoire supplémentaire pour y stocker de l'information. Un programmeur peut réserver une zone permettant de stocker des données et y associer un pointeur. (brk(2) et sbrk(2) modifient la taille du heap).
-En pratique, on utilise malloc(3) pour allouer de la mémoire et free(3) pour la libérer.
-aloué manuellement en mémoire (variables)
+
+##### Malloc
+En pratique, on utilise malloc(3) pour allouer de la mémoire et free(3) pour la libérer ce qui a été
+aloué manuellement en mémoire (variables). Attention l'oubli de ces libérations mémoires peuvent mener à des Memory leaks.
 
 Malloc, contrairement à calloc ne réinitialise pas la zone mémoire libérée.
-##### Malloc
 
 ```C
-string= (char *) malloc(length*sizeof(char))//malloc retourne un ptr void qu'il faut caster ensuite
+#include <sdtlib.h>
+string= (char * ) malloc(length * sizeof(char))//malloc retourne un ptr void qu'il faut caster ensuite
 free(string);
 ```
 
@@ -342,14 +344,20 @@ void *calloc(size_t num_element, size_t size); // base
 char *ptr = calloc(15,size(char));//exemple
 ```
 
-#### La pile (ou stack)
-Cette zone est très importante, elle sotcke l'ensemble des variables locales mais également les variables de retour de toutes ls fonction qui sont appelées. Cette zone est gérée comme une pile.
-alloué en automatiquement en  mémoire  (functions)
+#### 2.5.5 La pile (ou stack)
+Cette zone est très importante, elle stocke :
+* l'ensemble des variables locales
+* les variables de retour de toutes les fonction qui sont appelées
+* Les arguments placés aux fonctions
+
+Cette zone est gérée comme une pile.
 
 #### Les arguments et variables d'environnement
 argc : nombre d'arguments
 char* argv[] : les arguments
 argv[0]: nom du programme exécuté
+
+Les **variables d'environnement** sont toutes les variables permettant d'accéder à certaines informations de l'environnement qui lance le programme. (ex : path , lang, shell , home, ... ).
 
 
 -------------------
