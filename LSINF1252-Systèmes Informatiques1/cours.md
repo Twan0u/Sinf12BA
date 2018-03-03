@@ -91,7 +91,7 @@ int main ( intarg c , char ∗ argv [ ] ){
 #### 2.1.2 Compilation
 La compilation du fichier hello.c en un exécutable s'effectue sur un système Unix comme suit:
 ```
-gcc -Wall -o hello hello.
+gcc -Wall -o hello hello.c
 ```
 l'argument *-Wall* affiche tous les warnings  
 l'argument *-o hello* donne le nom de sortie de l'exécutable
@@ -145,11 +145,7 @@ int main(int argc, char *argv[]){
 }
 ```
 
-***
-*** update 22/02/18
-***
-
-#### Manuel
+#### 2.1.7 Le Manuel
 accessible via la commande man
 1. Utilitaire disponible pour tous les utilisateurs
 2. Appels systèmes en C
@@ -163,37 +159,39 @@ accessible via la commande man
 ### Section 2.2 : Types de données
 Les types de données et leur représentation en mémoire
 - decimal : 123  
-- Binaire : **0b**1111011  
-- Octal : **0**173   
-- Hexadécimal :**0x**7B  
+- Binaire : *0b* + 1111011  
+- Octal : *0* + 173   
+- Hexadécimal :*0x* + 7B  
 
 On peut obtenir la taille en mémoire d'un type de données avec
 ``` c
 sizeof(DATA_TYPE)
 ```
-Les **nombres signés** sont représentés sous la forme : Signe (négatif si = 1) - Nombre
+#### 2.2.1 Les nombres entiers
+Les **nombres signés** sont représentés sous la forme : Signe (négatif si = 1) - Nombre.  
+Les **nombres non-signés** sont représentés sous la forme binaire std 5 = 2^2 + 2^0.  
 
-#### Standard IEEE 754
+#### 2.2.2 IEEE 754
+Le **Standard IEEE 754** est une représentation des nombres réels sous forme : Signe; exposant; signifiant.
+il existe la single et la double précision (respectivement  32 et 64 bits)
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/LSINF1252-Syst%C3%A8mes%20Informatiques1/img/1.png)
-
-
-#### Les tableaux
+#### 2.2.3 Les tableaux
 Dans les anciennes version du langage langage C, les tableaux étaient de taille fixe.
 **Attention** pas de Tab.length en C  il faut donc prévoir de garder la taille du tableau en mémoire si on veut l'utiliser par la suite
 ```C
-#define N 10
+#define N 10 // taille du tableau
 float vecteur[N]
 float matrice[N][N]
+int tab[3] = {1,2,3};
 ```
+**attention pas de buffer overflow car pas d'exception**
 
-#### Caractères et chaines de caractères
+#### 2.2.4 Caractères et chaines de caractères
 Le langage C n'integre pas d'office les boolean et les strings. En C, les strings sont des tableaux de caractères dont le dernier élément contient la valeur '\0'.
 ```C
 char string[20]= "text";
 printf("%s \n",string);
 ```
-
 
 Les lettres étant des char (ASCII de 7 ou 8 bits) stockés sous la forme d'entiers, on peut donc effectuer des manipulations numériques avec des char.
 
@@ -206,21 +204,21 @@ Les lettres étant des char (ASCII de 7 ou 8 bits) stockés sous la forme d'enti
 Il n'existe pas de mécanisme d'exception en C. Celà pose des problèmes sécurité & des possibilités de Buffer Overflow.
 Une chaine de caractères se termine toujours par un '\0' ( equivalent à 0)
 
-#### Les Pointeurs
-En C, le programmeur peut interragir directement avec la mémoire où les données qu'un programme manipule sont stockés. En C, contrairement au java. Il n'y a pas de garbage collection qui retire de la mémoire les objets qui ne sont plus utilisés.
+#### 2.2.5 Les Pointeurs
+En C, le programmeur peut interragir directement avec la mémoire où les données qu'un programme manipule sont stockés.
 
-La mémoire est une zone qui est définie et accessible via son adresse.
-
-
-**Un pointeur** est une variable contenant l'adresse d'une autre variable.
+La **mémoire** est une zone qui est définie et accessible via son adresse.
+Un **pointeur** est une variable contenant l'adresse d'une autre variable.
 
 ```c
 &var // adresse à laquelle une variable est stockée
 var // variable en mémoire
 *ptr // récupère la valeur à l'adresse du pointeur
 ```
-
-#### Les structures
+-----
+En C, contrairement au java. Il n'y a pas de garbage collection qui retire de la mémoire les objets qui ne sont plus utilisés.
+----
+#### 2.2.6 Les structures
 En C, contrairement au java (et autres langages orientés objet) on ne peut pas créer d'objets mais on peut créer des types de données (appelés structures). Les Structures n'ont pas de méthodes liés via l'encapsulation dans la classe.
 
 Une **structure** est une combinaison de différents types de données simples ou structurés.
@@ -231,16 +229,14 @@ struct NOM-STRUCTURE
     int VARIABLE1;
     int VARIABLE2;
 }
-
 struct NOM-STRUCTURE NOM-INSTANCE = {1,2}; // crée une instance
 NOM-INSTANCE.VARIABLE1= 2 // accède directement à la variable en mémoire
-(*ptr).x // accède à l'élèm x du ptr
+(* ptr).x // accède à l'élèm x du ptr
 ptr->x //idem supp
-
 ```
-#### Les Alias
+#### 2.2.7 Les Alias
 On peut redéfinir des noms de structures :
-```c
+``` c
 typedef int ENTIER; //redéfini int par entier  
 ```
 On peut les utiliser pour  :
@@ -248,11 +244,25 @@ On peut les utiliser pour  :
 - diminuer la taille des identifiants
 - redéfinir des pointeurs (attention car un ptr reste un ptr )
 
-#### Les fonctions
+#### 2.2.8 Les fonctions
+Les fonctions sont des découpes simples de tâches complexes.
+On peut définir une fonction comme suit :
+``` c
+type_de_retour nom_fonction(type_var_1 nom_var_1, type_var_2 nom_var_2){...} // syntaxe Générale
+void hello(){...} //fonction sans arguments et sans valeur de retour
+int hola(int age){...} //fonction avec argument qui retourne un int
+int main(int argc, char *argv[]){...}// fonction main
+```
+La fonction main est la fonction principale du programme. elle est obligatoire
+
+**Déclaration** : Indique au compilateur le type des arguments et le type de la valeur de retour(en cas de fonctions). Toutes les fonctions et variables doivent être déclarées avant d'êtres utilisées.
+
+**Définition** : Le corps de la fonction est spécifiée  dans la déclaration ou dans le cas d'une variable daéns son initialisation.  
 
 En C les fonctions et les pointeurs peuvent être utilisés en argument.
 
-#### Manipulation bits
+
+#### 2.2.9 Manipulation bits
 ```c
 r = ~a;  //négation bit à bit
 r = a & b; // conjonction bit à bit
@@ -275,6 +285,7 @@ const double pi=3.14159265 // constante
 Dans les premières versions de C on devait définir les variables au début de chaque bloc
 
 ### Section 2.4 : Unions et énumérations
+#### 2.4.1 énumérations
 **enum** est utilisé pour définir un type de donées énumérées. càd un nombre fixe de valeurs possibles. (val stockées sous la forme d'entiers)
 
 ```C
@@ -283,6 +294,7 @@ typedef enum{
 }day;
 day jour = monday;
 ```
+#### 2.4.2 Unions
 
 **union** permet de réserver une zone en mémoire pour stocker plusieurs types de variables possibles
 
@@ -293,6 +305,7 @@ union u_t{
 }u;
 u.i = 12; // si cette variable contient un int, elle ne peut plus contenir de char sans supprimer la valeur du int
 ```
+Attention, union est diffférent d'une *Struct* qui pourrait contenir un *int* et un *char* en même temps
 
 ### Section 2.5 : L'organisation de la mémoire
 
