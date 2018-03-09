@@ -35,19 +35,30 @@ Une **pipe** ;) est une redirection de la sortie standartd d'un programme vers l
 **sort** : trie les lignes d'un fichier
 **mv** : utilitaire pour renommer ou déplacer un fichier ou dossier.  
 **head** et **tail** : extrait le debut et la fin d'un fichier.
-**wc** : compte le nombre de (lignes, mots, caractères).
+**wc** : compte le nombre de (lignes (-l), mots, caractères).
 **sort** : trie le fichier par ordre alphabétique
 **uniq** : retire les doublons *(Attention : fichier trié au préalable)*
-**tar** : permets de regrouper des fichiers dans une archive (fonctionne souvent avec gzip)  
+**tar** : permets de regrouper des fichiers dans une archive (fonctionne souvent avec gzip)
+ (c:compress/x:extract , z:utilise gzip , v:verbose , f: indique la donnée a compresser)
+``` bash
+tar czvf fichier1.txt dossier1 #compresser
+tar xzvf bob.tar.gz #decompresser
+```
 **gzip**/**gunzip** : compression / décompression d'un fichier .gz
 **cp** : copie un fichier ou dossier (-r pour les dossiers).   
-**rm** : efface un fichier ou dossier.  
+**rm** : efface un fichier ou dossier.  (-rf : suppression réccursive)
 **mkdir** : crée un répertoire.  
 **rmdir** : efface un répertoire vide.  
 **cd** : change le répertoire courant.  
 **pwd** : affiche le répertoire courant.  
 **./prog** : est utilisé pour lancer le programme prog.  
-**grep** : utilitaire permettant d'extraire d'un fichier les lignes qui contiennent ou non une chaine de caractère passée en argument.   
+**grep** : utilitaire permettant d'extraire d'un fichier les lignes qui contiennent ou non une chaine de caractère passée en argument. (cette commande est souvent utilisée apres une pipe ex : cat fichier.txt|grep "bonjour")  
+
+``` bash
+grep -r "truc" # recherche reccursive
+grep -n "truc" # affiche la ligne
+```
+
 **echo "Blabla" >> file.txt** copie le texte Blabla dans le fichier file.txt.  
 **man** :lire les pages de manuel d’un système Unix.  
 
@@ -303,7 +314,9 @@ union u_t{
 	int i;
 	char c;
 }u;
-u.i = 12; // si cette variable contient un int, elle ne peut plus contenir de char sans supprimer la valeur du int
+u.i = 12; /*si cette variable contient un int,
+elle ne peut plus contenir de char sans supprimer
+la valeur du int*/
 ```
 Attention, union est diffférent d'une *Struct* qui pourrait contenir un *int* et un *char* en même temps
 
