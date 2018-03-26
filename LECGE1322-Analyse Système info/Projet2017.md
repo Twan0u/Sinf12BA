@@ -1,6 +1,6 @@
-#Enoncé textuel du projet
+# Enoncé textuel du projet
 
-##Enoncé textuel du projet « Aéroclub » (LINGE1322, 6 février 2017)
+## Enoncé textuel du projet « Aéroclub » (LINGE1322, 6 février 2017)
 
 Un aéroclub souhaite acheter un logiciel de gestion pour faciliter la gestion des plannings, le contrôle des vols, la gestion des adhérents.
 

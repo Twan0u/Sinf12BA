@@ -1,41 +1,15 @@
-# Analyse
-##Cours S4 : notes pas encore dans le PDF
+# Analyse et Conception d'un système d'information
+## 0. Préface
+Le cours portera sur l'étude et la modèlisation d'un problème sous plusieurs aspects via 4 modèles.
 
-pour diférencier une phase d'une non phase on va utiliser des critères
-**Lieu**
-- changement de lieu
-**Temps**
-- Interruption
-- point d'attente de type 
-	- décision (humaine / a / t)
-	- accumulation 
+Le **Modèle 1** : Structuration des Données ( *data* )
+Le **Modèle 2** : Structuration des traitements ( *trairements* )
+Le **Modèle 3** : La dynamique des traitements ( *message d'entrée*, *traitements*, *message de sortie* )
+Le **Modèle 4** : Les flux de données ( *message d'entrée*, *traitements* + *Processeur [humain, info, méca, ...]*, *message de sortie* )
 
-voir Slides pour les différents trucs
-
---permanence de l'unité d'exécution -- trop rare que pour être 
--changement de ressources
-	- personne 
-	- logiciel / matériel
-	- information : nouveau / important **Attention, ne pas oublier**
-
-### Examen ecge Question 4 . mai 2013
-
-OuvrirMission = verbe d'action concret + objet
-
-### Cours  S10 
-
-une double flèche qui pointe vers une phase interactive est un OU
-une double flèche qui pointe vers un point de synchro est un ET
-
-On peut mettre les messages en destination de quelqu'un dans la case producteur ou la case destinataire, au choix ( attention - on doit mettre une flèche quand même vers l'autre)
-
-ATTENTION - au moins un message entre 2 proccessus
-
-
-On peut avoir plusieurs messages initiaux ? oui 
-
-
-
-
-
- 
+## Modèle 1 : Le diagramme de Classes
+### 1.1 : Introduction
+Le diagramme de classe est un **modèle du domaine** et un **modèle structurel**.
+Un **modèle du domaine** : modèle qui définit les objets que l'utilisateur final peut voir, accéder et manipuler avec des relations entre ces objets (Le modèle du domaine est un super ensemble du modèle des données)
+Un **modèle Structurel** : Une vue d'un système qui met l'accent sur la structure des objets, avec leur classificateurs, leur relations, leurs attributs et leurs opérations.
+### 1.2 : Identification des classes
