@@ -1,5 +1,11 @@
 # Systèmes Informatiques 1
 
+Points  :
+* Inginious  /2
+* Travail de groupe /4
+* Review /2
+* Interro /12
+
 ## Chapitre 1 : Introduction
 ### Section 1.1 : Introduction
 #### 1.1.1 Composition d'un système informatique

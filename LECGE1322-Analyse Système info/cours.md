@@ -1,4 +1,8 @@
 # Analyse et Conception d'un système d'information
+Notes :
+*  8/20 : projet + évaluations
+* 12/20 : QCM
+
 ## 0. Préface
 Le cours portera sur l'étude et la modèlisation d'un problème sous plusieurs aspects via 4 modèles.
 

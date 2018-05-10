@@ -24,4 +24,9 @@ Challenges :
 * data qulity
 * data interpretation
 * knowlege of a system on a client side
-* system complexity 
+* system complexity
+
+on peut faire du process mining sur différents processus.
+Chaque manquement peut mener à une baisse des bénéfices et des cas extrêmes peuvent mener à des problèmes plus importants.
+L'analyse des processus, peut pêrmettre d'optimiser le temps que prend un processus.
+ 
