@@ -1,10 +1,10 @@
-## Chapitre 1 : Introduction
-### Section 1.1 : Introduction
-#### 1.1.1 Composition d'un système informatique
+# Chapitre 1 : Introduction
+## Section 1.1 : Introduction
+### 1.1.1 Composition d'un système informatique
 
 Le système informatique  le plus simple est **un processeur** (*cpu*) et **une mémoire**. Ce prosesseur est capable de : *lire et écrire* des l'informations en mémoire et de *réaliser des calculs*.
 
-#### Systèmes Unix
+### Systèmes Unix
 Unix est un nom générique donné à une famille de systèmes d'exploitations. On y retrouve MacOS, FreeBSD et Linux qui sont les plus utilisés.
 
 Un système unix est composé de trois grands types de logiciels:  
@@ -29,7 +29,7 @@ En Unix une application est composée de un ou plusieurs processus.
  Les processus peuvent utiliser des ressources en mémoire qu'il liberera lors de sa terminaison et retourner un entier au processus parent ( 0 si Ok sinon autre chose )
 
 
-##### Shell
+#### Shell
 
 Un **shell** est un programme qui à été spécialement conçu pour faciliter l'utilisation d'un système Unix via le clavier, généralement appelée console ou terminal. Sa puissance vient de sa capacité à écrire des commandes enchaînées : <,>,>>,|
 

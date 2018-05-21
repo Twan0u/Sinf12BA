@@ -9,31 +9,6 @@ Points  :
 
 
 
--------------------
-
-
-## Cours S4
-
-Dram : condensateur - gourmand en énergie,  50ns
-Sram  : consomation en continue => production de chaleur , 1ns
-Dram : GB
-Sram : MB
-Posibilité d'avoir les deux avantages ?
-on doit mettre dans la sram les données en cours d'utilisation ( aussi appelé Cache )
-
-### Mémoire
-*Code*-*Données*-*Heap*-*Stack*
-
-**Principe de localité** :
-- spatiale : si on edite un élément, il est courrant d'accéder à une variable proche en mémoire
-- Si on a accédé à l'adresse X à l'instant t, il est commun d'accéder à la même adresse X à l'instant t+1
-
-En pratique, on a une hierarchie de mémoire caches. on sépare la cache insruction de la cache données.
-
-il existe une cache dans le processeur.
-
-
-
 ## Cours S5
 ## Cours S6
 livelock = le processeur tourne mais rien n'est exécuté
