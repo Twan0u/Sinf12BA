@@ -3,9 +3,9 @@
 
 ## ECGE1222-Microéconomie
 ## SINF1225-COO
-## ________-Anglais
+## LANGL2  -Anglais
 ## ________-Projet- App sinf
-## ________-Informatique2
+## LFSAB1402-Informatique2
 
 ## ECGE1212-Macroéconomie 
 ## SINF1250-Mathématiques pour l'informatique

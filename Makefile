@@ -1,10 +1,10 @@
 .SILENT:
-.PHONY: all clear LANGL2 FSAB1402 LECGE1212 ECGE1222
+.PHONY: all clear LANGL2 FSAB1402 LECGE1212 ECGE1222 LECGE1322 LSINF1225
 .DEFAULT_GOAL=help
 ESPACE_HELP=10
 
 
-all: LANGL2 FSAB1402 LECGE1212 ECGE1222 ## Compile toutes les notes en PDF ( Pandoc and texlive sont requis )
+all: LANGL2 FSAB1402 LECGE1212 LECGE1322 LSINF1225 ECGE1222 ## Compile toutes les notes en PDF ( Pandoc and texlive sont requis )
 
 
 clear: ## Supprime les fichiers temporaires non indispensables
@@ -28,6 +28,20 @@ ECGE1222: ## Compile les notes de Micro en PDF
 	# rm temp_$@.md
 
 LANGL2: ## Compile les notes de anglais 2 en PDF
+
+	echo $@/notes/chapitre*.md | xargs cat > temp_$@.md
+	pandoc temp_$@.md -s -o $@.pdf
+	echo $@
+	rm temp_$@.md
+
+LSINF1225: ## Compile les notes de anglais 2 en PDF
+
+	echo $@/notes/chapitre*.md | xargs cat > temp_$@.md
+	pandoc temp_$@.md -s -o $@.pdf
+	echo $@
+	rm temp_$@.md
+
+LECGE1322: ## Compile les notes de anglais 2 en PDF
 
 	echo $@/notes/chapitre*.md | xargs cat > temp_$@.md
 	pandoc temp_$@.md -s -o $@.pdf
