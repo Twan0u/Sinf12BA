@@ -30,7 +30,7 @@ Dans ce cours, nous allons simplifier :
 *b* : mesure de l'élasticité (élasticité grande si b est petit )
 *c* : coût marginal constant
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/masterECGE1222/img/222.png)
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222/img/222.png)
 
 ### 1.2 : Concurrence à la Cournot 
 
@@ -49,7 +49,7 @@ $$ y_2 = (a-b.y^e_1 - c_2) / 2b $$
 
 Ceci est la *fonction de réaction* de la firme 2 : 
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/masterECGE1222/img/221.png)
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222/img/221.png)
 
 la courbe d'isoprofit est un lieu de points (y<sub>1</sub>,y<sub>2</sub>)qui procurent le même montant de profit à la firme 2.
 
@@ -58,7 +58,7 @@ On obtiendra donc à l'équilibre :
 $$y^*_1 = (a-2.c_1+c_2)/3b$$
 $$y^*_2 = (a-2.c_2+c_1)/3b$$
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/masterECGE1222/img/223.png) 
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222/img/223.png) 
 
 En cas d'erreur sur les anticipations, celles-ci peuvent être **revues**  ( en sachant que celles-ci vont **converger vers l'équilibre** et c'est ce qui donne un équilibre de Cournot **stable**).
 Si les firmes sont **rationnelles**, alors elles peuvent adopter directement leurs quantités d'équilibre.
@@ -100,7 +100,7 @@ maximisation des somms des profits :$$Y^* = (a-c)/2b$$
 Dans le cas ou c<sub>1</sub> ≠ c<sub>2</sub> : seul la plus efficiente devrait produire.
 Dans le cas ou c<sub>1</sub> == c<sub>2</sub> : les deux firmes ont un interêt à dévier .
 
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/masterECGE1222/img/224.png) 
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222/img/224.png) 
 
 Un cartel est **instable**. La seule chose qui évite aux firmes de dévier sont les **mécanismes de contrôles** : **punition des déviants**, contrôle des prix, limitation volontaire des quantités,...
 
@@ -110,11 +110,11 @@ La menace d'entrer sur un marché est une forme de concurrence
 Dans le cas d'une société  M qui est implémentée sur un marché et une société E menace d'entrer: Dans quelle mesure la menace de M peut être crédible.
 
 #### Quand M ne réagit que après que E réagissent :
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/masterECGE1222/img/225.png)
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222/img/225.png)
 *La firme M n'a pas de menace crédible car si l'autre est déjà rentrée alors M n'as pas d'interêt à combattre et ça, E le sait.* 
 
 #### Quand M augmente ses capacités de production à un coût de 2 :
-![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/masterECGE1222/img/226.png)
+![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222/img/226.png)
 *La menace est maintenant crédible. E l'anticipe et décide de ne pas entrer.*
 
 Lors d'une analyse du marché, une **production excédentaire** est le signe d'une **  à l'égard des entrants potentiels. En plus des prix bas, la production excédentaire est une autre qui peut pousser une entreprise à ne pas rentrer. 
@@ -138,7 +138,7 @@ Des exemples de **jeux statiques** sont la *concurrence à la Cournot* et la *co
 
 ```
 Un jeu statique
-⎇ la liste des joueurs
+-> la liste des joueurs
 ⎇ la liste des actions pour chaque joueur 
 ⎇ la matrice des paiements 
 ```
@@ -205,7 +205,7 @@ U(x <sub>1</sub> ,-m)=v(x<sub>1</sub>)-m
  
 Au moins le produit est cher, au plus il est désirable et au plus il sera acheté.
 Un bon d'achat ou une modification du revenu est représenté par un glissement de la fonction horizontalement 
- ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/masterECGE1222/img/227.png)
+ ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222/img/227.png)
  
  L'utilité est la disposition à payer du consommateur
  
@@ -230,7 +230,7 @@ supposons 2 types de consommateurs (ga, gb) ga>gb et supposons que l'on peut ord
 #### Analyse 
 Dans le cas ou ga>gb nous avons un **single crossing** (croise au plus 1 fois, en tout point suppérieur à l'autre).
 Comme l'information est complète, le monopoleur peut proposer 2 contracts différents $$(x^*_a, F^*_a) et (x^*_b, F^*_b )$$. On imagine donc faire offre avec les 2 séparéments ( on applique la solution précédente).
- ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/masterECGE1222/img/228.png)
+ ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222/img/228.png)
  A payent plus que B
  
  Cette solution est avantageuse pour le monopoleur car : tout le surplus potentiel est crée et accaparé par le monopoleur

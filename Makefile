@@ -1,15 +1,17 @@
 .SILENT:
-.PHONY: all clear ECGE1222 LANGL2 FSAB1402 LECGE1212
+.PHONY: all clear LANGL2 FSAB1402 LECGE1212 ECGE1222
 .DEFAULT_GOAL=help
 ESPACE_HELP=10
 
 
-all: ECGE1222 LANGL2 FSAB1402 LECGE1212  ## Compile toutes les notes en PDF ( Pandoc and texlive sont requis )
+all: LANGL2 FSAB1402 LECGE1212 ECGE1222 ## Compile toutes les notes en PDF ( Pandoc and texlive sont requis )
 
 
 clear: ## Supprime les fichiers temporaires non indispensables
 
-	rm *.pdf
+	rm -f -- *.pdf
+	rm -f -- temp*.md
+	
 
 help: ## Affiche l'aide
 
@@ -21,9 +23,9 @@ help: ## Affiche l'aide
 ECGE1222: ## Compile les notes de Micro en PDF
 
 	echo $@/notes/chapitre*.md | xargs cat > temp_$@.md
-	pandoc temp_$@.md -s -o $@.pdf
+	# pandoc temp_$@.md -s -o $@.pdf
 	echo $@
-	rm temp_$@.md
+	# rm temp_$@.md
 
 LANGL2: ## Compile les notes de anglais 2 en PDF
 
@@ -42,3 +44,4 @@ FSAB1402: ## Compile les notes de Informatique2 en PDF
 LECGE1212: ## Copie le PDF du cours de Macro dans le directory principal 
 
 	cp LECGE1212/LECGE1212.pdf .
+	echo $@

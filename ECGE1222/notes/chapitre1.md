@@ -13,20 +13,20 @@ Qcm  +1,0,-0.25
 
 Les goûts de l'individu. Ces goûts peuvent être résumés par une relation de préférence.   
 L'individu peut :  
-- préférer strictement ≻≺
-- être indifférent à un choix entre 2 choses.  ∼
-- préférer faiblement ≿≾
+- préférer strictement ><
+- être indifférent à un choix entre 2 choses.  --
+- préférer faiblement >=<=
 
 #### Hypotheses fondamentales (préférences rationelles / cohérence )   
 
 *Toute paire d'alternatives peut être comparée* (relation complète)
- - soit a≿b soit a≾ b soit a≿b et a≾b  
+ - soit a>=b soit a<= b soit a>=b et a<=b  
 
 *Si une alternative quelconque est au moins aussi désirable qu'une autre et cette autre au moins aussi désirable qu'une troisième, alors la première est au moins aussi désirable que la troisième* (relation de transitivité)
-- si a≿b et b≿c alors a≿c  
+- si a>=b et b>=c alors a>=c  
 
 *Toute Alternative est au moins aussi désirable qu'elle-même* (relation de réflexivité)
--  a ≿ a    
+-  a >= a    
 
 Violation des hypothèses de  :   
 - **complétude**: paires incomparables   
@@ -41,7 +41,7 @@ Les préférences peuvent être exprimées au moyen de **fonctions d'utilités**
 Cette fonction peut donc subir autant de **transformation monotones** qu'elle le souhaite(transformation qui n'affece pas l'ordre(mult. par un nombre positif, addition d'un nombre quelconque, puissance impaire,... )).
 On ne peut *pas toujours trouver une fonction d'utilité* représentant la relation de préférences. Si nous pouvons, alors la fonction) est dite *complète et transitive*.
 
-Exemple : u(a) ≥ u(b) ⇌ a ≿ b.
+Exemple : u(a) >= u(b) <-> a >= b.
 ### 1.4 Choix et Contraintes
 Face à une situation, un décideur choisira la meilleure alternative et ainsi **maximiser ses préférences**. Si il est confronté à des contraintes, alors il effectura une **maximisatin de son utilité sous contraintes**. Ses choix peuvent aussi être synthétisés sous la forme d'une fonction appelée **fonction de choix**. On parle d'**alternatives acceptables** quand l'individu pourrait être amené à choisir cet alternative au lieu d'une autre
 N.B. si il existe plusieurs alterntatives meilleures, alors l'individu sera indifférent entre elles
@@ -74,7 +74,7 @@ Chaque pannier à une valeur qui lui est attribué en fonction du prix de chaqu'
 
 La **contrainte budgéraire** sont les paniers accessibles ou abordables au prix des biens sur le marché comparativement aux revenus du consommateur. 
 
-L'**ensemble budgétaire** l'ensemble des panniers qui répondent à la fonction $$px≤R$$
+L'**ensemble budgétaire** l'ensemble des panniers qui répondent à la fonction $$px<=R$$
 
 si **px =R** alors on se trouve sur l'**hyperplan de budget**. Dans le cas de deux biens, cette équation est représentée graphiquement par une droite, appelée droite de budget.
 
@@ -88,14 +88,14 @@ $$x_2 = R/p_2 - (p_1/p_2).x_1$$
 ### 2.3 Préférences
 Les **courbes d'indifférence** regroupent tous les paniers qui satisfont de manière égale le consommateur
 
-**courbe d'indifférence** : y∼x
-**contour supérieur** : y≿x
-**contour inférieur** : y≾x
+**courbe d'indifférence** : y--x
+**contour supérieur** : y>=x
+**contour inférieur** : y<=x
 (x est un pannier)
 
-Si on souhaite passer du pannier x=(x<sub>1</sub>,x<sub>2</sub>) à un pannier avec plus du bien 1, alors on obient x'=(x<sub>1</sub>+∆x<sub>1</sub>,x<sub>2</sub>-∆x<sub>2</sub>)
+Si on souhaite passer du pannier x=(x<sub>1</sub>,x<sub>2</sub>) à un pannier avec plus du bien 1, alors on obient x'=(x<sub>1</sub>+DELTAx<sub>1</sub>,x<sub>2</sub>-DELTAx<sub>2</sub>)
 
-**∆x<sub>2</sub>** est la quantitée qu'il faut retirer au panier sachant que l'on vient d'ajouter  la quantité **∆x<sub>1</sub>**
+**DELTAx<sub>2</sub>** est la quantitée qu'il faut retirer au panier sachant que l'on vient d'ajouter  la quantité **DELTAx<sub>1</sub>**
 
 #### Hypotheses sur les préférences
 
@@ -142,7 +142,7 @@ Rappel : les préférences qui peuvent être représentées en fonction d'utilit
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222/img/3.png)
 #### Utilité marginale (Um)
 
-Soit un panier x=(x<sub>1</sub>,x<sub>2</sub>) ∈ X. Si on augmente la quantité du bien 1 de ∆x, quelle est la variation d'utilité (∆U) de cet individu ? 
+Soit un panier x=(x<sub>1</sub>,x<sub>2</sub>) ∈ X. Si on augmente la quantité du bien 1 de DELTAx, quelle est la variation d'utilité (DELTAU) de cet individu ? 
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222/img/4.png)
 ![](https://raw.githubusercontent.com/Twan0u/Sinf12BA/master/ECGE1222/img/5.png)
 
@@ -200,7 +200,7 @@ f(p,R) est la **fonction de choix**. La quantitée demandée individuelle d'un b
 Le choix optimal satisfait l'**égaliation du taux marginal de substitution et du rapport des prix** (preuve par annulation de la dérivéepremière par rapport à x<sub>1</sub> dans l'équation d'identité budgétaire)  et  **l'identité budgetaire**
 
 ### 2.6 Préférences révélées
-L'axiome faible des préférences révélées : Si **p'x ≤ R** alors **p'x \> R'** 
+L'axiome faible des préférences révélées : Si **p'x <= R** alors **p'x \> R'** 
 ### 2.7 Statique comparative
 Les **statistiques comparatives** étudient les modifications des choix suite à des changements dans l'environnement économique. Dans ce cours, nous avons les **prix** et le **revenu**.
 #### Variations de revenu
